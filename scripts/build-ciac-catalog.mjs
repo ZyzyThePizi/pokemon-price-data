@@ -30,6 +30,7 @@ import { fillCardmarketIds, expansionLanguages } from './lib/cm-match.mjs'
 import { fillImages, POKELLECTOR_JA } from './lib/image-fallbacks.mjs'
 import { japaneseEnglishNames } from './lib/ja-english-names.mjs'
 import { fillSetLogos } from './lib/set-logos.mjs'
+import { dropSetMarks } from './lib/set-marks.mjs'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..')
 const OUT = path.join(ROOT, 'catalog', 'v2')
@@ -373,6 +374,8 @@ async function main() {
   for (const lang of LANGS) {
     const prev = await readJson(path.join(OUT, `cards-${lang}.json`))
     const { sets, cards } = await buildLang(lang, prev?.rows, prevSets)
+    const marks = dropSetMarks(cards)
+    if (Object.keys(marks).length) console.log(`[${lang}] set-wide marks dropped (not prints of their own): ${JSON.stringify(marks)}`)
     const abbrOf = new Map(sets.map(r => [r[0], r[10]]))
     const nameOf = new Map(sets.map(r => [r[0], r[2]]))
     const img = await fillImages(lang, cards, path.join(OUT, 'image-fallbacks.json'), id => abbrOf.get(id), { setName: id => nameOf.get(id), root: ROOT })
