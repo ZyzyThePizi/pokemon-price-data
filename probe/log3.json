@@ -1,0 +1,50 @@
+{
+ "limitless-M6a.png": {
+  "url": "https://s3.limitlesstcg.com/sets/jp/M6a.png",
+  "status": 200,
+  "type": "image/png",
+  "size": 1479
+ },
+ "limitless-PCG3.png": {
+  "url": "https://s3.limitlesstcg.com/sets/jp/PCG3.png",
+  "status": 403,
+  "type": "application/xml",
+  "size": 243
+ },
+ "limitless-E1.png": {
+  "url": "https://s3.limitlesstcg.com/sets/jp/E1.png",
+  "status": 403,
+  "type": "application/xml",
+  "size": 263
+ },
+ "limitless-SVK.png": {
+  "url": "https://s3.limitlesstcg.com/sets/jp/SVK.png",
+  "status": 200,
+  "type": "image/png",
+  "size": 3437
+ },
+ "limitless-en-30th.png": {
+  "url": "https://s3.limitlesstcg.com/sets/en/MFB.png",
+  "status": 403,
+  "type": "application/xml",
+  "size": 263
+ },
+ "pc-console.html": {
+  "url": "https://www.pricecharting.com/console/pokemon-japanese-mask-of-change",
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 599812
+ },
+ "pc-search.html": {
+  "url": "https://www.pricecharting.com/search-products?q=mask+of+change+booster+box&type=prices",
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 174615
+ },
+ "pc-chinese.html": {
+  "url": "https://www.pricecharting.com/console/pokemon-chinese-gem-pack",
+  "status": 200,
+  "type": "text/html; charset=utf-8",
+  "size": 524491
+ }
+}
