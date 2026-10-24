@@ -43,9 +43,7 @@ export const MIRROR = {
   SM2p: 'https://www.serebii.net/card/logo/beyondanewchallenge.png',
   SM3p: 'https://www.serebii.net/card/logo/shininglegend.png',
   S1a: 'https://www.serebii.net/card/logo/vmaxrising.png',
-  // English
-  '2023sv': `${WIKIDEX}4/48/latest/20230926215305/Logo_Colecci%C3%B3n_de_McDonald%27s_2023_%28TCG%29.png`,
-  '2024sv': `${WIKIDEX}b/b7/latest/20250117134554/Logo_Colecci%C3%B3n_de_McDonald%27s_2024_%28TCG%29.png`,
+  // (WikiDex's McDonald's 2023/2024 files are promo photos, not logos: left out)
 }
 const PAGES = 'https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/'
 const BROWSER = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
