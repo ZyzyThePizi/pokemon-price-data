@@ -122,11 +122,12 @@ async function main() {
   if (!products) throw new Error('prices/products.json missing')
   const f = Object.fromEntries(products.fields.map((k, i) => [k, i]))
   // Live Code Cards are a code, not a box
-  // the language of each Cardmarket expansion the catalog's cards are in (about a third of the sealed products)
+  // the language of each Cardmarket expansion the catalog's cards are in
   const cards = {}
   for (const l of ['en', 'ja']) cards[l] = (await readJson(path.join(OUT, `cards-${l}.json`)))?.rows ?? []
-  const expLang = expansionLanguages(products, cards, (await readJson(path.join(OUT, 'cards-en.json')))?.fields ?? [])
-  const langOf = (e) => (expLang.en?.has(e) ? 'en' : expLang.ja?.has(e) ? 'ja' : null)
+  // (English ids matched from the product list count: most of the older sets' are)
+  const expLang = expansionLanguages(products, cards, (await readJson(path.join(OUT, 'cards-en.json')))?.fields ?? [], 'en')
+  const langOf = (e) => (expLang.en?.has(e) === expLang.ja?.has(e) ? null : expLang.en?.has(e) ? 'en' : 'ja')
   const cm = products.rows.filter(r => r[f.idCategory] !== 51 && !/live code/i.test(r[f.name]))
     .map(r => [r[f.idProduct], r[f.name], langOf(r[f.idExpansion])])
 
