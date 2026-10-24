@@ -17,6 +17,7 @@
 //
 // Run: node scripts/build-sealed-images.mjs [--offline]   (--offline: match from the cache only)
 import { readFile, writeFile } from 'node:fs/promises'
+import { expansionLanguages } from './lib/cm-match.mjs'
 import path from 'node:path'
 import { matchSealedAll } from './lib/sealed-match.mjs'
 
@@ -121,7 +122,13 @@ async function main() {
   if (!products) throw new Error('prices/products.json missing')
   const f = Object.fromEntries(products.fields.map((k, i) => [k, i]))
   // Live Code Cards are a code, not a box
-  const cm = products.rows.filter(r => r[f.idCategory] !== 51 && !/live code/i.test(r[f.name])).map(r => [r[f.idProduct], r[f.name]])
+  // the language of each Cardmarket expansion the catalog's cards are in (about a third of the sealed products)
+  const cards = {}
+  for (const l of ['en', 'ja']) cards[l] = (await readJson(path.join(OUT, `cards-${l}.json`)))?.rows ?? []
+  const expLang = expansionLanguages(products, cards, (await readJson(path.join(OUT, 'cards-en.json')))?.fields ?? [])
+  const langOf = (e) => (expLang.en?.has(e) ? 'en' : expLang.ja?.has(e) ? 'ja' : null)
+  const cm = products.rows.filter(r => r[f.idCategory] !== 51 && !/live code/i.test(r[f.name]))
+    .map(r => [r[f.idProduct], r[f.name], langOf(r[f.idExpansion])])
 
   const cacheFile = path.join(OUT, 'sealed-sources.json')
   const cache = (await readJson(cacheFile)) ?? {}
