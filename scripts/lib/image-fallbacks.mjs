@@ -24,10 +24,13 @@ const LIMITLESS_EN = { 'CEL:CC': 'CEC' }
 // 30th-c shares its official code 30C with the main 30th Celebration set, and Limitless's 30C pictures are
 // the main set's (Exeggcute where Charizard belongs, 2026-10-24).
 const BY_NAME = { '30th-c': 'me55c' }
+// TCGdex set → pokemontcg.io set with the same numbers, for the cards with no picture at all: 30th Celebration's
+// RGB Mew (B, G, R), which TCGdex deleted with their pictures (2026-10-24)
+const BY_NUMBER = { '30th': 'me55' }
 const nameKey = (s) => String(s).toLowerCase().replace(/[^a-z0-9&]+/g, ' ').trim()
 
 /** pokemontcg.io's pictures for a BY_NAME set: card id → URL (the small one; the app asks /large for big). */
-async function picturesByName(rows, ptcgSet) {
+async function ptcgCards(ptcgSet) {
   let data = null
   for (let i = 0; i < 3 && !data; i++) {
     try {
@@ -36,7 +39,12 @@ async function picturesByName(rows, ptcgSet) {
     } catch { /* retry */ }
     if (!data) await new Promise(r => setTimeout(r, 1000 * (i + 1)))
   }
-  if (!data?.length) return null
+  return data?.length ? data : null
+}
+
+async function picturesByName(rows, ptcgSet) {
+  const data = await ptcgCards(ptcgSet)
+  if (!data) return null
   // theirs in number order (99 before 100, 106 before 106m), ours in ours: two cards of one name pair in order
   const num = (n) => [parseInt(n, 10) || 0, String(n)]
   const theirs = [...data].sort((a, b) => num(a.number)[0] - num(b.number)[0] || num(a.number)[1].localeCompare(num(b.number)[1]))
@@ -151,6 +159,17 @@ export async function fillImages(lang, cards, cacheFile, abbrOf = () => null, op
       if (url && (!r[IMAGE] || /^https?:/.test(r[IMAGE]))) { r[IMAGE] = url; cache.cards[r[0]] = { url, by: ptcgSet, at: now0 } }
     }
     if (!got) console.log(`  ${setId}: pokemontcg.io ${ptcgSet} did not pair every card by name`)
+  }
+  for (const [setId, ptcgSet] of Object.entries(BY_NUMBER)) {
+    const rows = cards.filter(r => String(r[1]).replace(/^ja-/, '') === setId && !r[IMAGE])
+    if (lang !== 'en' || !rows.length) continue
+    const data = await ptcgCards(ptcgSet)
+    const key = (n) => (/^\d+$/.test(String(n)) ? String(parseInt(n, 10)) : String(n).toUpperCase())
+    const byNum = new Map((data ?? []).map(c => [key(c.number), c.images.small]))
+    for (const r of rows) {
+      const url = byNum.get(key(r[2])) ?? (cache.cards[r[0]]?.by === ptcgSet ? cache.cards[r[0]].url : null)
+      if (url) { r[IMAGE] = url; cache.cards[r[0]] = { url, by: ptcgSet, at: now0 } }
+    }
   }
   const missing = cards.filter(r => !r[IMAGE])
   const bySet = new Map()

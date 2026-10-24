@@ -275,7 +275,8 @@ async function buildLang(lang, previousCards, previousSets) {
     const have = new Set(cards.map(r => String(r[0]).replace(/^ja-/, '')))
     const setIds = new Set(sets.map(r => r[0]))
     const gone = [...prevById].filter(([id, r]) => !have.has(id) && setIds.has(String(r[1]).replace(/^ja-/, '')))
-    for (const [, r] of gone) cards.push(r)
+    // its TCGdex picture went with it (a relative path that now 404s): the fallbacks look for another
+    for (const [, r] of gone) { if (r[11] && !/^https?:/.test(r[11])) r[11] = null; cards.push(r) }
     if (gone.length) console.log(`[${lang}] ${gone.length} cards TCGdex no longer lists kept: ${gone.slice(0, 12).map(([id]) => id).join(' ')}${gone.length > 12 ? ' …' : ''}`)
   }
   // Stable order: by set release order, then number

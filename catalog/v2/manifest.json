@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-24T15:19:59.728Z",
+  "generatedAt": "2026-10-24T15:27:22.247Z",
   "source": "TCGdex (tcgdex.dev, MIT)",
   "imageBase": "https://assets.tcgdex.net/",
   "files": {
@@ -9,7 +9,7 @@
       "cards": 21290,
       "withCardmarketId": 19596,
       "cardmarketMatched": 6807,
-      "sha1": "54107b08a11ad0cbb4ffcbba470dbcd1790dda14"
+      "sha1": "9956a135ff468c475e782edba0954b9f2ec2ac03"
     },
     "cards-ja": {
       "file": "cards-ja.json",
