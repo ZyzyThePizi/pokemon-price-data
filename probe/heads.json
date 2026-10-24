@@ -1,0 +1,22 @@
+{
+ "https://product-images.s3.cardmarket.com/1016/ASC/860574/860574.jpg": {
+  "status": 403,
+  "type": "text/html",
+  "img": null
+ },
+ "https://product-images.s3.cardmarket.com/1016/ASH/860574/860574.jpg": {
+  "status": 403,
+  "type": "text/html",
+  "img": null
+ },
+ "https://product-images.s3.cardmarket.com/51/ASC/860574/860574.jpg": {
+  "status": 403,
+  "type": "text/html",
+  "img": null
+ },
+ "https://www.cardmarket.com/en/Pokemon/Products/Elite-Trainer-Boxes/Ascended-Heroes-Elite-Trainer-Box": {
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "img": null
+ }
+}
