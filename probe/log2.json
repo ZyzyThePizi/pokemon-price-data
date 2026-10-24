@@ -1,0 +1,98 @@
+{
+ "serebii-vs.png": {
+  "url": "https://www.serebii.net/card/logo/vs.png",
+  "status": 200,
+  "type": "image/png",
+  "size": 3106
+ },
+ "serebii-blueshock.png": {
+  "url": "https://www.serebii.net/card/logo/blueshock.png",
+  "status": 200,
+  "type": "image/png",
+  "size": 22892
+ },
+ "serebii-temporalforces.png": {
+  "url": "https://www.serebii.net/card/logo/temporalforces.png",
+  "status": 200,
+  "type": "image/png",
+  "size": 51167
+ },
+ "serebii-30thcelebration.png": {
+  "url": "https://www.serebii.net/card/logo/30thcelebration.png",
+  "status": 200,
+  "type": "image/png",
+  "size": 19861
+ },
+ "serebii-feverburstfighter.png": {
+  "url": "https://www.serebii.net/card/logo/feverburstfighter.png",
+  "status": 200,
+  "type": "image/png",
+  "size": 31833
+ },
+ "tcg-668496_400w.jpg": {
+  "url": "https://tcgplayer-cdn.tcgplayer.com/product/668496_400w.jpg",
+  "status": 200,
+  "type": "image/jpeg",
+  "size": 35179
+ },
+ "tcg-672434_200w.jpg": {
+  "url": "https://tcgplayer-cdn.tcgplayer.com/product/672434_200w.jpg",
+  "status": 200,
+  "type": "image/jpeg",
+  "size": 26067
+ },
+ "tcg-702496_400w.jpg": {
+  "url": "https://tcgplayer-cdn.tcgplayer.com/product/702496_400w.jpg",
+  "status": 200,
+  "type": "image/jpeg",
+  "size": 49074
+ },
+ "tcgcollector-intl.html": {
+  "url": "https://www.tcgcollector.com/expansions/intl",
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 5701
+ },
+ "tcgcollector-jp.html": {
+  "url": "https://www.tcgcollector.com/expansions/jp",
+  "status": 403,
+  "type": "text/html; charset=UTF-8",
+  "size": 5695
+ },
+ "limitless-jp.html": {
+  "url": "https://limitlesstcg.com/cards/jp",
+  "status": 200,
+  "type": "text/html; charset=UTF-8",
+  "size": 157823
+ },
+ "limitless-en.html": {
+  "url": "https://limitlesstcg.com/cards",
+  "status": 200,
+  "type": "text/html; charset=UTF-8",
+  "size": 168702
+ },
+ "pkmncards-sets.html": {
+  "url": "https://pkmncards.com/sets/",
+  "status": 412,
+  "type": "text/html; charset=iso-8859-1",
+  "size": 2470
+ },
+ "wikidex.json": {
+  "url": "https://www.wikidex.net/api.php?format=json&action=query&list=search&srnamespace=6&srlimit=30&srsearch=Logo%20Leaders%20Stadium",
+  "status": 200,
+  "type": "application/json; charset=utf-8",
+  "size": 71
+ },
+ "wikidex2.json": {
+  "url": "https://www.wikidex.net/api.php?format=json&action=query&list=allimages&aiprefix=Logo_&ailimit=500",
+  "status": 200,
+  "type": "application/json; charset=utf-8",
+  "size": 173740
+ },
+ "pokumon.html": {
+  "url": "https://pokumon.com/series/",
+  "status": 404,
+  "type": "text/html; charset=UTF-8",
+  "size": 736408
+ }
+}

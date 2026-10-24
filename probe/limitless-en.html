@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Database – Limitless</title>
+    <meta name="description" content="A multi-language Pokémon TCG card database with advanced search features and up-to-date pricing data.">
+
+            <meta property="og:title" content="Card Database – Limitless">
+        <meta property="og:description" content="A multi-language Pokémon TCG card database with advanced search features and up-to-date pricing data.">
+        <meta property="og:image" content="https://limitless3.nyc3.cdn.digitaloceanspaces.com/limitless/social-preview.png">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Limitless TCG">
+    
+            <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@LimitlessTCG">
+        <meta name="twitter:title" content="Card Database – Limitless">
+        <meta name="twitter:description" content="A multi-language Pokémon TCG card database with advanced search features and up-to-date pricing data.">
+        <meta name="twitter:image" content="https://limitless3.nyc3.cdn.digitaloceanspaces.com/limitless/social-preview.png">
+    
+    <link rel="manifest" href="/app.webmanifest">
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102651668-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102651668-1', { 'anonymize_ip': true });
+</script>    
+            <script data-cfasync="false">
+        window.ramp = window.ramp || {};
+        window.ramp.que = window.ramp.que || [];
+    </script>
+
+<style>
+#pw-oop-bottom_rail, .bh-div-wrapper, .celtra-banner {
+    z-index: 10 !important;
+    box-sizing: content-box;
+}
+
+@media print {
+    #pw-oop-bottom_rail, .bh-div-wrapper, .celtra-banner,
+    #pw-oop-left_rail {
+        display: none !important;
+    }
+}
+</style>    
+    <link rel="preload" as="style" href="https://limitlesstcg.com/build/assets/main-e01e825c.css" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/main-e12b7c15.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/dom-7f7df130.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/limitless-38d3eac6.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/fetch-a833fccf.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/tables-bcf04db3.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/ws-search-e6ffb889.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/suggest-4ff36e79.js" /><link rel="stylesheet" href="https://limitlesstcg.com/build/assets/main-e01e825c.css" /><script type="module" src="https://limitlesstcg.com/build/assets/main-e12b7c15.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&family=Open+Sans+Condensed:wght@700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&family=Open+Sans+Condensed:wght@700&display=swap">
+        <link rel="stylesheet" href="/inc/fontawesome/css/all.min.css?v=5.11.2">
+    
+        
+    <script>var LS_SEARCH_RESULTS = '~ search results', LS_NO_SEARCH_RESULTS = 'no search results found';</script>
+    <script>var LMT_RNT = false;</script>
+</head>
+
+<body>
+    <header>
+    <div class="header-top" data-mini-bar>
+        <div class="container top">
+            <div class="flex gap-4 items-center">
+                
+                <div class="site-news"> Latest Updates:
+                                            <a href="/tournaments/581">Louisville</a>  •                                             <a href="/tournaments/582">Nice</a>                                      </div>
+            </div>
+
+            <div class="site-settings">
+                <select class="language-switch" data-site-language>
+                    <option value="en_US"  selected >English</option>
+                    <option value="jp_JP" >日本語</option>
+                    <option value="de_DE" >Deutsch</option>
+                    <option value="fr_FR" >Français</option>
+                    <option value="es_ES" >Español</option>
+                    <option value="it_IT" >Italiano</option>
+                    <option value="pt_BR" >Português</option>
+                </select>
+
+                <button class="darkmode-toggle" aria-label="darkmode toggle" data-site-theme data-tooltip="Toggle Darkmode">
+                    <i class="fas fa-lg fa-moon" data-icon></i>
+                </button>
+
+                <div class="user-menu">
+
+                    <button data-user-button>
+                        <i class="fas fa-lg fa-user"></i>
+                    </button>
+
+                    <div class="user-menu-dd" data-user-menu>
+                                                    <div class="username italic">not logged in</div>
+                            <div class="user-options">
+                                <a href="https://account.limitlesstcg.com/login?redirect=https%3A%2F%2Flimitlesstcg.com">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    Log In
+                                </a>
+                                <a href="https://account.limitlesstcg.com/signup">
+                                    <i class="fas fa-user-plus"></i>
+                                    Create Account
+                                </a>
+                            </div>
+                                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container header">
+        <a class="site-logo" href="/">
+            <img src="https://limitless3.nyc3.cdn.digitaloceanspaces.com/limitless/logo.png" alt="Limitless">
+        </a>
+
+                <form class="site-search" method="get" action="/" data-lang="en">
+            <div class="category-label">
+                <span class="selected-category">Cards</span>
+                <i class="fas fa-sm fa-caret-down"></i>
+            </div>
+
+            <select name="type" class="category-select">
+                
+                <option value="cards"  selected >Cards</option>
+                <option value="tournaments" >Tournaments</option>
+                <option value="decks" >Decks</option>
+                <option value="players" >Players</option>
+            </select>
+
+            <input type="text" name="q" placeholder="Search database" autocomplete="off" autocapitalize="off"
+                autocorrect="off" >
+
+            <button type="submit" aria-label="submit search">
+                <i class="fas fa-lg fa-search"></i>
+            </button>
+
+            <div class="search-suggestions" data-suggestions>
+                <span class="suggestions-message" data-message></span>
+                <div class="suggestions-list" data-options>
+                </div>
+            </div>
+        </form>
+
+        <nav class="site-nav resp-nav" data-site-nav>
+            <button class="nav-toggle">
+                <i data-open class="fas fa-lg fa-bars"></i>
+                <i data-close class="fas fa-lg fa-times" style="display: none"></i>
+            </button>
+
+            <ul class="links">
+                
+                <li><a href="/tournaments">Tournaments</a></li>
+                <li><a href="/decks">Decks</a></li>
+                <li class="sub-category">
+                    <a href="/cards">Cards</a>
+                    <ul class="sub-menu">
+                        <li><a href="/cards/advanced">Advanced Search</a></li>
+                        <li><a href="/cards/syntax">Search Syntax</a></li>
+                        <li><a href="/translations">Translations</a></li>
+                    </ul>
+                </li>
+                <li class="sub-category">
+                    <a href="/tools">Tools</a>
+                    <ul class="sub-menu shift">
+                        <li><a href="/tools/proxies">Proxy Printer</a></li>
+                        <li><a href="/tools/swisscalc">Swiss Calculator</a></li>
+                        <li><a href="/tools/imggen">Image Generator</a></li>
+                        <li><a href="/tools/drawcalc">DrawCalc</a></li>
+                        <li><a href="/tools/tabletop">Tabletop</a></li>
+                        <li><a href="https://my.limitlesstcg.com/builder">Deck Builder (Beta)</a></li>
+                        <li><a href="https://labs.limitlesstcg.com">Labs</a></li>
+                        <li><a href="/tools/mfy">Metafy Hub</a></li>
+                    </ul>
+                </li>
+                <li class="sub-category more">
+                    <a class="expand">More</a>
+                    <ul class="sub-menu shift">
+                        <li><a href="/players">Rankings</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="https://play.limitlesstcg.com">Play</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="before-content">
+<div class="container secondary-menu">
+    <ul class="nav">
+        <li class="active"><a href="/cards">International</a></li>
+        <li class=""><a href="/cards/jp">Japan</a></li>
+        <li><a href="/cards/pokedex">Pokédex</a></li>
+        <li><a href="https://pocket.limitlesstcg.com/cards" class="external">Pocket</a></li>
+    </ul>
+</div>
+
+</div>
+
+            <div id="top_lb_placeholder" class="container dont-print top-banner">
+            <div class="patreon-note">
+                <a href="https://www.patreon.com/limitlesstcg/membership" target="_blank">
+                    <img src="https://limitless3.nyc3.cdn.digitaloceanspaces.com/web/patreon.png" alt="Patreon" class="invert">
+                    You can support us on Patreon to remove ads.
+                </a>
+            </div>
+        </div>
+    
+    <main>
+        <div class="container content">
+<div class="options-group">
+    <div class="options-row">
+        <label for="set-products-select">Show</label>
+        <select id="set-products-select" name="products" data-reload>
+            <option value="all"  selected >All sets</option>
+            <option value="main" >Main expansions</option>
+            <option value="side" >Side products</option>
+        </select>
+    </div>
+
+    <div class="options-row">
+        <label for="lang-select">Language</label>
+<select id="lang-select" data-card-language data-location="" >
+            <option value="en"  selected >English</option>
+        <option value="de" >German</option>
+        <option value="fr" >French</option>
+        <option value="es" >Spanish</option>
+        <option value="it" >Italian</option>
+        <option value="pt" >Portuguese</option>
+    </select>    </div>
+</div>
+
+<table class="data-table sets-table striped">
+        <tr>
+        <th>Name</th>
+        <th>Release Date</th>
+        <th class="md-only">Cards</th>
+                    <th class="lg-only">USD</th>
+            <th class="lg-only">EUR</th>
+            </tr>
+            <tr>
+            <th class="sub-heading" colspan=5>Mega</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/30C"><img class="set" alt="30C" src="https://s3.limitlesstcg.com/sets/en/30C_SM.png"> 30th Celebration <span class="code annotation">30C</span></a></td>
+                <td><a href="/cards/30C">16 Sep 26</a></td>
+                <td class="md-only"><a href="/cards/30C">190 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">17.80%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fme-30th-celebration" target="_blank">$9,783.62</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/30th-Celebration?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">5,886.81€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PBL"><img class="set" alt="PBL" src="https://s3.limitlesstcg.com/sets/en/PBL_SM.png"> Pitch Black <span class="code annotation">PBL</span></a></td>
+                <td><a href="/cards/PBL">17 Jul 26</a></td>
+                <td class="md-only"><a href="/cards/PBL">120 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">45.83%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fme05-pitch-black" target="_blank">$553.78</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">566.05€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/CRI"><img class="set" alt="CRI" src="https://s3.limitlesstcg.com/sets/en/CRI_SM.png"> Chaos Rising <span class="code annotation">CRI</span></a></td>
+                <td><a href="/cards/CRI">22 May 26</a></td>
+                <td class="md-only"><a href="/cards/CRI">122 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">31.97%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fme04-chaos-rising" target="_blank">$441.33</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Chaos-Rising?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">468.73€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/POR"><img class="set" alt="POR" src="https://s3.limitlesstcg.com/sets/en/POR_SM.png"> Perfect Order <span class="code annotation">POR</span></a></td>
+                <td><a href="/cards/POR">27 Mar 26</a></td>
+                <td class="md-only"><a href="/cards/POR">124 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.35%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fme03-perfect-order" target="_blank">$453.61</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Perfect-Order?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">473.51€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/ASC"><img class="set" alt="ASC" src="https://s3.limitlesstcg.com/sets/en/ASC_SM.png"> Ascended Heroes <span class="code annotation">ASC</span></a></td>
+                <td><a href="/cards/ASC">30 Jan 26</a></td>
+                <td class="md-only"><a href="/cards/ASC">295 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.54%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fproduct" target="_blank">$3,922.23</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">4,165.06€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PFL"><img class="set" alt="PFL" src="https://s3.limitlesstcg.com/sets/en/PFL_SM.png"> Phantasmal Flames <span class="code annotation">PFL</span></a></td>
+                <td><a href="/cards/PFL">14 Nov 25</a></td>
+                <td class="md-only"><a href="/cards/PFL">130 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.62%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fme02-phantasmal-flames" target="_blank">$981.96</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Phantasmal-Flames?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,133.35€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/MEG"><img class="set" alt="MEG" src="https://s3.limitlesstcg.com/sets/en/MEG_SM.png"> Mega Evolution <span class="code annotation">MEG</span></a></td>
+                <td><a href="/cards/MEG">26 Sep 25</a></td>
+                <td class="md-only"><a href="/cards/MEG">188 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.66%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fme01-mega-evolution" target="_blank">$1,347.89</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Mega-Evolution?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,328.89€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/MEE"><img class="set" alt="MEE" src="https://s3.limitlesstcg.com/sets/en/MEE_SM.png"> Mega Evolution Energy <span class="code annotation">MEE</span></a></td>
+                <td><a href="/cards/MEE">25 Sep 25</a></td>
+                <td class="md-only"><a href="/cards/MEE">16 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fproduct" target="_blank">$2.95</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1.11€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/MEP"><img class="set" alt="MEP" src="https://s3.limitlesstcg.com/sets/en/MEP_SM.png"> Mega Promos <span class="code annotation">MEP</span></a></td>
+                <td><a href="/cards/MEP"></a></td>
+                <td class="md-only"><a href="/cards/MEP">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fme-mega-evolution-promo" target="_blank">$1,716.68</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/MEP-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,253.37€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>Scarlet &amp; Violet</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/BLK"><img class="set" alt="BLK" src="https://s3.limitlesstcg.com/sets/en/BLK_SM.png"> Black Bolt <span class="code annotation">BLK</span></a></td>
+                <td><a href="/cards/BLK">18 Jul 25</a></td>
+                <td class="md-only"><a href="/cards/BLK">172 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">22.67%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv-black-bolt" target="_blank">$3,189.46</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Black-Bolt?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,196.01€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/WHT"><img class="set" alt="WHT" src="https://s3.limitlesstcg.com/sets/en/WHT_SM.png"> White Flare <span class="code annotation">WHT</span></a></td>
+                <td><a href="/cards/WHT">18 Jul 25</a></td>
+                <td class="md-only"><a href="/cards/WHT">173 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">20.81%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv-white-flare" target="_blank">$2,823.24</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/White-Flare?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,601.19€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DRI"><img class="set" alt="DRI" src="https://s3.limitlesstcg.com/sets/en/DRI_SM.png"> Destined Rivals <span class="code annotation">DRI</span></a></td>
+                <td><a href="/cards/DRI">30 May 25</a></td>
+                <td class="md-only"><a href="/cards/DRI">244 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.85%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv10-destined-rivals" target="_blank">$1,358.88</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Destined-Rivals?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,666.01€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/JTG"><img class="set" alt="JTG" src="https://s3.limitlesstcg.com/sets/en/JTG_SM.png"> Journey Together <span class="code annotation">JTG</span></a></td>
+                <td><a href="/cards/JTG">28 Mar 25</a></td>
+                <td class="md-only"><a href="/cards/JTG">190 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.95%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv-journey-together" target="_blank">$373.79</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Journey-Together?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">413.90€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PRE"><img class="set" alt="PRE" src="https://s3.limitlesstcg.com/sets/en/PRE_SM.png"> Prismatic Evolutions <span class="code annotation">PRE</span></a></td>
+                <td><a href="/cards/PRE">17 Jan 25</a></td>
+                <td class="md-only"><a href="/cards/PRE">180 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">73.33%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv-prismatic-evolutions" target="_blank">$4,164.55</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Prismatic-Evolutions?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,601.46€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SSP"><img class="set" alt="SSP" src="https://s3.limitlesstcg.com/sets/en/SSP_SM.png"> Surging Sparks <span class="code annotation">SSP</span></a></td>
+                <td><a href="/cards/SSP">08 Nov 24</a></td>
+                <td class="md-only"><a href="/cards/SSP">252 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.05%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv08-surging-sparks" target="_blank">$1,096.51</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Surging-Sparks?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,047.82€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SCR"><img class="set" alt="SCR" src="https://s3.limitlesstcg.com/sets/en/SCR_SM.png" loading="lazy"> Stellar Crown <span class="code annotation">SCR</span></a></td>
+                <td><a href="/cards/SCR">13 Sep 24</a></td>
+                <td class="md-only"><a href="/cards/SCR">175 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.29%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv07-stellar-crown" target="_blank">$553.83</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Stellar-Crown?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">401.93€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SFA"><img class="set" alt="SFA" src="https://s3.limitlesstcg.com/sets/en/SFA_SM.png" loading="lazy"> Shrouded Fable <span class="code annotation">SFA</span></a></td>
+                <td><a href="/cards/SFA">02 Aug 24</a></td>
+                <td class="md-only"><a href="/cards/SFA">99 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">61.62%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv-shrouded-fable" target="_blank">$788.19</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Shrouded-Fable?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">569.67€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/TWM"><img class="set" alt="TWM" src="https://s3.limitlesstcg.com/sets/en/TWM_SM.png" loading="lazy"> Twilight Masquerade <span class="code annotation">TWM</span></a></td>
+                <td><a href="/cards/TWM">24 May 24</a></td>
+                <td class="md-only"><a href="/cards/TWM">226 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.31%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv06-twilight-masquerade" target="_blank">$1,123.11</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Twilight-Masquerade?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">770.59€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/TEF"><img class="set" alt="TEF" src="https://s3.limitlesstcg.com/sets/en/TEF_SM.png" loading="lazy"> Temporal Forces <span class="code annotation">TEF</span></a></td>
+                <td><a href="/cards/TEF">22 Mar 24</a></td>
+                <td class="md-only"><a href="/cards/TEF">218 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">48.62%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv05-temporal-forces" target="_blank">$1,129.23</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Temporal-Forces?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">837.77€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PAF"><img class="set" alt="PAF" src="https://s3.limitlesstcg.com/sets/en/PAF_SM.png" loading="lazy"> Paldean Fates <span class="code annotation">PAF</span></a></td>
+                <td><a href="/cards/PAF">26 Jan 24</a></td>
+                <td class="md-only"><a href="/cards/PAF">245 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">56.33%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv-paldean-fates" target="_blank">$2,468.66</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Paldean-Fates?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,686.49€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PAR"><img class="set" alt="PAR" src="https://s3.limitlesstcg.com/sets/en/PAR_SM.png" loading="lazy"> Paradox Rift <span class="code annotation">PAR</span></a></td>
+                <td><a href="/cards/PAR">03 Nov 23</a></td>
+                <td class="md-only"><a href="/cards/PAR">266 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.99%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv04-paradox-rift" target="_blank">$1,099.60</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Paradox-Rift?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">800.61€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/MEW"><img class="set" alt="MEW" src="https://s3.limitlesstcg.com/sets/en/MEW_SM.png" loading="lazy"> Pokémon 151 <span class="code annotation">MEW</span></a></td>
+                <td><a href="/cards/MEW">22 Sep 23</a></td>
+                <td class="md-only"><a href="/cards/MEW">207 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">31.88%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv-scarlet-and-violet-151" target="_blank">$1,591.84</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/151?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,750.91€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/OBF"><img class="set" alt="OBF" src="https://s3.limitlesstcg.com/sets/en/OBF_SM.png" loading="lazy"> Obsidian Flames <span class="code annotation">OBF</span></a></td>
+                <td><a href="/cards/OBF">11 Aug 23</a></td>
+                <td class="md-only"><a href="/cards/OBF">230 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">27.39%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fproduct" target="_blank">$412.25</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">372.83€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PAL"><img class="set" alt="PAL" src="https://s3.limitlesstcg.com/sets/en/PAL_SM.png" loading="lazy"> Paldea Evolved <span class="code annotation">PAL</span></a></td>
+                <td><a href="/cards/PAL">09 Jun 23</a></td>
+                <td class="md-only"><a href="/cards/PAL">279 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.80%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv02-paldea-evolved" target="_blank">$1,733.46</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Paldea-Evolved?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,207.31€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SVI"><img class="set" alt="SVI" src="https://s3.limitlesstcg.com/sets/en/SVI_SM.png" loading="lazy"> Scarlet &amp; Violet <span class="code annotation">SVI</span></a></td>
+                <td><a href="/cards/SVI">31 Mar 23</a></td>
+                <td class="md-only"><a href="/cards/SVI">258 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.25%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsv01-scarlet-and-violet-base-set" target="_blank">$681.43</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Scarlet-Violet?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">529.70€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SVE"><img class="set" alt="SVE" src="https://s3.limitlesstcg.com/sets/en/SVE_SM.png" loading="lazy"> Scarlet &amp; Violet Energy <span class="code annotation">SVE</span></a></td>
+                <td><a href="/cards/SVE">30 Mar 23</a></td>
+                <td class="md-only"><a href="/cards/SVE">24 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fproduct" target="_blank">$3.81</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1.16€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SVP"><img class="set" alt="SVP" src="https://s3.limitlesstcg.com/sets/en/SVP_SM.png" loading="lazy"> Scarlet &amp; Violet Promos <span class="code annotation">SVP</span></a></td>
+                <td><a href="/cards/SVP"></a></td>
+                <td class="md-only"><a href="/cards/SVP">217 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.70%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fproduct" target="_blank">$2,653.46</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,456.79€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>Sword &amp; Shield</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/CRZ"><img class="set" alt="CRZ" src="https://s3.limitlesstcg.com/sets/en/CRZ_SM.png" loading="lazy"> Crown Zenith <span class="code annotation">CRZ</span></a></td>
+                <td><a href="/cards/CRZ">20 Jan 23</a></td>
+                <td class="md-only"><a href="/cards/CRZ">230 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.48%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fcrown-zenith" target="_blank">$2,354.94</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Crown-Zenith?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,580.98€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SIT"><img class="set" alt="SIT" src="https://s3.limitlesstcg.com/sets/en/SIT_SM.png" loading="lazy"> Silver Tempest <span class="code annotation">SIT</span></a></td>
+                <td><a href="/cards/SIT">11 Nov 22</a></td>
+                <td class="md-only"><a href="/cards/SIT">245 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.45%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh12-silver-tempest" target="_blank">$1,361.67</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Silver-Tempest?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,332.98€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/LOR"><img class="set" alt="LOR" src="https://s3.limitlesstcg.com/sets/en/LOR_SM.png" loading="lazy"> Lost Origin <span class="code annotation">LOR</span></a></td>
+                <td><a href="/cards/LOR">09 Sep 22</a></td>
+                <td class="md-only"><a href="/cards/LOR">247 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.94%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh11-lost-origin" target="_blank">$1,915.12</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Lost-Origin?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,752.65€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PGO"><img class="set" alt="PGO" src="https://s3.limitlesstcg.com/sets/en/PGO_SM.png" loading="lazy"> Pokémon GO <span class="code annotation">PGO</span></a></td>
+                <td><a href="/cards/PGO">01 Jul 22</a></td>
+                <td class="md-only"><a href="/cards/PGO">88 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">32.95%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpokemon-go" target="_blank">$354.47</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Pokemon-GO?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">353.68€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/ASR"><img class="set" alt="ASR" src="https://s3.limitlesstcg.com/sets/en/ASR_SM.png" loading="lazy"> Astral Radiance <span class="code annotation">ASR</span></a></td>
+                <td><a href="/cards/ASR">27 May 22</a></td>
+                <td class="md-only"><a href="/cards/ASR">246 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.03%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh10-astral-radiance" target="_blank">$1,264.77</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Astral-Radiance?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,162.84€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BRS"><img class="set" alt="BRS" src="https://s3.limitlesstcg.com/sets/en/BRS_SM.png" loading="lazy"> Brilliant Stars <span class="code annotation">BRS</span></a></td>
+                <td><a href="/cards/BRS">25 Feb 22</a></td>
+                <td class="md-only"><a href="/cards/BRS">224 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">48.66%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh09-brilliant-stars" target="_blank">$1,379.92</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Brilliant-Stars?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,208.80€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/FST"><img class="set" alt="FST" src="https://s3.limitlesstcg.com/sets/en/FST_SM.png" loading="lazy"> Fusion Strike <span class="code annotation">FST</span></a></td>
+                <td><a href="/cards/FST">12 Nov 21</a></td>
+                <td class="md-only"><a href="/cards/FST">284 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.70%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh08-fusion-strike" target="_blank">$2,233.00</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Fusion-Strike?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,050.29€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/CEL"><img class="set" alt="CEL" src="https://s3.limitlesstcg.com/sets/en/CEL_SM.png" loading="lazy"> Celebrations <span class="code annotation">CEL</span></a></td>
+                <td><a href="/cards/CEL">08 Oct 21</a></td>
+                <td class="md-only"><a href="/cards/CEL">50 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fcelebrations" target="_blank">$516.88</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Celebrations?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">731.82€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/EVS"><img class="set" alt="EVS" src="https://s3.limitlesstcg.com/sets/en/EVS_SM.png" loading="lazy"> Evolving Skies <span class="code annotation">EVS</span></a></td>
+                <td><a href="/cards/EVS">27 Aug 21</a></td>
+                <td class="md-only"><a href="/cards/EVS">237 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.68%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh07-evolving-skies" target="_blank">$7,872.39</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Evolving-Skies?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">6,396.63€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/CRE"><img class="set" alt="CRE" src="https://s3.limitlesstcg.com/sets/en/CRE_SM.png" loading="lazy"> Chilling Reign <span class="code annotation">CRE</span></a></td>
+                <td><a href="/cards/CRE">18 Jun 21</a></td>
+                <td class="md-only"><a href="/cards/CRE">233 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.64%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh06-chilling-reign" target="_blank">$1,994.99</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Chilling-Reign?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,691.89€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BST"><img class="set" alt="BST" src="https://s3.limitlesstcg.com/sets/en/BST_SM.png" loading="lazy"> Battle Styles <span class="code annotation">BST</span></a></td>
+                <td><a href="/cards/BST">19 Mar 21</a></td>
+                <td class="md-only"><a href="/cards/BST">183 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.54%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh05-battle-styles" target="_blank">$779.85</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Battle-Styles?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">683.85€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SHF"><img class="set" alt="SHF" src="https://s3.limitlesstcg.com/sets/en/SHF_SM.png" loading="lazy"> Shining Fates <span class="code annotation">SHF</span></a></td>
+                <td><a href="/cards/SHF">19 Feb 21</a></td>
+                <td class="md-only"><a href="/cards/SHF">195 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">45.64%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fshining-fates" target="_blank">$696.31</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Shining-Fates?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">575.54€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/VIV"><img class="set" alt="VIV" src="https://s3.limitlesstcg.com/sets/en/VIV_SM.png" loading="lazy"> Vivid Voltage <span class="code annotation">VIV</span></a></td>
+                <td><a href="/cards/VIV">13 Nov 20</a></td>
+                <td class="md-only"><a href="/cards/VIV">203 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">30.05%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh04-vivid-voltage" target="_blank">$512.96</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Vivid-Voltage?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">553.50€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/CPA"><img class="set" alt="CPA" src="https://s3.limitlesstcg.com/sets/en/CPA_SM.png" loading="lazy"> Champion&#039;s Path <span class="code annotation">CPA</span></a></td>
+                <td><a href="/cards/CPA">25 Sep 20</a></td>
+                <td class="md-only"><a href="/cards/CPA">80 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">35.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fchampions-path" target="_blank">$527.58</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Champions-Path?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">482.22€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DAA"><img class="set" alt="DAA" src="https://s3.limitlesstcg.com/sets/en/DAA_SM.png" loading="lazy"> Darkness Ablaze <span class="code annotation">DAA</span></a></td>
+                <td><a href="/cards/DAA">14 Aug 20</a></td>
+                <td class="md-only"><a href="/cards/DAA">201 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">26.37%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh03-darkness-ablaze" target="_blank">$244.45</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Darkness-Ablaze?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">271.93€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/RCL"><img class="set" alt="RCL" src="https://s3.limitlesstcg.com/sets/en/RCL_SM.png" loading="lazy"> Rebel Clash <span class="code annotation">RCL</span></a></td>
+                <td><a href="/cards/RCL">01 May 20</a></td>
+                <td class="md-only"><a href="/cards/RCL">209 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.36%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh02-rebel-clash" target="_blank">$503.09</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Rebel-Clash?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">438.23€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SSH"><img class="set" alt="SSH" src="https://s3.limitlesstcg.com/sets/en/SSH_SM.png" loading="lazy"> Sword &amp; Shield <span class="code annotation">SSH</span></a></td>
+                <td><a href="/cards/SSH">07 Feb 20</a></td>
+                <td class="md-only"><a href="/cards/SSH">224 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">49.11%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh01-sword-and-shield-base-set" target="_blank">$527.72</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Sword-Shield?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">508.05€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SP"><img class="set" alt="SP" src="https://s3.limitlesstcg.com/sets/en/SP_SM.png" loading="lazy"> Sword &amp; Shield Promos <span class="code annotation">SP</span></a></td>
+                <td><a href="/cards/SP"></a></td>
+                <td class="md-only"><a href="/cards/SP">292 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.60%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fswsh-sword-and-shield-promo-cards" target="_blank">$2,578.62</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/SWSH-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,107.28€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>Sun &amp; Moon</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/CEC"><img class="set" alt="CEC" src="https://s3.limitlesstcg.com/sets/en/CEC_SM.png" loading="lazy"> Cosmic Eclipse <span class="code annotation">CEC</span></a></td>
+                <td><a href="/cards/CEC">01 Nov 19</a></td>
+                <td class="md-only"><a href="/cards/CEC">271 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.85%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-cosmic-eclipse" target="_blank">$6,560.56</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Cosmic-Eclipse?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">4,441.50€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/HIF"><img class="set" alt="HIF" src="https://s3.limitlesstcg.com/sets/en/HIF_SM.png" loading="lazy"> Hidden Fates <span class="code annotation">HIF</span></a></td>
+                <td><a href="/cards/HIF">23 Aug 19</a></td>
+                <td class="md-only"><a href="/cards/HIF">163 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">58.90%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fhidden-fates" target="_blank">$3,696.12</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Hidden-Fates?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,660.80€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/UNM"><img class="set" alt="UNM" src="https://s3.limitlesstcg.com/sets/en/UNM_SM.png" loading="lazy"> Unified Minds <span class="code annotation">UNM</span></a></td>
+                <td><a href="/cards/UNM">02 Aug 19</a></td>
+                <td class="md-only"><a href="/cards/UNM">258 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.51%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-unified-minds" target="_blank">$4,894.00</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Unified-Minds?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,430.76€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/UNB"><img class="set" alt="UNB" src="https://s3.limitlesstcg.com/sets/en/UNB_SM.png" loading="lazy"> Unbroken Bonds <span class="code annotation">UNB</span></a></td>
+                <td><a href="/cards/UNB">03 May 19</a></td>
+                <td class="md-only"><a href="/cards/UNB">234 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.94%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-unbroken-bonds" target="_blank">$4,170.15</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Unbroken-Bonds?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">4,127.90€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DET"><img class="set" alt="DET" src="https://s3.limitlesstcg.com/sets/en/DET_SM.png" loading="lazy"> Detective Pikachu <span class="code annotation">DET</span></a></td>
+                <td><a href="/cards/DET">29 Mar 19</a></td>
+                <td class="md-only"><a href="/cards/DET">18 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">11.11%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdetective-pikachu" target="_blank">$78.01</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Detective-Pikachu?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">72.95€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/TEU"><img class="set" alt="TEU" src="https://s3.limitlesstcg.com/sets/en/TEU_SM.png" loading="lazy"> Team Up <span class="code annotation">TEU</span></a></td>
+                <td><a href="/cards/TEU">01 Feb 19</a></td>
+                <td class="md-only"><a href="/cards/TEU">205 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.14%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-team-up" target="_blank">$12,191.41</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Team-Up?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">8,035.04€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/LOT"><img class="set" alt="LOT" src="https://s3.limitlesstcg.com/sets/en/LOT_SM.png" loading="lazy"> Lost Thunder <span class="code annotation">LOT</span></a></td>
+                <td><a href="/cards/LOT">02 Nov 18</a></td>
+                <td class="md-only"><a href="/cards/LOT">236 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">56.25%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-lost-thunder" target="_blank">$2,978.51</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Lost-Thunder?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,384.56€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DRM"><img class="set" alt="DRM" src="https://s3.limitlesstcg.com/sets/en/DRM_SM.png" loading="lazy"> Dragon Majesty <span class="code annotation">DRM</span></a></td>
+                <td><a href="/cards/DRM">07 Sep 18</a></td>
+                <td class="md-only"><a href="/cards/DRM">78 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.25%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdragon-majesty" target="_blank">$773.38</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Dragon-Majesty?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,010.07€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/CES"><img class="set" alt="CES" src="https://s3.limitlesstcg.com/sets/en/CES_SM.png" loading="lazy"> Celestial Storm <span class="code annotation">CES</span></a></td>
+                <td><a href="/cards/CES">03 Aug 18</a></td>
+                <td class="md-only"><a href="/cards/CES">183 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.08%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-celestial-storm" target="_blank">$2,136.08</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Celestial-Storm?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,514.24€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/FLI"><img class="set" alt="FLI" src="https://s3.limitlesstcg.com/sets/en/FLI_SM.png" loading="lazy"> Forbidden Light <span class="code annotation">FLI</span></a></td>
+                <td><a href="/cards/FLI">04 May 18</a></td>
+                <td class="md-only"><a href="/cards/FLI">146 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">57.33%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-forbidden-light" target="_blank">$1,397.72</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Forbidden-Light?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,092.77€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/UPR"><img class="set" alt="UPR" src="https://s3.limitlesstcg.com/sets/en/UPR_SM.png" loading="lazy"> Ultra Prism <span class="code annotation">UPR</span></a></td>
+                <td><a href="/cards/UPR">02 Feb 18</a></td>
+                <td class="md-only"><a href="/cards/UPR">173 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">59.55%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-ultra-prism" target="_blank">$2,373.06</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Ultra-Prism?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,456.17€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/CIN"><img class="set" alt="CIN" src="https://s3.limitlesstcg.com/sets/en/CIN_SM.png" loading="lazy"> Crimson Invasion <span class="code annotation">CIN</span></a></td>
+                <td><a href="/cards/CIN">03 Nov 17</a></td>
+                <td class="md-only"><a href="/cards/CIN">124 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">37.30%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-crimson-invasion" target="_blank">$505.84</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Crimson-Invasion?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">396.94€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SLG"><img class="set" alt="SLG" src="https://s3.limitlesstcg.com/sets/en/SLG_SM.png" loading="lazy"> Shining Legends <span class="code annotation">SLG</span></a></td>
+                <td><a href="/cards/SLG">06 Oct 17</a></td>
+                <td class="md-only"><a href="/cards/SLG">78 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.09%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fshining-legends" target="_blank">$1,578.95</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Shining-Legends?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,451.26€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BUS"><img class="set" alt="BUS" src="https://s3.limitlesstcg.com/sets/en/BUS_SM.png" loading="lazy"> Burning Shadows <span class="code annotation">BUS</span></a></td>
+                <td><a href="/cards/BUS">04 Aug 17</a></td>
+                <td class="md-only"><a href="/cards/BUS">169 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.67%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-burning-shadows" target="_blank">$1,848.48</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Burning-Shadows?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">771.21€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/GRI"><img class="set" alt="GRI" src="https://s3.limitlesstcg.com/sets/en/GRI_SM.png" loading="lazy"> Guardians Rising <span class="code annotation">GRI</span></a></td>
+                <td><a href="/cards/GRI">05 May 17</a></td>
+                <td class="md-only"><a href="/cards/GRI">169 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.33%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-guardians-rising" target="_blank">$1,082.56</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Guardians-Rising?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">632.53€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SUM"><img class="set" alt="SUM" src="https://s3.limitlesstcg.com/sets/en/SUM_SM.png" loading="lazy"> Sun &amp; Moon <span class="code annotation">SUM</span></a></td>
+                <td><a href="/cards/SUM">03 Feb 17</a></td>
+                <td class="md-only"><a href="/cards/SUM">172 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.18%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-base-set" target="_blank">$655.48</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Sun-Moon?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">576.95€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SMP"><img class="set" alt="SMP" src="https://s3.limitlesstcg.com/sets/en/SMP_SM.png" loading="lazy"> Sun &amp; Moon Promos <span class="code annotation">SMP</span></a></td>
+                <td><a href="/cards/SMP"></a></td>
+                <td class="md-only"><a href="/cards/SMP">248 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">51.39%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsm-promos" target="_blank">$7,294.28</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/SM-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">6,353.96€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>XY</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/EVO"><img class="set" alt="EVO" src="https://s3.limitlesstcg.com/sets/en/EVO_SM.png" loading="lazy"> Evolutions <span class="code annotation">EVO</span></a></td>
+                <td><a href="/cards/EVO">02 Nov 16</a></td>
+                <td class="md-only"><a href="/cards/EVO">113 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">26.55%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-evolutions" target="_blank">$779.26</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Evolutions?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">882.95€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/STS"><img class="set" alt="STS" src="https://s3.limitlesstcg.com/sets/en/STS_SM.png" loading="lazy"> Steam Siege <span class="code annotation">STS</span></a></td>
+                <td><a href="/cards/STS">03 Aug 16</a></td>
+                <td class="md-only"><a href="/cards/STS">116 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">31.90%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-steam-siege" target="_blank">$428.93</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Steam-Siege?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">662.36€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/FCO"><img class="set" alt="FCO" src="https://s3.limitlesstcg.com/sets/en/FCO_SM.png" loading="lazy"> Fates Collide <span class="code annotation">FCO</span></a></td>
+                <td><a href="/cards/FCO">02 May 16</a></td>
+                <td class="md-only"><a href="/cards/FCO">125 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.31%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-fates-collide" target="_blank">$849.28</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Fates-Collide?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,398.94€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/GEN"><img class="set" alt="GEN" src="https://s3.limitlesstcg.com/sets/en/GEN_SM.png" loading="lazy"> Generations <span class="code annotation">GEN</span></a></td>
+                <td><a href="/cards/GEN">22 Feb 16</a></td>
+                <td class="md-only"><a href="/cards/GEN">115 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.46%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fgenerations" target="_blank">$1,815.67</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Generations?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,622.69€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BKP"><img class="set" alt="BKP" src="https://s3.limitlesstcg.com/sets/en/BKP_SM.png" loading="lazy"> BREAKpoint <span class="code annotation">BKP</span></a></td>
+                <td><a href="/cards/BKP">03 Feb 16</a></td>
+                <td class="md-only"><a href="/cards/BKP">123 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.92%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-breakpoint" target="_blank">$1,047.51</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/BREAKpoint?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,434.98€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BKT"><img class="set" alt="BKT" src="https://s3.limitlesstcg.com/sets/en/BKT_SM.png" loading="lazy"> BREAKthrough <span class="code annotation">BKT</span></a></td>
+                <td><a href="/cards/BKT">04 Nov 15</a></td>
+                <td class="md-only"><a href="/cards/BKT">164 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">28.48%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-breakthrough" target="_blank">$1,400.91</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/BREAKthrough?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,991.75€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/AOR"><img class="set" alt="AOR" src="https://s3.limitlesstcg.com/sets/en/AOR_SM.png" loading="lazy"> Ancient Origins <span class="code annotation">AOR</span></a></td>
+                <td><a href="/cards/AOR">12 Aug 15</a></td>
+                <td class="md-only"><a href="/cards/AOR">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.56%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-ancient-origins" target="_blank">$3,400.50</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Ancient-Origins?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,384.10€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/ROS"><img class="set" alt="ROS" src="https://s3.limitlesstcg.com/sets/en/ROS_SM.png" loading="lazy"> Roaring Skies <span class="code annotation">ROS</span></a></td>
+                <td><a href="/cards/ROS">06 May 15</a></td>
+                <td class="md-only"><a href="/cards/ROS">110 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.04%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-roaring-skies" target="_blank">$1,769.70</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Roaring-Skies?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,802.95€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DCR"><img class="set" alt="DCR" src="https://s3.limitlesstcg.com/sets/en/DCR_SM.png" loading="lazy"> Double Crisis <span class="code annotation">DCR</span></a></td>
+                <td><a href="/cards/DCR">25 Mar 15</a></td>
+                <td class="md-only"><a href="/cards/DCR">34 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">5.88%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdouble-crisis" target="_blank">$1,189.97</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Couble-Crisis?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,131.83€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PRC"><img class="set" alt="PRC" src="https://s3.limitlesstcg.com/sets/en/PRC_SM.png" loading="lazy"> Primal Clash <span class="code annotation">PRC</span></a></td>
+                <td><a href="/cards/PRC">04 Feb 15</a></td>
+                <td class="md-only"><a href="/cards/PRC">164 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">35.98%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-primal-clash" target="_blank">$1,992.48</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Primal-Clash?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,948.59€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PHF"><img class="set" alt="PHF" src="https://s3.limitlesstcg.com/sets/en/PHF_SM.png" loading="lazy"> Phantom Forces <span class="code annotation">PHF</span></a></td>
+                <td><a href="/cards/PHF">05 Nov 14</a></td>
+                <td class="md-only"><a href="/cards/PHF">122 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">41.13%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-phantom-forces" target="_blank">$2,813.45</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Phantom-Forces?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,343.74€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/FFI"><img class="set" alt="FFI" src="https://s3.limitlesstcg.com/sets/en/FFI_SM.png" loading="lazy"> Furious Fists <span class="code annotation">FFI</span></a></td>
+                <td><a href="/cards/FFI">13 Aug 14</a></td>
+                <td class="md-only"><a href="/cards/FFI">113 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">15.79%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-furious-fists" target="_blank">$894.32</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Furious-Fists?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">657.51€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/FLF"><img class="set" alt="FLF" src="https://s3.limitlesstcg.com/sets/en/FLF_SM.png" loading="lazy"> Flashfire <span class="code annotation">FLF</span></a></td>
+                <td><a href="/cards/FLF">07 May 14</a></td>
+                <td class="md-only"><a href="/cards/FLF">109 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.36%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-flashfire" target="_blank">$2,844.19</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Flashfire?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,191.21€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/XY"><img class="set" alt="XY" src="https://s3.limitlesstcg.com/sets/en/XY_SM.png" loading="lazy"> XY <span class="code annotation">XY</span></a></td>
+                <td><a href="/cards/XY">05 Feb 14</a></td>
+                <td class="md-only"><a href="/cards/XY">146 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">28.08%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-base-set" target="_blank">$847.95</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/XY?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">710.24€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/KSS"><img class="set" alt="KSS" src="https://s3.limitlesstcg.com/sets/en/KSS_SM.png" loading="lazy"> Kalos Starter Set <span class="code annotation">KSS</span></a></td>
+                <td><a href="/cards/KSS">08 Nov 13</a></td>
+                <td class="md-only"><a href="/cards/KSS">39 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">17.95%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fkalos-starter-set" target="_blank">$129.99</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/XY-Kalos-Starter-Set?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">97.65€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/XYP"><img class="set" alt="XYP" src="https://s3.limitlesstcg.com/sets/en/XYP_SM.png" loading="lazy"> XY Promos <span class="code annotation">XYP</span></a></td>
+                <td><a href="/cards/XYP"></a></td>
+                <td class="md-only"><a href="/cards/XYP">211 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.46%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fxy-promos" target="_blank">$10,105.62</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/XY-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">8,350.81€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>Black &amp; White</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/LTR"><img class="set" alt="LTR" src="https://s3.limitlesstcg.com/sets/en/LTR_SM.png" loading="lazy"> Legendary Treasures <span class="code annotation">LTR</span></a></td>
+                <td><a href="/cards/LTR">06 Nov 13</a></td>
+                <td class="md-only"><a href="/cards/LTR">140 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">27.86%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Flegendary-treasures" target="_blank">$2,519.80</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Legendary-Treasures?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,657.09€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PLB"><img class="set" alt="PLB" src="https://s3.limitlesstcg.com/sets/en/PLB_SM.png" loading="lazy"> Plasma Blast <span class="code annotation">PLB</span></a></td>
+                <td><a href="/cards/PLB">14 Aug 13</a></td>
+                <td class="md-only"><a href="/cards/PLB">105 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.19%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fplasma-blast" target="_blank">$2,605.20</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Plasma-Blast?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,882.09€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PLF"><img class="set" alt="PLF" src="https://s3.limitlesstcg.com/sets/en/PLF_SM.png" loading="lazy"> Plasma Freeze <span class="code annotation">PLF</span></a></td>
+                <td><a href="/cards/PLF">08 May 13</a></td>
+                <td class="md-only"><a href="/cards/PLF">122 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">29.51%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fplasma-freeze" target="_blank">$5,581.75</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Plasma-Freeze?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,803.25€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PLS"><img class="set" alt="PLS" src="https://s3.limitlesstcg.com/sets/en/PLS_SM.png" loading="lazy"> Plasma Storm <span class="code annotation">PLS</span></a></td>
+                <td><a href="/cards/PLS">06 Feb 13</a></td>
+                <td class="md-only"><a href="/cards/PLS">138 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">23.91%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fplasma-storm" target="_blank">$5,166.84</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Plasma-Storm?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,175.84€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BCR"><img class="set" alt="BCR" src="https://s3.limitlesstcg.com/sets/en/BCR_SM.png" loading="lazy"> Boundaries Crossed <span class="code annotation">BCR</span></a></td>
+                <td><a href="/cards/BCR">07 Nov 12</a></td>
+                <td class="md-only"><a href="/cards/BCR">153 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">27.45%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fboundaries-crossed" target="_blank">$3,323.99</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Boundaries-Crossed?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,375.54€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DRV"><img class="set" alt="DRV" src="https://s3.limitlesstcg.com/sets/en/DRV_SM.png" loading="lazy"> Dragon Vault <span class="code annotation">DRV</span></a></td>
+                <td><a href="/cards/DRV">05 Oct 12</a></td>
+                <td class="md-only"><a href="/cards/DRV">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">14.29%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdragon-vault" target="_blank">$337.79</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Dragon-Vault?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">215.81€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DRX"><img class="set" alt="DRX" src="https://s3.limitlesstcg.com/sets/en/DRX_SM.png" loading="lazy"> Dragons Exalted <span class="code annotation">DRX</span></a></td>
+                <td><a href="/cards/DRX">15 Aug 12</a></td>
+                <td class="md-only"><a href="/cards/DRX">128 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">20.31%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdragons-exalted" target="_blank">$3,808.52</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Dragons-Exalted?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,147.11€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DEX"><img class="set" alt="DEX" src="https://s3.limitlesstcg.com/sets/en/DEX_SM.png" loading="lazy"> Dark Explorers <span class="code annotation">DEX</span></a></td>
+                <td><a href="/cards/DEX">09 May 12</a></td>
+                <td class="md-only"><a href="/cards/DEX">111 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">27.03%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdark-explorers" target="_blank">$4,081.60</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Dark-Explorers?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,636.45€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/NXD"><img class="set" alt="NXD" src="https://s3.limitlesstcg.com/sets/en/NXD_SM.png" loading="lazy"> Next Destinies <span class="code annotation">NXD</span></a></td>
+                <td><a href="/cards/NXD">08 Feb 12</a></td>
+                <td class="md-only"><a href="/cards/NXD">103 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">22.33%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fnext-destinies" target="_blank">$2,685.81</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Next-Destinies?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">997.51€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/NVI"><img class="set" alt="NVI" src="https://s3.limitlesstcg.com/sets/en/NVI_SM.png" loading="lazy"> Noble Victories <span class="code annotation">NVI</span></a></td>
+                <td><a href="/cards/NVI">16 Nov 11</a></td>
+                <td class="md-only"><a href="/cards/NVI">102 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">21.57%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fnoble-victories" target="_blank">$885.48</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Noble-Victories?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">605.04€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/EPO"><img class="set" alt="EPO" src="https://s3.limitlesstcg.com/sets/en/EPO_SM.png" loading="lazy"> Emerging Powers <span class="code annotation">EPO</span></a></td>
+                <td><a href="/cards/EPO">31 Aug 11</a></td>
+                <td class="md-only"><a href="/cards/EPO">98 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">14.29%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Femerging-powers" target="_blank">$115.77</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Emerging-Powers?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">65.86€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BLW"><img class="set" alt="BLW" src="https://s3.limitlesstcg.com/sets/en/BLW_SM.png" loading="lazy"> Black &amp; White <span class="code annotation">BLW</span></a></td>
+                <td><a href="/cards/BLW">25 Apr 11</a></td>
+                <td class="md-only"><a href="/cards/BLW">115 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">32.17%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fblack-and-white" target="_blank">$550.20</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Black-White?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">447.10€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BWP"><img class="set" alt="BWP" src="https://s3.limitlesstcg.com/sets/en/BWP_SM.png" loading="lazy"> Black &amp; White Promos <span class="code annotation">BWP</span></a></td>
+                <td><a href="/cards/BWP"></a></td>
+                <td class="md-only"><a href="/cards/BWP">101 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">27.72%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fblack-and-white-promos" target="_blank">$7,238.96</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/BW-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">4,080.61€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>HeartGold &amp; SoulSilver</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/CL"><img class="set" alt="CL" src="https://s3.limitlesstcg.com/sets/en/CL_SM.png" loading="lazy"> Call of Legends <span class="code annotation">CL</span></a></td>
+                <td><a href="/cards/CL">09 Feb 11</a></td>
+                <td class="md-only"><a href="/cards/CL">106 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">21.70%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fcall-of-legends" target="_blank">$8,090.89</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Call-of-Legends?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">5,868.91€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/TM"><img class="set" alt="TM" src="https://s3.limitlesstcg.com/sets/en/TM_SM.png" loading="lazy"> Triumphant <span class="code annotation">TM</span></a></td>
+                <td><a href="/cards/TM">03 Nov 10</a></td>
+                <td class="md-only"><a href="/cards/TM">103 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">13.59%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Ftriumphant" target="_blank">$2,767.67</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Triumphant?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,033.87€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/UD"><img class="set" alt="UD" src="https://s3.limitlesstcg.com/sets/en/UD_SM.png" loading="lazy"> Undaunted <span class="code annotation">UD</span></a></td>
+                <td><a href="/cards/UD">18 Aug 10</a></td>
+                <td class="md-only"><a href="/cards/UD">91 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">10.99%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fundaunted" target="_blank">$4,456.30</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Undaunted?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,378.26€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/UL"><img class="set" alt="UL" src="https://s3.limitlesstcg.com/sets/en/UL_SM.png" loading="lazy"> Unleashed <span class="code annotation">UL</span></a></td>
+                <td><a href="/cards/UL">12 May 10</a></td>
+                <td class="md-only"><a href="/cards/UL">96 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Funleashed" target="_blank">$2,669.66</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Unleashed?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">770.11€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/HS"><img class="set" alt="HS" src="https://s3.limitlesstcg.com/sets/en/HS_SM.png" loading="lazy"> HeartGold &amp; SoulSilver <span class="code annotation">HS</span></a></td>
+                <td><a href="/cards/HS">10 Feb 10</a></td>
+                <td class="md-only"><a href="/cards/HS">124 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">26.61%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fheartgold-soulsilver" target="_blank">$3,260.95</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/HeartGold-SoulSilver?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,011.02€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/HSP"><img class="set" alt="HSP" src="https://s3.limitlesstcg.com/sets/en/HSP_SM.png" loading="lazy"> HeartGold &amp; SoulSilver Promos <span class="code annotation">HSP</span></a></td>
+                <td><a href="/cards/HSP"></a></td>
+                <td class="md-only"><a href="/cards/HSP">25 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">8.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fhgss-promos" target="_blank">$2,701.97</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/HGSS-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,046.18€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>Diamond &amp; Pearl / Platinum</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/RM"><img class="set" alt="RM" src="https://s3.limitlesstcg.com/sets/en/RM_SM.png" loading="lazy"> Pokémon Rumble <span class="code annotation">RM</span></a></td>
+                <td><a href="/cards/RM">02 Dec 09</a></td>
+                <td class="md-only"><a href="/cards/RM">16 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Frumble" target="_blank">$4,633.26</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Pokemon-Rumble?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">5,105.80€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/AR"><img class="set" alt="AR" src="https://s3.limitlesstcg.com/sets/en/AR_SM.png" loading="lazy"> Arceus <span class="code annotation">AR</span></a></td>
+                <td><a href="/cards/AR">04 Nov 09</a></td>
+                <td class="md-only"><a href="/cards/AR">111 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">5.41%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Farceus" target="_blank">$2,597.00</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Arceus?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,256.30€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SV"><img class="set" alt="SV" src="https://s3.limitlesstcg.com/sets/en/SV_SM.png" loading="lazy"> Supreme Victors <span class="code annotation">SV</span></a></td>
+                <td><a href="/cards/SV">19 Aug 09</a></td>
+                <td class="md-only"><a href="/cards/SV">153 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">9.80%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsupreme-victors" target="_blank">$3,673.81</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Supreme-Victors?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,053.06€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/RR"><img class="set" alt="RR" src="https://s3.limitlesstcg.com/sets/en/RR_SM.png" loading="lazy"> Rising Rivals <span class="code annotation">RR</span></a></td>
+                <td><a href="/cards/RR">20 May 09</a></td>
+                <td class="md-only"><a href="/cards/RR">120 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">17.50%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Frising-rivals" target="_blank">$4,164.82</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Rising-Rivals?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,689.37€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P9"><img class="set" alt="P9" src="https://s3.limitlesstcg.com/sets/en/P9_SM.png" loading="lazy"> POP Series 9 <span class="code annotation">P9</span></a></td>
+                <td><a href="/cards/P9">01 Mar 09</a></td>
+                <td class="md-only"><a href="/cards/P9">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-9" target="_blank">$181.46</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-9?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">117.56€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PL"><img class="set" alt="PL" src="https://s3.limitlesstcg.com/sets/en/PL_SM.png" loading="lazy"> Platinum <span class="code annotation">PL</span></a></td>
+                <td><a href="/cards/PL">11 Feb 09</a></td>
+                <td class="md-only"><a href="/cards/PL">133 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">18.80%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fplatinum" target="_blank">$2,136.36</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Platinum?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">739.05€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SF"><img class="set" alt="SF" src="https://s3.limitlesstcg.com/sets/en/SF_SM.png" loading="lazy"> Stormfront <span class="code annotation">SF</span></a></td>
+                <td><a href="/cards/SF">05 Nov 08</a></td>
+                <td class="md-only"><a href="/cards/SF">106 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.47%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fstormfront" target="_blank">$2,202.57</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Stormfront?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,081.26€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P8"><img class="set" alt="P8" src="https://s3.limitlesstcg.com/sets/en/P8_SM.png" loading="lazy"> POP Series 8 <span class="code annotation">P8</span></a></td>
+                <td><a href="/cards/P8">01 Sep 08</a></td>
+                <td class="md-only"><a href="/cards/P8">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">17.65%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-8" target="_blank">$150.52</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-8?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">55.86€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/LA"><img class="set" alt="LA" src="https://s3.limitlesstcg.com/sets/en/LA_SM.png" loading="lazy"> Legends Awakened <span class="code annotation">LA</span></a></td>
+                <td><a href="/cards/LA">20 Aug 08</a></td>
+                <td class="md-only"><a href="/cards/LA">146 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">6.16%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Flegends-awakened" target="_blank">$1,877.50</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Legends-Awakened?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">970.42€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/MD"><img class="set" alt="MD" src="https://s3.limitlesstcg.com/sets/en/MD_SM.png" loading="lazy"> Majestic Dawn <span class="code annotation">MD</span></a></td>
+                <td><a href="/cards/MD">21 May 08</a></td>
+                <td class="md-only"><a href="/cards/MD">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">11.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fmajestic-dawn" target="_blank">$2,271.60</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Majestic-Dawn?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,643.00€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P7"><img class="set" alt="P7" src="https://s3.limitlesstcg.com/sets/en/P7_SM.png" loading="lazy"> POP Series 7 <span class="code annotation">P7</span></a></td>
+                <td><a href="/cards/P7">01 Mar 08</a></td>
+                <td class="md-only"><a href="/cards/P7">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">11.76%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-7" target="_blank">$229.45</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-7?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">109.55€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/GE"><img class="set" alt="GE" src="https://s3.limitlesstcg.com/sets/en/GE_SM.png" loading="lazy"> Great Encounters <span class="code annotation">GE</span></a></td>
+                <td><a href="/cards/GE">13 Feb 08</a></td>
+                <td class="md-only"><a href="/cards/GE">106 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">8.49%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fgreat-encounters" target="_blank">$1,300.78</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Great-Encounters?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">619.19€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SW"><img class="set" alt="SW" src="https://s3.limitlesstcg.com/sets/en/SW_SM.png" loading="lazy"> Secret Wonders <span class="code annotation">SW</span></a></td>
+                <td><a href="/cards/SW">07 Nov 07</a></td>
+                <td class="md-only"><a href="/cards/SW">132 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">12.12%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsecret-wonders" target="_blank">$1,547.43</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Secret-Wonders?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">727.11€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P6"><img class="set" alt="P6" src="https://s3.limitlesstcg.com/sets/en/P6_SM.png" loading="lazy"> POP Series 6 <span class="code annotation">P6</span></a></td>
+                <td><a href="/cards/P6">01 Sep 07</a></td>
+                <td class="md-only"><a href="/cards/P6">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-6" target="_blank">$494.31</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-6?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">262.38€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/MT"><img class="set" alt="MT" src="https://s3.limitlesstcg.com/sets/en/MT_SM.png" loading="lazy"> Mysterious Treasures <span class="code annotation">MT</span></a></td>
+                <td><a href="/cards/MT">22 Aug 07</a></td>
+                <td class="md-only"><a href="/cards/MT">124 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">8.06%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fmysterious-treasures" target="_blank">$990.14</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Mysterious-Treasures?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">575.22€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DP"><img class="set" alt="DP" src="https://s3.limitlesstcg.com/sets/en/DP_SM.png" loading="lazy"> Diamond &amp; Pearl <span class="code annotation">DP</span></a></td>
+                <td><a href="/cards/DP">23 May 07</a></td>
+                <td class="md-only"><a href="/cards/DP">130 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">14.62%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdiamond-and-pearl" target="_blank">$1,008.32</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Diamond-Pearl?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">373.57€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DPP"><img class="set" alt="DPP" src="https://s3.limitlesstcg.com/sets/en/DPP_SM.png" loading="lazy"> Diamond &amp; Pearl Promos <span class="code annotation">DPP</span></a></td>
+                <td><a href="/cards/DPP"></a></td>
+                <td class="md-only"><a href="/cards/DPP">56 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">8.93%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdiamond-and-pearl-promos" target="_blank">$5,478.87</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/DP-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,917.63€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>EX</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/P5"><img class="set" alt="P5" src="https://s3.limitlesstcg.com/sets/en/P5_SM.png" loading="lazy"> POP Series 5 <span class="code annotation">P5</span></a></td>
+                <td><a href="/cards/P5">01 Mar 07</a></td>
+                <td class="md-only"><a href="/cards/P5">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">5.88%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-5" target="_blank">$2,974.52</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-5?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">14,331.35€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/PK"><img class="set" alt="PK" src="https://s3.limitlesstcg.com/sets/en/PK_SM.png" loading="lazy"> Power Keepers <span class="code annotation">PK</span></a></td>
+                <td><a href="/cards/PK">14 Feb 07</a></td>
+                <td class="md-only"><a href="/cards/PK">108 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">12.04%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpower-keepers" target="_blank">$5,546.57</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Power-Keepers?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">5,768.78€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DF"><img class="set" alt="DF" src="https://s3.limitlesstcg.com/sets/en/DF_SM.png" loading="lazy"> Dragon Frontiers <span class="code annotation">DF</span></a></td>
+                <td><a href="/cards/DF">08 Nov 06</a></td>
+                <td class="md-only"><a href="/cards/DF">101 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">2.97%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdragon-frontiers" target="_blank">$8,582.68</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Dragon-Frontiers?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">8,141.13€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/CG"><img class="set" alt="CG" src="https://s3.limitlesstcg.com/sets/en/CG_SM.png" loading="lazy"> Crystal Guardians <span class="code annotation">CG</span></a></td>
+                <td><a href="/cards/CG">30 Aug 06</a></td>
+                <td class="md-only"><a href="/cards/CG">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">6.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fcrystal-guardians" target="_blank">$5,621.91</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Crystal-Guardians?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">6,891.04€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P4"><img class="set" alt="P4" src="https://s3.limitlesstcg.com/sets/en/P4_SM.png" loading="lazy"> POP Series 4 <span class="code annotation">P4</span></a></td>
+                <td><a href="/cards/P4">01 Aug 06</a></td>
+                <td class="md-only"><a href="/cards/P4">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">5.88%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-4" target="_blank">$1,884.94</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-4?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,533.85€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/HP"><img class="set" alt="HP" src="https://s3.limitlesstcg.com/sets/en/HP_SM.png" loading="lazy"> Holon Phantoms <span class="code annotation">HP</span></a></td>
+                <td><a href="/cards/HP">03 May 06</a></td>
+                <td class="md-only"><a href="/cards/HP">111 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">9.01%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fholon-phantoms" target="_blank">$16,069.21</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Holon-Phantoms?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">12,626.64€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P3"><img class="set" alt="P3" src="https://s3.limitlesstcg.com/sets/en/P3_SM.png" loading="lazy"> POP Series 3 <span class="code annotation">P3</span></a></td>
+                <td><a href="/cards/P3">01 Apr 06</a></td>
+                <td class="md-only"><a href="/cards/P3">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-3" target="_blank">$781.48</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-3?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,056.29€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/LM"><img class="set" alt="LM" src="https://s3.limitlesstcg.com/sets/en/LM_SM.png" loading="lazy"> Legend Maker <span class="code annotation">LM</span></a></td>
+                <td><a href="/cards/LM">13 Feb 06</a></td>
+                <td class="md-only"><a href="/cards/LM">93 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">1.08%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Flegend-maker" target="_blank">$5,733.16</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Legend-Maker?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">5,402.86€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DS"><img class="set" alt="DS" src="https://s3.limitlesstcg.com/sets/en/DS_SM.png" loading="lazy"> Delta Species <span class="code annotation">DS</span></a></td>
+                <td><a href="/cards/DS">31 Oct 05</a></td>
+                <td class="md-only"><a href="/cards/DS">114 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">6.14%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdelta-species" target="_blank">$10,809.58</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Delta-Species?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">10,303.60€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/UF"><img class="set" alt="UF" src="https://s3.limitlesstcg.com/sets/en/UF_SM.png" loading="lazy"> Unseen Forces <span class="code annotation">UF</span></a></td>
+                <td><a href="/cards/UF">22 Aug 05</a></td>
+                <td class="md-only"><a href="/cards/UF">143 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">6.90%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Funseen-forces" target="_blank">$13,469.77</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Unseen-Forces?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">13,356.95€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P2"><img class="set" alt="P2" src="https://s3.limitlesstcg.com/sets/en/P2_SM.png" loading="lazy"> POP Series 2 <span class="code annotation">P2</span></a></td>
+                <td><a href="/cards/P2">01 Aug 05</a></td>
+                <td class="md-only"><a href="/cards/P2">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">5.88%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-2" target="_blank">$499.12</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-2?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">684.22€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/EM"><img class="set" alt="EM" src="https://s3.limitlesstcg.com/sets/en/EM_SM.png" loading="lazy"> Emerald <span class="code annotation">EM</span></a></td>
+                <td><a href="/cards/EM">09 May 05</a></td>
+                <td class="md-only"><a href="/cards/EM">107 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">10.28%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Femerald" target="_blank">$2,708.78</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Emerald?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,231.65€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DX"><img class="set" alt="DX" src="https://s3.limitlesstcg.com/sets/en/DX_SM.png" loading="lazy"> Deoxys <span class="code annotation">DX</span></a></td>
+                <td><a href="/cards/DX">14 Feb 05</a></td>
+                <td class="md-only"><a href="/cards/DX">108 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdeoxys" target="_blank">$9,227.29</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Deoxys?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">14,593.25€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/TRR"><img class="set" alt="TRR" src="https://s3.limitlesstcg.com/sets/en/TRR_SM.png" loading="lazy"> Team Rocket Returns <span class="code annotation">TRR</span></a></td>
+                <td><a href="/cards/TRR">08 Nov 04</a></td>
+                <td class="md-only"><a href="/cards/TRR">111 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.90%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fteam-rocket-returns" target="_blank">$19,833.48</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Team-Rocket-Returns?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">26,903.69€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/P1"><img class="set" alt="P1" src="https://s3.limitlesstcg.com/sets/en/P1_SM.png" loading="lazy"> POP Series 1 <span class="code annotation">P1</span></a></td>
+                <td><a href="/cards/P1">01 Sep 04</a></td>
+                <td class="md-only"><a href="/cards/P1">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fpop-series-1" target="_blank">$581.45</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/POP-Series-1?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,001.42€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/RG"><img class="set" alt="RG" src="https://s3.limitlesstcg.com/sets/en/RG_SM.png" loading="lazy"> FireRed &amp; LeafGreen <span class="code annotation">RG</span></a></td>
+                <td><a href="/cards/RG">30 Aug 04</a></td>
+                <td class="md-only"><a href="/cards/RG">116 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">8.62%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Ffirered-and-leafgreen" target="_blank">$4,840.62</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-FireRed-LeafGreen?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">4,317.90€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/HL"><img class="set" alt="HL" src="https://s3.limitlesstcg.com/sets/en/HL_SM.png" loading="lazy"> Hidden Legends <span class="code annotation">HL</span></a></td>
+                <td><a href="/cards/HL">14 Jun 04</a></td>
+                <td class="md-only"><a href="/cards/HL">102 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">1.96%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fhidden-legends" target="_blank">$3,186.91</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Hidden-Legends?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,528.13€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/MA"><img class="set" alt="MA" src="https://s3.limitlesstcg.com/sets/en/MA_SM.png" loading="lazy"> Team Magma vs Team Aqua <span class="code annotation">MA</span></a></td>
+                <td><a href="/cards/MA">15 Mar 04</a></td>
+                <td class="md-only"><a href="/cards/MA">97 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">2.06%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fteam-magma-vs-team-aqua" target="_blank">$3,892.92</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Team-Magma-vs-Team-Aqua?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,167.12€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/DR"><img class="set" alt="DR" src="https://s3.limitlesstcg.com/sets/en/DR_SM.png" loading="lazy"> Dragon <span class="code annotation">DR</span></a></td>
+                <td><a href="/cards/DR">24 Nov 03</a></td>
+                <td class="md-only"><a href="/cards/DR">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">2.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fdragon" target="_blank">$3,982.40</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Dragon?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,201.77€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SS"><img class="set" alt="SS" src="https://s3.limitlesstcg.com/sets/en/SS_SM.png" loading="lazy"> Sandstorm <span class="code annotation">SS</span></a></td>
+                <td><a href="/cards/SS">18 Sep 03</a></td>
+                <td class="md-only"><a href="/cards/SS">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">2.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsandstorm" target="_blank">$2,377.59</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Sandstorm?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,692.90€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/RS"><img class="set" alt="RS" src="https://s3.limitlesstcg.com/sets/en/RS_SM.png" loading="lazy"> Ruby &amp; Sapphire <span class="code annotation">RS</span></a></td>
+                <td><a href="/cards/RS">18 Jun 03</a></td>
+                <td class="md-only"><a href="/cards/RS">109 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">14.68%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fruby-and-sapphire" target="_blank">$2,380.34</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/EX-Ruby-Sapphire?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,496.13€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/NP"><img class="set" alt="NP" src="https://s3.limitlesstcg.com/sets/en/NP_SM.png" loading="lazy"> Nintendo Promos <span class="code annotation">NP</span></a></td>
+                <td><a href="/cards/NP"></a></td>
+                <td class="md-only"><a href="/cards/NP">40 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fnintendo-promos" target="_blank">$6,742.03</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Nintendo-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">10,101.79€</a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=5>WotC Era</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/E3"><img class="set" alt="E3" src="https://s3.limitlesstcg.com/sets/en/E3_SM.png" loading="lazy"> Skyridge <span class="code annotation">E3</span></a></td>
+                <td><a href="/cards/E3">12 May 03</a></td>
+                <td class="md-only"><a href="/cards/E3">182 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">3.30%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fskyridge" target="_blank">$24,924.81</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Skyridge?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">40,320.09€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/E2"><img class="set" alt="E2" src="https://s3.limitlesstcg.com/sets/en/E2_SM.png" loading="lazy"> Aquapolis <span class="code annotation">E2</span></a></td>
+                <td><a href="/cards/E2">15 Jan 03</a></td>
+                <td class="md-only"><a href="/cards/E2">182 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">3.85%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Faquapolis" target="_blank">$16,065.90</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Aquapolis?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">16,657.47€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BG"><img class="set" alt="BG" src="https://s3.limitlesstcg.com/sets/en/BG_SM.png" loading="lazy"> Best of Game <span class="code annotation">BG</span></a></td>
+                <td><a href="/cards/BG">01 Dec 02</a></td>
+                <td class="md-only"><a href="/cards/BG">9 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fbest-of-promos" target="_blank">$3,174.94</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Best-of-Game-Cards-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,587.17€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/E1"><img class="set" alt="E1" src="https://s3.limitlesstcg.com/sets/en/E1_SM.png" loading="lazy"> Expedition <span class="code annotation">E1</span></a></td>
+                <td><a href="/cards/E1">15 Sep 02</a></td>
+                <td class="md-only"><a href="/cards/E1">165 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">9.70%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fexpedition" target="_blank">$8,386.21</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Expedition-Base-Set?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">10,131.68€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/LC"><img class="set" alt="LC" src="https://s3.limitlesstcg.com/sets/en/LC_SM.png" loading="lazy"> Legendary Collection <span class="code annotation">LC</span></a></td>
+                <td><a href="/cards/LC">24 May 02</a></td>
+                <td class="md-only"><a href="/cards/LC">110 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">2.73%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Flegendary-collection" target="_blank">$3,177.42</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Legendary-Collection?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,287.15€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/N4"><img class="set" alt="N4" src="https://s3.limitlesstcg.com/sets/en/N4_SM.png" loading="lazy"> Neo Destiny <span class="code annotation">N4</span></a></td>
+                <td><a href="/cards/N4">28 Feb 02</a></td>
+                <td class="md-only"><a href="/cards/N4">113 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fneo-destiny" target="_blank">$8,961.50</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Neo-Destiny?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">9,033.05€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/N3"><img class="set" alt="N3" src="https://s3.limitlesstcg.com/sets/en/N3_SM.png" loading="lazy"> Neo Revelation <span class="code annotation">N3</span></a></td>
+                <td><a href="/cards/N3">21 Sep 01</a></td>
+                <td class="md-only"><a href="/cards/N3">66 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fneo-revelation" target="_blank">$3,532.40</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Neo-Revelation?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,623.71€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/SI"><img class="set" alt="SI" src="https://s3.limitlesstcg.com/sets/en/SI_SM.png" loading="lazy"> Southern Islands <span class="code annotation">SI</span></a></td>
+                <td><a href="/cards/SI">31 Jul 01</a></td>
+                <td class="md-only"><a href="/cards/SI">18 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fsouthern-islands" target="_blank">$2,405.89</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Southern-Islands?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,534.82€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/N2"><img class="set" alt="N2" src="https://s3.limitlesstcg.com/sets/en/N2_SM.png" loading="lazy"> Neo Discovery <span class="code annotation">N2</span></a></td>
+                <td><a href="/cards/N2">01 Jun 01</a></td>
+                <td class="md-only"><a href="/cards/N2">75 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fneo-discovery" target="_blank">$1,973.59</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Neo-Discovery?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,049.77€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/N1"><img class="set" alt="N1" src="https://s3.limitlesstcg.com/sets/en/N1_SM.png" loading="lazy"> Neo Genesis <span class="code annotation">N1</span></a></td>
+                <td><a href="/cards/N1">16 Dec 00</a></td>
+                <td class="md-only"><a href="/cards/N1">111 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">9.91%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fneo-genesis" target="_blank">$2,177.90</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Neo-Genesis?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,325.80€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/G2"><img class="set" alt="G2" src="https://s3.limitlesstcg.com/sets/en/G2_SM.png" loading="lazy"> Gym Challenge <span class="code annotation">G2</span></a></td>
+                <td><a href="/cards/G2">16 Oct 00</a></td>
+                <td class="md-only"><a href="/cards/G2">132 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">5.30%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fgym-challenge" target="_blank">$3,123.66</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Gym-Challenge?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">4,864.12€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/G1"><img class="set" alt="G1" src="https://s3.limitlesstcg.com/sets/en/G1_SM.png" loading="lazy"> Gym Heroes <span class="code annotation">G1</span></a></td>
+                <td><a href="/cards/G1">14 Aug 00</a></td>
+                <td class="md-only"><a href="/cards/G1">132 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">4.55%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fgym-heroes" target="_blank">$2,090.54</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Gym-Heroes?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">3,127.80€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/TR"><img class="set" alt="TR" src="https://s3.limitlesstcg.com/sets/en/TR_SM.png" loading="lazy"> Team Rocket <span class="code annotation">TR</span></a></td>
+                <td><a href="/cards/TR">24 Apr 00</a></td>
+                <td class="md-only"><a href="/cards/TR">83 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">2.41%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fteam-rocket" target="_blank">$1,692.41</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Team-Rocket?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">2,393.97€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BS2"><img class="set" alt="BS2" src="https://s3.limitlesstcg.com/sets/en/BS2_SM.png" loading="lazy"> Base Set 2 <span class="code annotation">BS2</span></a></td>
+                <td><a href="/cards/BS2">24 Feb 00</a></td>
+                <td class="md-only"><a href="/cards/BS2">130 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">10.77%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fbase-set-2" target="_blank">$1,694.34</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Base-Set-2?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,263.78€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/FO"><img class="set" alt="FO" src="https://s3.limitlesstcg.com/sets/en/FO_SM.png" loading="lazy"> Fossil <span class="code annotation">FO</span></a></td>
+                <td><a href="/cards/FO">10 Oct 99</a></td>
+                <td class="md-only"><a href="/cards/FO">62 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">1.61%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Ffossil" target="_blank">$1,201.09</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Fossil?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,143.02€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/JU"><img class="set" alt="JU" src="https://s3.limitlesstcg.com/sets/en/JU_SM.png" loading="lazy"> Jungle <span class="code annotation">JU</span></a></td>
+                <td><a href="/cards/JU">16 Jun 99</a></td>
+                <td class="md-only"><a href="/cards/JU">64 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">1.56%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fjungle" target="_blank">$1,101.41</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Jungle?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">774.83€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/BS"> Base Set <span class="code annotation">BS</span></a></td>
+                <td><a href="/cards/BS">09 Jan 99</a></td>
+                <td class="md-only"><a href="/cards/BS">102 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">14.71%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fbase-set" target="_blank">$2,216.29</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Base-Set?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">1,251.55€</a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/WP"><img class="set" alt="WP" src="https://s3.limitlesstcg.com/sets/en/WP_SM.png" loading="lazy"> WotC Promos <span class="code annotation">WP</span></a></td>
+                <td><a href="/cards/WP"></a></td>
+                <td class="md-only"><a href="/cards/WP">53 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                                    <td class="lg-only"><a class="card-price usd" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fwotc-promo" target="_blank">$6,637.09</a></td>
+                    <td class="lg-only"><a class="card-price eur" href="https://www.cardmarket.com/en/Pokemon/Expansions/Wizards-Black-Star-Promos?utm_source=limitlesstcg&utm_medium=text&utm_campaign=card_prices" target="_blank">5,992.17€</a></td>
+                            </tr>
+            </table>
+
+</div>
+    </main>
+
+    
+            <div id="bottom_ad_placeholder" class="container dont-print"></div>
+    
+    <div class="after-content"></div>
+
+    <footer>
+    <div class="container footer">
+        <div class="menus">
+            <div class="column">
+                <h2><a href="https://limitlesstcg.com">Limitless TCG</a></h2>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/legal">Site Notice</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Our Other Sites</h2>
+                <ul>
+                    <li><a href="https://my.limitlesstcg.com">Deck Builder</a></li>
+                    <li><a href="https://play.limitlesstcg.com">Tournament Platform</a></li>
+                    <li><a href="https://onepiece.limitlesstcg.com">One Piece Database</a></li>
+                    <li><a href="https://pocket.limitlesstcg.com">Pocket Database</a></li>
+                    <li><a href="https://limitlessvgc.com">Limitless VGC</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Follow</h2>
+                <ul>
+                    <li><a href="https://twitter.com/limitlesstcg"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://facebook.com/LimitlessTCG/"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://twitch.tv/limitless_tcg"><i class="fab fa-twitch"></i> Twitch</a></li>
+                    <li><a href="https://www.patreon.com/limitlesstcg"><i class="fab fa-patreon"></i> Patreon</a></li>
+                </ul>
+            </div>
+            <div class="column full">
+                                                    <h2>TCGplayer</h2>
+                    <a class="promo" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fproduct" target="_blank">
+                        <img src="https://limitless3.nyc3.cdn.digitaloceanspaces.com/markets/promo/tcgplayer.png" alt="TCGplayer logo" />
+                        <p>You can support us by using our Affiliate Link when buying on TCGplayer!</p>
+                    </a>
+                            </div>
+
+                            <span class="cookie-link" onclick="window.ramp.showCmpModal();">Manage Cookies</span>
+                    </div>
+
+        <div class="disclaimer">The literal and graphical information presented on this website about the Pokémon Trading Card Game, including card images and text, is copyright The Pokémon Company (Pokémon), Nintendo, Game Freak and/or Creatures. This website is not produced by, endorsed by, supported by, or affiliated with Pokémon, Nintendo, Game Freak or Creatures.</div>
+    </div>
+</footer>
+
+    <div id="jsg">
+        <div class="overlay"></div>
+    </div>
+
+            <script data-cfasync="false" async src="//cdn.intergient.com/1025537/78560/ramp.js"></script>
+    </body>
+
+</html>

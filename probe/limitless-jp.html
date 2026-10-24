@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Database – Limitless</title>
+    <meta name="description" content="A multi-language Pokémon TCG card database with advanced search features and up-to-date pricing data.">
+
+            <meta property="og:title" content="Card Database – Limitless">
+        <meta property="og:description" content="A multi-language Pokémon TCG card database with advanced search features and up-to-date pricing data.">
+        <meta property="og:image" content="https://limitless3.nyc3.cdn.digitaloceanspaces.com/limitless/social-preview.png">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Limitless TCG">
+    
+            <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@LimitlessTCG">
+        <meta name="twitter:title" content="Card Database – Limitless">
+        <meta name="twitter:description" content="A multi-language Pokémon TCG card database with advanced search features and up-to-date pricing data.">
+        <meta name="twitter:image" content="https://limitless3.nyc3.cdn.digitaloceanspaces.com/limitless/social-preview.png">
+    
+    <link rel="manifest" href="/app.webmanifest">
+
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-102651668-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-102651668-1', { 'anonymize_ip': true });
+</script>    
+            <script data-cfasync="false">
+        window.ramp = window.ramp || {};
+        window.ramp.que = window.ramp.que || [];
+    </script>
+
+<style>
+#pw-oop-bottom_rail, .bh-div-wrapper, .celtra-banner {
+    z-index: 10 !important;
+    box-sizing: content-box;
+}
+
+@media print {
+    #pw-oop-bottom_rail, .bh-div-wrapper, .celtra-banner,
+    #pw-oop-left_rail {
+        display: none !important;
+    }
+}
+</style>    
+    <link rel="preload" as="style" href="https://limitlesstcg.com/build/assets/main-e01e825c.css" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/main-e12b7c15.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/dom-7f7df130.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/limitless-38d3eac6.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/fetch-a833fccf.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/tables-bcf04db3.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/ws-search-e6ffb889.js" /><link rel="modulepreload" href="https://limitlesstcg.com/build/assets/suggest-4ff36e79.js" /><link rel="stylesheet" href="https://limitlesstcg.com/build/assets/main-e01e825c.css" /><script type="module" src="https://limitlesstcg.com/build/assets/main-e12b7c15.js"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&family=Open+Sans+Condensed:wght@700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400..700&family=Open+Sans+Condensed:wght@700&display=swap">
+        <link rel="stylesheet" href="/inc/fontawesome/css/all.min.css?v=5.11.2">
+    
+        
+    <script>var LS_SEARCH_RESULTS = '~ search results', LS_NO_SEARCH_RESULTS = 'no search results found';</script>
+    <script>var LMT_RNT = false;</script>
+</head>
+
+<body>
+    <header>
+    <div class="header-top" data-mini-bar>
+        <div class="container top">
+            <div class="flex gap-4 items-center">
+                
+                <div class="site-news"> Latest Updates:
+                                            <a href="/tournaments/581">Louisville</a>  •                                             <a href="/tournaments/582">Nice</a>                                      </div>
+            </div>
+
+            <div class="site-settings">
+                <select class="language-switch" data-site-language>
+                    <option value="en_US"  selected >English</option>
+                    <option value="jp_JP" >日本語</option>
+                    <option value="de_DE" >Deutsch</option>
+                    <option value="fr_FR" >Français</option>
+                    <option value="es_ES" >Español</option>
+                    <option value="it_IT" >Italiano</option>
+                    <option value="pt_BR" >Português</option>
+                </select>
+
+                <button class="darkmode-toggle" aria-label="darkmode toggle" data-site-theme data-tooltip="Toggle Darkmode">
+                    <i class="fas fa-lg fa-moon" data-icon></i>
+                </button>
+
+                <div class="user-menu">
+
+                    <button data-user-button>
+                        <i class="fas fa-lg fa-user"></i>
+                    </button>
+
+                    <div class="user-menu-dd" data-user-menu>
+                                                    <div class="username italic">not logged in</div>
+                            <div class="user-options">
+                                <a href="https://account.limitlesstcg.com/login?redirect=https%3A%2F%2Flimitlesstcg.com">
+                                    <i class="fas fa-sign-in-alt"></i>
+                                    Log In
+                                </a>
+                                <a href="https://account.limitlesstcg.com/signup">
+                                    <i class="fas fa-user-plus"></i>
+                                    Create Account
+                                </a>
+                            </div>
+                                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container header">
+        <a class="site-logo" href="/">
+            <img src="https://limitless3.nyc3.cdn.digitaloceanspaces.com/limitless/logo.png" alt="Limitless">
+        </a>
+
+                <form class="site-search" method="get" action="/" data-lang="en">
+            <div class="category-label">
+                <span class="selected-category">Cards</span>
+                <i class="fas fa-sm fa-caret-down"></i>
+            </div>
+
+            <select name="type" class="category-select">
+                
+                <option value="cards"  selected >Cards</option>
+                <option value="tournaments" >Tournaments</option>
+                <option value="decks" >Decks</option>
+                <option value="players" >Players</option>
+            </select>
+
+            <input type="text" name="q" placeholder="Search database" autocomplete="off" autocapitalize="off"
+                autocorrect="off" >
+
+            <button type="submit" aria-label="submit search">
+                <i class="fas fa-lg fa-search"></i>
+            </button>
+
+            <div class="search-suggestions" data-suggestions>
+                <span class="suggestions-message" data-message></span>
+                <div class="suggestions-list" data-options>
+                </div>
+            </div>
+        </form>
+
+        <nav class="site-nav resp-nav" data-site-nav>
+            <button class="nav-toggle">
+                <i data-open class="fas fa-lg fa-bars"></i>
+                <i data-close class="fas fa-lg fa-times" style="display: none"></i>
+            </button>
+
+            <ul class="links">
+                
+                <li><a href="/tournaments">Tournaments</a></li>
+                <li><a href="/decks">Decks</a></li>
+                <li class="sub-category">
+                    <a href="/cards">Cards</a>
+                    <ul class="sub-menu">
+                        <li><a href="/cards/advanced">Advanced Search</a></li>
+                        <li><a href="/cards/syntax">Search Syntax</a></li>
+                        <li><a href="/translations">Translations</a></li>
+                    </ul>
+                </li>
+                <li class="sub-category">
+                    <a href="/tools">Tools</a>
+                    <ul class="sub-menu shift">
+                        <li><a href="/tools/proxies">Proxy Printer</a></li>
+                        <li><a href="/tools/swisscalc">Swiss Calculator</a></li>
+                        <li><a href="/tools/imggen">Image Generator</a></li>
+                        <li><a href="/tools/drawcalc">DrawCalc</a></li>
+                        <li><a href="/tools/tabletop">Tabletop</a></li>
+                        <li><a href="https://my.limitlesstcg.com/builder">Deck Builder (Beta)</a></li>
+                        <li><a href="https://labs.limitlesstcg.com">Labs</a></li>
+                        <li><a href="/tools/mfy">Metafy Hub</a></li>
+                    </ul>
+                </li>
+                <li class="sub-category more">
+                    <a class="expand">More</a>
+                    <ul class="sub-menu shift">
+                        <li><a href="/players">Rankings</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="https://play.limitlesstcg.com">Play</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <div class="before-content">
+<div class="container secondary-menu">
+    <ul class="nav">
+        <li class=""><a href="/cards">International</a></li>
+        <li class="active"><a href="/cards/jp">Japan</a></li>
+        <li><a href="/cards/pokedex">Pokédex</a></li>
+        <li><a href="https://pocket.limitlesstcg.com/cards" class="external">Pocket</a></li>
+    </ul>
+</div>
+
+</div>
+
+            <div id="top_lb_placeholder" class="container dont-print top-banner">
+            <div class="patreon-note">
+                <a href="https://www.patreon.com/limitlesstcg/membership" target="_blank">
+                    <img src="https://limitless3.nyc3.cdn.digitaloceanspaces.com/web/patreon.png" alt="Patreon" class="invert">
+                    You can support us on Patreon to remove ads.
+                </a>
+            </div>
+        </div>
+    
+    <main>
+        <div class="container content">
+<div class="options-group">
+    <div class="options-row">
+        <label for="set-products-select">Show</label>
+        <select id="set-products-select" name="products" data-reload>
+            <option value="all"  selected >All sets</option>
+            <option value="main" >Main expansions</option>
+            <option value="side" >Side products</option>
+        </select>
+    </div>
+
+    <div class="options-row">
+        <label for="lang-select">Language</label>
+<select id="lang-select" data-card-language data-location="" >
+            <option value="jp"  selected >Japanese</option>
+        <option value="jp" data-translate="en" >English (transl.)</option>
+    </select>    </div>
+</div>
+
+<table class="data-table sets-table striped">
+        <tr>
+        <th>Name</th>
+        <th>Release Date</th>
+        <th class="md-only">Cards</th>
+            </tr>
+            <tr>
+            <th class="sub-heading" colspan=4>Mega</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/jp/M6a"><img class="set" alt="M6a" src="https://s3.limitlesstcg.com/sets/jp/M6a.png"> 30th Celebration <span class="code annotation">M6a</span></a></td>
+                <td><a href="/cards/jp/M6a">16 Sep 26</a></td>
+                <td class="md-only"><a href="/cards/jp/M6a">111 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">19.82%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MF"><img class="set" alt="MF" src="https://s3.limitlesstcg.com/sets/jp/MF.png"> 30th Celebration Premium Deck Set Espeon &amp; Umbreon <span class="code annotation">MF</span></a></td>
+                <td><a href="/cards/jp/MF">16 Sep 26</a></td>
+                <td class="md-only"><a href="/cards/jp/MF">49 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.73%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M6"><img class="set" alt="M6" src="https://s3.limitlesstcg.com/sets/jp/M6.png"> Storm Emeralda <span class="code annotation">M6</span></a></td>
+                <td><a href="/cards/jp/M6">31 Jul 26</a></td>
+                <td class="md-only"><a href="/cards/jp/M6">113 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">16.81%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MEE"><img class="set" alt="MEE" src="https://s3.limitlesstcg.com/sets/jp/MEE.png"> ex Starter Set Eevee ex <span class="code annotation">MEE</span></a></td>
+                <td><a href="/cards/jp/MEE">31 Jul 26</a></td>
+                <td class="md-only"><a href="/cards/jp/MEE">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MEM"><img class="set" alt="MEM" src="https://s3.limitlesstcg.com/sets/jp/MEM.png"> ex Starter Set Sprigatito &amp; Meowscarada ex <span class="code annotation">MEM</span></a></td>
+                <td><a href="/cards/jp/MEM">31 Jul 26</a></td>
+                <td class="md-only"><a href="/cards/jp/MEM">18 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.89%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MEZ"><img class="set" alt="MEZ" src="https://s3.limitlesstcg.com/sets/jp/MEZ.png"> ex Starter Set Zorua &amp; Zoroark ex <span class="code annotation">MEZ</span></a></td>
+                <td><a href="/cards/jp/MEZ">31 Jul 26</a></td>
+                <td class="md-only"><a href="/cards/jp/MEZ">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M5"><img class="set" alt="M5" src="https://s3.limitlesstcg.com/sets/jp/M5.png"> Abyss Eye <span class="code annotation">M5</span></a></td>
+                <td><a href="/cards/jp/M5">22 May 26</a></td>
+                <td class="md-only"><a href="/cards/jp/M5">118 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">45.76%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M4"><img class="set" alt="M4" src="https://s3.limitlesstcg.com/sets/jp/M4.png"> Ninja Spinner <span class="code annotation">M4</span></a></td>
+                <td><a href="/cards/jp/M4">13 Mar 26</a></td>
+                <td class="md-only"><a href="/cards/jp/M4">120 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">32.50%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M3"><img class="set" alt="M3" src="https://s3.limitlesstcg.com/sets/jp/M3.png"> Nihil Zero <span class="code annotation">M3</span></a></td>
+                <td><a href="/cards/jp/M3">23 Jan 26</a></td>
+                <td class="md-only"><a href="/cards/jp/M3">117 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">41.88%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MC"><img class="set" alt="MC" src="https://s3.limitlesstcg.com/sets/jp/MC.png"> Starter Decks 100 Battle Collection <span class="code annotation">MC</span></a></td>
+                <td><a href="/cards/jp/MC">19 Dec 25</a></td>
+                <td class="md-only"><a href="/cards/jp/MC">774 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">39.79%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MP1"><img class="set" alt="MP1" src="https://s3.limitlesstcg.com/sets/jp/MP1.png"> Starter Decks 100 Battle Collection CoroCiao ver. <span class="code annotation">MP1</span></a></td>
+                <td><a href="/cards/jp/MP1">19 Dec 25</a></td>
+                <td class="md-only"><a href="/cards/jp/MP1">23 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.78%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M2a"><img class="set" alt="M2a" src="https://s3.limitlesstcg.com/sets/jp/M2a.png"> Mega Dream ex <span class="code annotation">M2a</span></a></td>
+                <td><a href="/cards/jp/M2a">28 Nov 25</a></td>
+                <td class="md-only"><a href="/cards/jp/M2a">250 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">73.60%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M2"><img class="set" alt="M2" src="https://s3.limitlesstcg.com/sets/jp/M2.png"> Inferno X <span class="code annotation">M2</span></a></td>
+                <td><a href="/cards/jp/M2">26 Sep 25</a></td>
+                <td class="md-only"><a href="/cards/jp/M2">116 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.41%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MBD"><img class="set" alt="MBD" src="https://s3.limitlesstcg.com/sets/jp/MBD.png"> MEGA Starter Set Mega Diancie ex <span class="code annotation">MBD</span></a></td>
+                <td><a href="/cards/jp/MBD">05 Sep 25</a></td>
+                <td class="md-only"><a href="/cards/jp/MBD">22 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">63.64%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MBG"><img class="set" alt="MBG" src="https://s3.limitlesstcg.com/sets/jp/MBG.png"> MEGA Starter Set Mega Gengar ex <span class="code annotation">MBG</span></a></td>
+                <td><a href="/cards/jp/MBG">05 Sep 25</a></td>
+                <td class="md-only"><a href="/cards/jp/MBG">22 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">77.27%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M1L"><img class="set" alt="M1L" src="https://s3.limitlesstcg.com/sets/jp/M1L.png" loading="lazy"> Mega Brave <span class="code annotation">M1L</span></a></td>
+                <td><a href="/cards/jp/M1L">01 Aug 25</a></td>
+                <td class="md-only"><a href="/cards/jp/M1L">92 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.43%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/M1S"><img class="set" alt="M1S" src="https://s3.limitlesstcg.com/sets/jp/M1S.png" loading="lazy"> Mega Symphonia <span class="code annotation">M1S</span></a></td>
+                <td><a href="/cards/jp/M1S">01 Aug 25</a></td>
+                <td class="md-only"><a href="/cards/jp/M1S">92 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.83%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MA"><img class="set" alt="MA" src="https://s3.limitlesstcg.com/sets/jp/MA.png" loading="lazy"> Premium Trainer Box MEGA <span class="code annotation">MA</span></a></td>
+                <td><a href="/cards/jp/MA">01 Aug 25</a></td>
+                <td class="md-only"><a href="/cards/jp/MA">43 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MP"><img class="set" alt="MP" src="https://s3.limitlesstcg.com/sets/jp/MP.png" loading="lazy"> Mega Promotional Cards <span class="code annotation">MP</span></a></td>
+                <td><a href="/cards/jp/MP"></a></td>
+                <td class="md-only"><a href="/cards/jp/MP">166 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">61.45%</span></a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=4>Scarlet &amp; Violet</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV11B"><img class="set" alt="SV11B" src="https://s3.limitlesstcg.com/sets/jp/SV11B.png" loading="lazy"> Black Bolt <span class="code annotation">SV11B</span></a></td>
+                <td><a href="/cards/jp/SV11B">06 Jun 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SV11B">174 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">24.71%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV11W"><img class="set" alt="SV11W" src="https://s3.limitlesstcg.com/sets/jp/SV11W.png" loading="lazy"> White Flare <span class="code annotation">SV11W</span></a></td>
+                <td><a href="/cards/jp/SV11W">06 Jun 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SV11W">174 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">18.39%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV10"><img class="set" alt="SV10" src="https://s3.limitlesstcg.com/sets/jp/SV10.png" loading="lazy"> Glory of Team Rocket <span class="code annotation">SV10</span></a></td>
+                <td><a href="/cards/jp/SV10">18 Apr 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SV10">132 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.64%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV9a"><img class="set" alt="SV9a" src="https://s3.limitlesstcg.com/sets/jp/SV9a.png" loading="lazy"> Heat Wave Arena <span class="code annotation">SV9a</span></a></td>
+                <td><a href="/cards/jp/SV9a">14 Mar 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SV9a">92 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">51.09%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVOD"><img class="set" alt="SVOD" src="https://s3.limitlesstcg.com/sets/jp/SVOD.png" loading="lazy"> ex Starter Set Steven&#039;s Beldum &amp; Metagross ex <span class="code annotation">SVOD</span></a></td>
+                <td><a href="/cards/jp/SVOD">21 Feb 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SVOD">19 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">84.21%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVOM"><img class="set" alt="SVOM" src="https://s3.limitlesstcg.com/sets/jp/SVOM.png" loading="lazy"> ex Starter Set Marnie&#039;s Morpeko &amp; Grimmsnarl ex <span class="code annotation">SVOM</span></a></td>
+                <td><a href="/cards/jp/SVOM">21 Feb 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SVOM">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">80.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV9"><img class="set" alt="SV9" src="https://s3.limitlesstcg.com/sets/jp/SV9.png" loading="lazy"> Battle Partners <span class="code annotation">SV9</span></a></td>
+                <td><a href="/cards/jp/SV9">24 Jan 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SV9">132 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.97%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVN"><img class="set" alt="SVN" src="https://s3.limitlesstcg.com/sets/jp/SVN.png" loading="lazy"> Battle Partners Deck Build Box <span class="code annotation">SVN</span></a></td>
+                <td><a href="/cards/jp/SVN">24 Jan 25</a></td>
+                <td class="md-only"><a href="/cards/jp/SVN">45 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV8a"><img class="set" alt="SV8a" src="https://s3.limitlesstcg.com/sets/jp/SV8a.png" loading="lazy"> Terastal Fest ex <span class="code annotation">SV8a</span></a></td>
+                <td><a href="/cards/jp/SV8a">06 Dec 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV8a">237 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">82.28%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVM"><img class="set" alt="SVM" src="https://s3.limitlesstcg.com/sets/jp/SVM.png" loading="lazy"> Starter Decks Generations <span class="code annotation">SVM</span></a></td>
+                <td><a href="/cards/jp/SVM">22 Nov 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVM">175 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.57%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV8"><img class="set" alt="SV8" src="https://s3.limitlesstcg.com/sets/jp/SV8.png" loading="lazy"> Super Electric Breaker <span class="code annotation">SV8</span></a></td>
+                <td><a href="/cards/jp/SV8">18 Oct 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV8">137 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">45.26%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV7a"><img class="set" alt="SV7a" src="https://s3.limitlesstcg.com/sets/jp/SV7a.png" loading="lazy"> Paradise Dragona <span class="code annotation">SV7a</span></a></td>
+                <td><a href="/cards/jp/SV7a">13 Sep 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV7a">94 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.62%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVLN"><img class="set" alt="SVLN" src="https://s3.limitlesstcg.com/sets/jp/SVLN.png" loading="lazy"> Stellar Tera Type Starter Set Sylveon ex <span class="code annotation">SVLN</span></a></td>
+                <td><a href="/cards/jp/SVLN">30 Aug 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVLN">22 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">72.73%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVLS"><img class="set" alt="SVLS" src="https://s3.limitlesstcg.com/sets/jp/SVLS.png" loading="lazy"> Stellar Tera Type Starter Set Ceruledge ex <span class="code annotation">SVLS</span></a></td>
+                <td><a href="/cards/jp/SVLS">30 Aug 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVLS">22 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">77.27%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV7"><img class="set" alt="SV7" src="https://s3.limitlesstcg.com/sets/jp/SV7.png" loading="lazy"> Stellar Miracle <span class="code annotation">SV7</span></a></td>
+                <td><a href="/cards/jp/SV7">19 Jul 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV7">135 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.52%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVK"><img class="set" alt="SVK" src="https://s3.limitlesstcg.com/sets/jp/SVK.png" loading="lazy"> Stellar Miracle Deck Build Box <span class="code annotation">SVK</span></a></td>
+                <td><a href="/cards/jp/SVK">19 Jul 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVK">44 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV6a"><img class="set" alt="SV6a" src="https://s3.limitlesstcg.com/sets/jp/SV6a.png" loading="lazy"> Night Wanderer <span class="code annotation">SV6a</span></a></td>
+                <td><a href="/cards/jp/SV6a">07 Jun 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV6a">94 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">59.57%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVJL"><img class="set" alt="SVJL" src="https://s3.limitlesstcg.com/sets/jp/SVJL.png" loading="lazy"> Battle Master Deck Charizard ex <span class="code annotation">SVJL</span></a></td>
+                <td><a href="/cards/jp/SVJL">17 May 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVJL">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">95.24%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVJP"><img class="set" alt="SVJP" src="https://s3.limitlesstcg.com/sets/jp/SVJP.png" loading="lazy"> Battle Master Deck Chien-Pao ex <span class="code annotation">SVJP</span></a></td>
+                <td><a href="/cards/jp/SVJP">17 May 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVJP">19 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV6"><img class="set" alt="SV6" src="https://s3.limitlesstcg.com/sets/jp/SV6.png" loading="lazy"> Mask of Change <span class="code annotation">SV6</span></a></td>
+                <td><a href="/cards/jp/SV6">26 Apr 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV6">133 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">62.41%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV5a"><img class="set" alt="SV5a" src="https://s3.limitlesstcg.com/sets/jp/SV5a.png" loading="lazy"> Crimson Haze <span class="code annotation">SV5a</span></a></td>
+                <td><a href="/cards/jp/SV5a">22 Mar 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV5a">96 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.92%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVI"><img class="set" alt="SVI" src="https://s3.limitlesstcg.com/sets/jp/SVI.png" loading="lazy"> Scarlet &amp; Violet: Battle Academy <span class="code annotation">SVI</span></a></td>
+                <td><a href="/cards/jp/SVI">08 Mar 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVI">74 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.54%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV5K"><img class="set" alt="SV5K" src="https://s3.limitlesstcg.com/sets/jp/SV5K.png" loading="lazy"> Wild Force <span class="code annotation">SV5K</span></a></td>
+                <td><a href="/cards/jp/SV5K">26 Jan 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV5K">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV5M"><img class="set" alt="SV5M" src="https://s3.limitlesstcg.com/sets/jp/SV5M.png" loading="lazy"> Cyber Judge <span class="code annotation">SV5M</span></a></td>
+                <td><a href="/cards/jp/SV5M">26 Jan 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SV5M">100 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">49.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVHK"><img class="set" alt="SVHK" src="https://s3.limitlesstcg.com/sets/jp/SVHK.png" loading="lazy"> Ancient Koraidon ex Starter Deck &amp; Build Set <span class="code annotation">SVHK</span></a></td>
+                <td><a href="/cards/jp/SVHK">26 Jan 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVHK">53 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">88.68%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVHM"><img class="set" alt="SVHM" src="https://s3.limitlesstcg.com/sets/jp/SVHM.png" loading="lazy"> Future Miradon ex Starter Deck &amp; Build Set <span class="code annotation">SVHM</span></a></td>
+                <td><a href="/cards/jp/SVHM">26 Jan 24</a></td>
+                <td class="md-only"><a href="/cards/jp/SVHM">53 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">86.79%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV4a"><img class="set" alt="SV4a" src="https://s3.limitlesstcg.com/sets/jp/SV4a.png" loading="lazy"> Shiny Treasure ex <span class="code annotation">SV4a</span></a></td>
+                <td><a href="/cards/jp/SV4a">01 Dec 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV4a">360 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.83%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVG"><img class="set" alt="SVG" src="https://s3.limitlesstcg.com/sets/jp/SVG.png" loading="lazy"> Special Deck Set ex Venusaur &amp; Charizard &amp; Blastoise <span class="code annotation">SVG</span></a></td>
+                <td><a href="/cards/jp/SVG">10 Nov 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVG">52 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">65.38%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV4K"><img class="set" alt="SV4K" src="https://s3.limitlesstcg.com/sets/jp/SV4K.png" loading="lazy"> Ancient Roar <span class="code annotation">SV4K</span></a></td>
+                <td><a href="/cards/jp/SV4K">27 Oct 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV4K">94 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.68%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV4M"><img class="set" alt="SV4M" src="https://s3.limitlesstcg.com/sets/jp/SV4M.png" loading="lazy"> Future Flash <span class="code annotation">SV4M</span></a></td>
+                <td><a href="/cards/jp/SV4M">27 Oct 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV4M">94 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.68%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV3a"><img class="set" alt="SV3a" src="https://s3.limitlesstcg.com/sets/jp/SV3a.png" loading="lazy"> Raging Surf <span class="code annotation">SV3a</span></a></td>
+                <td><a href="/cards/jp/SV3a">22 Sep 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV3a">92 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">50.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVEL"><img class="set" alt="SVEL" src="https://s3.limitlesstcg.com/sets/jp/SVEL.png" loading="lazy"> Terastal Starter Set Skeledirge ex <span class="code annotation">SVEL</span></a></td>
+                <td><a href="/cards/jp/SVEL">22 Sep 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVEL">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">65.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVEM"><img class="set" alt="SVEM" src="https://s3.limitlesstcg.com/sets/jp/SVEM.png" loading="lazy"> Terastal Starter Set Mewtwo ex <span class="code annotation">SVEM</span></a></td>
+                <td><a href="/cards/jp/SVEM">22 Sep 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVEM">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">75.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV3"><img class="set" alt="SV3" src="https://s3.limitlesstcg.com/sets/jp/SV3.png" loading="lazy"> Ruler of the Black Flame <span class="code annotation">SV3</span></a></td>
+                <td><a href="/cards/jp/SV3">28 Jul 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV3">141 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.04%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVF"><img class="set" alt="SVF" src="https://s3.limitlesstcg.com/sets/jp/SVF.png" loading="lazy"> Deck Build Box Ruler of the Black Flame <span class="code annotation">SVF</span></a></td>
+                <td><a href="/cards/jp/SVF">28 Jul 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVF">38 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/WCS23"><img class="set" alt="WCS23" src="https://s3.limitlesstcg.com/sets/jp/WCS23.png" loading="lazy"> World Championships 2023 Yokohama Deck –Pikachu– <span class="code annotation">WCS23</span></a></td>
+                <td><a href="/cards/jp/WCS23">28 Jul 23</a></td>
+                <td class="md-only"><a href="/cards/jp/WCS23">32 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.13%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVD"><img class="set" alt="SVD" src="https://s3.limitlesstcg.com/sets/jp/SVD.png" loading="lazy"> ex Starter Decks <span class="code annotation">SVD</span></a></td>
+                <td><a href="/cards/jp/SVD">07 Jul 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVD">139 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">35.25%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV2a"><img class="set" alt="SV2a" src="https://s3.limitlesstcg.com/sets/jp/SV2a.png" loading="lazy"> Pokémon Card 151 <span class="code annotation">SV2a</span></a></td>
+                <td><a href="/cards/jp/SV2a">16 Jun 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV2a">210 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">31.90%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVP1"><img class="set" alt="SVP1" src="https://s3.limitlesstcg.com/sets/jp/SVP1.png" loading="lazy"> ex Special Set <span class="code annotation">SVP1</span></a></td>
+                <td><a href="/cards/jp/SVP1">19 May 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVP1">7 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">28.57%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV2D"><img class="set" alt="SV2D" src="https://s3.limitlesstcg.com/sets/jp/SV2D.png" loading="lazy"> Clay Burst <span class="code annotation">SV2D</span></a></td>
+                <td><a href="/cards/jp/SV2D">14 Apr 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV2D">99 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.44%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV2P"><img class="set" alt="SV2P" src="https://s3.limitlesstcg.com/sets/jp/SV2P.png" loading="lazy"> Snow Hazard <span class="code annotation">SV2P</span></a></td>
+                <td><a href="/cards/jp/SV2P">14 Apr 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV2P">99 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.46%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVC"><img class="set" alt="SVC" src="https://s3.limitlesstcg.com/sets/jp/SVC.png" loading="lazy"> ex Starter Set Pikachu ex &amp; Pawmot <span class="code annotation">SVC</span></a></td>
+                <td><a href="/cards/jp/SVC">24 Mar 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVC">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.38%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV1a"><img class="set" alt="SV1a" src="https://s3.limitlesstcg.com/sets/jp/SV1a.png" loading="lazy"> Triplet Beat <span class="code annotation">SV1a</span></a></td>
+                <td><a href="/cards/jp/SV1a">10 Mar 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV1a">103 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.95%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV1S"><img class="set" alt="SV1S" src="https://s3.limitlesstcg.com/sets/jp/SV1S.png" loading="lazy"> Scarlet ex <span class="code annotation">SV1S</span></a></td>
+                <td><a href="/cards/jp/SV1S">20 Jan 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV1S">108 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">49.07%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SV1V"><img class="set" alt="SV1V" src="https://s3.limitlesstcg.com/sets/jp/SV1V.png" loading="lazy"> Violet ex <span class="code annotation">SV1V</span></a></td>
+                <td><a href="/cards/jp/SV1V">20 Jan 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SV1V">108 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.89%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVAL"><img class="set" alt="SVAL" src="https://s3.limitlesstcg.com/sets/jp/SVAL.png" loading="lazy"> ex Starter Set Fuecoco &amp; Ampharos ex <span class="code annotation">SVAL</span></a></td>
+                <td><a href="/cards/jp/SVAL">20 Jan 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVAL">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">57.14%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVAM"><img class="set" alt="SVAM" src="https://s3.limitlesstcg.com/sets/jp/SVAM.png" loading="lazy"> ex Starter Set Sprigatito &amp; Lucario ex <span class="code annotation">SVAM</span></a></td>
+                <td><a href="/cards/jp/SVAM">20 Jan 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVAM">23 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.83%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVAW"><img class="set" alt="SVAW" src="https://s3.limitlesstcg.com/sets/jp/SVAW.png" loading="lazy"> ex Starter Set Quaxly &amp; Mimikyu ex <span class="code annotation">SVAW</span></a></td>
+                <td><a href="/cards/jp/SVAW">20 Jan 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVAW">23 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.87%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVB"><img class="set" alt="SVB" src="https://s3.limitlesstcg.com/sets/jp/SVB.png" loading="lazy"> Premium Trainer Box ex <span class="code annotation">SVB</span></a></td>
+                <td><a href="/cards/jp/SVB">20 Jan 23</a></td>
+                <td class="md-only"><a href="/cards/jp/SVB">28 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SVP"><img class="set" alt="SVP" src="https://s3.limitlesstcg.com/sets/jp/SVP.png" loading="lazy"> Scarlet &amp; Violet Promotional Cards <span class="code annotation">SVP</span></a></td>
+                <td><a href="/cards/jp/SVP"></a></td>
+                <td class="md-only"><a href="/cards/jp/SVP">300 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">61.00%</span></a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=4>Sword &amp; Shield</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/jp/S12a"><img class="set" alt="S12a" src="https://s3.limitlesstcg.com/sets/jp/S12a.png" loading="lazy"> VSTAR Universe <span class="code annotation">S12a</span></a></td>
+                <td><a href="/cards/jp/S12a">02 Dec 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S12a">254 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">75.98%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SO"><img class="set" alt="SO" src="https://s3.limitlesstcg.com/sets/jp/SO.png" loading="lazy"> Special Deck Set: Charizard VSTAR vs Rayquaza VMAX <span class="code annotation">SO</span></a></td>
+                <td><a href="/cards/jp/SO">04 Nov 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SO">32 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">68.75%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S12"><img class="set" alt="S12" src="https://s3.limitlesstcg.com/sets/jp/S12.png" loading="lazy"> Paradigm Trigger <span class="code annotation">S12</span></a></td>
+                <td><a href="/cards/jp/S12">21 Oct 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S12">125 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">35.20%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S11a"><img class="set" alt="S11a" src="https://s3.limitlesstcg.com/sets/jp/S11a.png" loading="lazy"> Incandescent Arcana <span class="code annotation">S11a</span></a></td>
+                <td><a href="/cards/jp/S11a">02 Sep 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S11a">94 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.81%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SP6"><img class="set" alt="SP6" src="https://s3.limitlesstcg.com/sets/jp/SP6.png" loading="lazy"> VSTAR Special Set <span class="code annotation">SP6</span></a></td>
+                <td><a href="/cards/jp/SP6">05 Aug 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SP6">6 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">66.67%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S11"><img class="set" alt="S11" src="https://s3.limitlesstcg.com/sets/jp/S11.png" loading="lazy"> Lost Abyss <span class="code annotation">S11</span></a></td>
+                <td><a href="/cards/jp/S11">15 Jul 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S11">127 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">39.37%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SPD"><img class="set" alt="SPD" src="https://s3.limitlesstcg.com/sets/jp/SPD.png" loading="lazy"> VSTAR&amp;VMAX High-Class Deck Deoxys <span class="code annotation">SPD</span></a></td>
+                <td><a href="/cards/jp/SPD">15 Jul 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SPD">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">85.71%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SPZ"><img class="set" alt="SPZ" src="https://s3.limitlesstcg.com/sets/jp/SPZ.png" loading="lazy"> VSTAR&amp;VMAX High-Class Deck Zeraora <span class="code annotation">SPZ</span></a></td>
+                <td><a href="/cards/jp/SPZ">15 Jul 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SPZ">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">90.48%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S10b"><img class="set" alt="S10b" src="https://s3.limitlesstcg.com/sets/jp/S10b.png" loading="lazy"> Pokémon GO <span class="code annotation">S10b</span></a></td>
+                <td><a href="/cards/jp/S10b">17 Jun 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S10b">101 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.63%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S10a"><img class="set" alt="S10a" src="https://s3.limitlesstcg.com/sets/jp/S10a.png" loading="lazy"> Dark Phantasma <span class="code annotation">S10a</span></a></td>
+                <td><a href="/cards/jp/S10a">13 May 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S10a">99 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">48.48%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S10D"><img class="set" alt="S10D" src="https://s3.limitlesstcg.com/sets/jp/S10D.png" loading="lazy"> Time Gazer <span class="code annotation">S10D</span></a></td>
+                <td><a href="/cards/jp/S10D">08 Apr 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S10D">88 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.91%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S10P"><img class="set" alt="S10P" src="https://s3.limitlesstcg.com/sets/jp/S10P.png" loading="lazy"> Space Juggler <span class="code annotation">S10P</span></a></td>
+                <td><a href="/cards/jp/S10P">08 Apr 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S10P">88 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">37.50%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SN"><img class="set" alt="SN" src="https://s3.limitlesstcg.com/sets/jp/SN.png" loading="lazy"> Starter Deck 100 CoroCoro ver. <span class="code annotation">SN</span></a></td>
+                <td><a href="/cards/jp/SN">01 Mar 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SN">25 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">48.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S9a"><img class="set" alt="S9a" src="https://s3.limitlesstcg.com/sets/jp/S9a.png" loading="lazy"> Battle Region <span class="code annotation">S9a</span></a></td>
+                <td><a href="/cards/jp/S9a">25 Feb 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S9a">93 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.09%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SLD"><img class="set" alt="SLD" src="https://s3.limitlesstcg.com/sets/jp/SLD.png" loading="lazy"> Starter Set Darkrai VSTAR <span class="code annotation">SLD</span></a></td>
+                <td><a href="/cards/jp/SLD">25 Feb 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SLD">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SLL"><img class="set" alt="SLL" src="https://s3.limitlesstcg.com/sets/jp/SLL.png" loading="lazy"> Starter Set Lucario VSTAR <span class="code annotation">SLL</span></a></td>
+                <td><a href="/cards/jp/SLL">25 Feb 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SLL">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">66.67%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S9"><img class="set" alt="S9" src="https://s3.limitlesstcg.com/sets/jp/S9.png" loading="lazy"> Star Birth <span class="code annotation">S9</span></a></td>
+                <td><a href="/cards/jp/S9">14 Jan 22</a></td>
+                <td class="md-only"><a href="/cards/jp/S9">127 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.88%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SK"><img class="set" alt="SK" src="https://s3.limitlesstcg.com/sets/jp/SK.png" loading="lazy"> VSTAR Premium Trainer Box <span class="code annotation">SK</span></a></td>
+                <td><a href="/cards/jp/SK">14 Jan 22</a></td>
+                <td class="md-only"><a href="/cards/jp/SK">30 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">90.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SI"><img class="set" alt="SI" src="https://s3.limitlesstcg.com/sets/jp/SI.png" loading="lazy"> Starter Decks 100 <span class="code annotation">SI</span></a></td>
+                <td><a href="/cards/jp/SI">17 Dec 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SI">427 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.53%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S8b"><img class="set" alt="S8b" src="https://s3.limitlesstcg.com/sets/jp/S8b.png" loading="lazy"> VMAX Climax <span class="code annotation">S8b</span></a></td>
+                <td><a href="/cards/jp/S8b">03 Dec 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S8b">277 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">72.56%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SJ"><img class="set" alt="SJ" src="https://s3.limitlesstcg.com/sets/jp/SJ.png" loading="lazy"> Special Deck Set: Zacian &amp; Zamazenta vs Eternatus <span class="code annotation">SJ</span></a></td>
+                <td><a href="/cards/jp/SJ">05 Nov 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SJ">30 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">56.67%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S8a"><img class="set" alt="S8a" src="https://s3.limitlesstcg.com/sets/jp/S8a.png" loading="lazy"> 25th Anniversary Collection <span class="code annotation">S8a</span></a></td>
+                <td><a href="/cards/jp/S8a">21 Oct 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S8a">37 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">48.65%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S8"><img class="set" alt="S8" src="https://s3.limitlesstcg.com/sets/jp/S8.png" loading="lazy"> Fusion Arts <span class="code annotation">S8</span></a></td>
+                <td><a href="/cards/jp/S8">24 Sep 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S8">115 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.91%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SP5"><img class="set" alt="SP5" src="https://s3.limitlesstcg.com/sets/jp/SP5.png" loading="lazy"> V-UNION Special Card Sets <span class="code annotation">SP5</span></a></td>
+                <td><a href="/cards/jp/SP5">20 Aug 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SP5">13 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.46%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S7D"><img class="set" alt="S7D" src="https://s3.limitlesstcg.com/sets/jp/S7D.png" loading="lazy"> Skyscraping Perfection <span class="code annotation">S7D</span></a></td>
+                <td><a href="/cards/jp/S7D">09 Jul 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S7D">79 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.30%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S7R"><img class="set" alt="S7R" src="https://s3.limitlesstcg.com/sets/jp/S7R.png" loading="lazy"> Blue Sky Stream <span class="code annotation">S7R</span></a></td>
+                <td><a href="/cards/jp/S7R">09 Jul 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S7R">79 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">41.77%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SH"><img class="set" alt="SH" src="https://s3.limitlesstcg.com/sets/jp/SH.png" loading="lazy"> Family Pokémon Card Game <span class="code annotation">SH</span></a></td>
+                <td><a href="/cards/jp/SH">09 Jul 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SH">59 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">30.51%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S6a"><img class="set" alt="S6a" src="https://s3.limitlesstcg.com/sets/jp/S6a.png" loading="lazy"> Eevee Heroes <span class="code annotation">S6a</span></a></td>
+                <td><a href="/cards/jp/S6a">28 May 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S6a">87 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SGG"><img class="set" alt="SGG" src="https://s3.limitlesstcg.com/sets/jp/SGG.png" loading="lazy"> High-Class Deck Gengar VMAX <span class="code annotation">SGG</span></a></td>
+                <td><a href="/cards/jp/SGG">28 May 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SGG">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SGI"><img class="set" alt="SGI" src="https://s3.limitlesstcg.com/sets/jp/SGI.png" loading="lazy"> High-Class Deck Inteleon VMAX <span class="code annotation">SGI</span></a></td>
+                <td><a href="/cards/jp/SGI">28 May 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SGI">24 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">87.50%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SP4"><img class="set" alt="SP4" src="https://s3.limitlesstcg.com/sets/jp/SP4.png" loading="lazy"> VMAX Special Set Eevee Heroes <span class="code annotation">SP4</span></a></td>
+                <td><a href="/cards/jp/SP4">28 May 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SP4">8 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">75.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S6H"><img class="set" alt="S6H" src="https://s3.limitlesstcg.com/sets/jp/S6H.png" loading="lazy"> Silver Lance <span class="code annotation">S6H</span></a></td>
+                <td><a href="/cards/jp/S6H">23 Apr 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S6H">83 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">31.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S6K"><img class="set" alt="S6K" src="https://s3.limitlesstcg.com/sets/jp/S6K.png" loading="lazy"> Jet-Black Spirit <span class="code annotation">S6K</span></a></td>
+                <td><a href="/cards/jp/S6K">23 Apr 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S6K">83 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.96%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SP3"><img class="set" alt="SP3" src="https://s3.limitlesstcg.com/sets/jp/SP3.png" loading="lazy"> Jumbo-Pack Set Silver Lance &amp; Jet-Black Spirit <span class="code annotation">SP3</span></a></td>
+                <td><a href="/cards/jp/SP3">23 Apr 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SP3">6 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">50.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S5a"><img class="set" alt="S5a" src="https://s3.limitlesstcg.com/sets/jp/S5a.png" loading="lazy"> Matchless Fighters <span class="code annotation">S5a</span></a></td>
+                <td><a href="/cards/jp/S5a">19 Mar 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S5a">84 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S5I"><img class="set" alt="S5I" src="https://s3.limitlesstcg.com/sets/jp/S5I.png" loading="lazy"> Single Strike Master <span class="code annotation">S5I</span></a></td>
+                <td><a href="/cards/jp/S5I">22 Jan 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S5I">81 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">39.51%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S5R"><img class="set" alt="S5R" src="https://s3.limitlesstcg.com/sets/jp/S5R.png" loading="lazy"> Rapid Strike Master <span class="code annotation">S5R</span></a></td>
+                <td><a href="/cards/jp/S5R">22 Jan 21</a></td>
+                <td class="md-only"><a href="/cards/jp/S5R">81 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.44%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SF"><img class="set" alt="SF" src="https://s3.limitlesstcg.com/sets/jp/SF.png" loading="lazy"> Premium Trainer Box Single Strike &amp; Rapid Strike <span class="code annotation">SF</span></a></td>
+                <td><a href="/cards/jp/SF">22 Jan 21</a></td>
+                <td class="md-only"><a href="/cards/jp/SF">33 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">87.88%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SC2"><img class="set" alt="SC2" src="https://s3.limitlesstcg.com/sets/jp/SC2.png" loading="lazy"> Charizard VMAX Starter Set 2 <span class="code annotation">SC2</span></a></td>
+                <td><a href="/cards/jp/SC2">04 Dec 20</a></td>
+                <td class="md-only"><a href="/cards/jp/SC2">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">57.14%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SEF"><img class="set" alt="SEF" src="https://s3.limitlesstcg.com/sets/jp/SEF.png" loading="lazy"> Venusaur VMAX Starter Set <span class="code annotation">SEF</span></a></td>
+                <td><a href="/cards/jp/SEF">04 Dec 20</a></td>
+                <td class="md-only"><a href="/cards/jp/SEF">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.38%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SEK"><img class="set" alt="SEK" src="https://s3.limitlesstcg.com/sets/jp/SEK.png" loading="lazy"> Blastoise VMAX Starter Set <span class="code annotation">SEK</span></a></td>
+                <td><a href="/cards/jp/SEK">04 Dec 20</a></td>
+                <td class="md-only"><a href="/cards/jp/SEK">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S4a"><img class="set" alt="S4a" src="https://s3.limitlesstcg.com/sets/jp/S4a.png" loading="lazy"> Shiny Star V <span class="code annotation">S4a</span></a></td>
+                <td><a href="/cards/jp/S4a">20 Nov 20</a></td>
+                <td class="md-only"><a href="/cards/jp/S4a">326 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">49.39%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SP2"><img class="set" alt="SP2" src="https://s3.limitlesstcg.com/sets/jp/SP2.png" loading="lazy"> VMAX Special Set <span class="code annotation">SP2</span></a></td>
+                <td><a href="/cards/jp/SP2">23 Oct 20</a></td>
+                <td class="md-only"><a href="/cards/jp/SP2">8 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">87.50%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S4"><img class="set" alt="S4" src="https://s3.limitlesstcg.com/sets/jp/S4.png" loading="lazy"> Amazing Volt Tackle <span class="code annotation">S4</span></a></td>
+                <td><a href="/cards/jp/S4">18 Sep 20</a></td>
+                <td class="md-only"><a href="/cards/jp/S4">111 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.23%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S3a"><img class="set" alt="S3a" src="https://s3.limitlesstcg.com/sets/jp/S3a.png" loading="lazy"> Legendary Heartbeat <span class="code annotation">S3a</span></a></td>
+                <td><a href="/cards/jp/S3a">10 Jul 20</a></td>
+                <td class="md-only"><a href="/cards/jp/S3a">85 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.12%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SD"><img class="set" alt="SD" src="https://s3.limitlesstcg.com/sets/jp/SD.png" loading="lazy"> V Starter Decks <span class="code annotation">SD</span></a></td>
+                <td><a href="/cards/jp/SD">10 Jul 20</a></td>
+                <td class="md-only"><a href="/cards/jp/SD">127 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">35.43%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S3"><img class="set" alt="S3" src="https://s3.limitlesstcg.com/sets/jp/S3.png" loading="lazy"> Infinity Zone <span class="code annotation">S3</span></a></td>
+                <td><a href="/cards/jp/S3">05 Jun 20</a></td>
+                <td class="md-only"><a href="/cards/jp/S3">110 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">22.73%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S2a"><img class="set" alt="S2a" src="https://s3.limitlesstcg.com/sets/jp/S2a.png" loading="lazy"> Explosive Walker <span class="code annotation">S2a</span></a></td>
+                <td><a href="/cards/jp/S2a">24 Apr 20</a></td>
+                <td class="md-only"><a href="/cards/jp/S2a">78 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.64%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SCd"><img class="set" alt="SCd" src="https://s3.limitlesstcg.com/sets/jp/SCd.png" loading="lazy"> Grimmsnarl VMAX Starter Set <span class="code annotation">SCd</span></a></td>
+                <td><a href="/cards/jp/SCd">27 Mar 20</a></td>
+                <td class="md-only"><a href="/cards/jp/SCd">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SCr"><img class="set" alt="SCr" src="https://s3.limitlesstcg.com/sets/jp/SCr.png" loading="lazy"> Charizard VMAX Starter Set <span class="code annotation">SCr</span></a></td>
+                <td><a href="/cards/jp/SCr">27 Mar 20</a></td>
+                <td class="md-only"><a href="/cards/jp/SCr">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">57.14%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S2"><img class="set" alt="S2" src="https://s3.limitlesstcg.com/sets/jp/S2.png" loading="lazy"> Rebel Clash <span class="code annotation">S2</span></a></td>
+                <td><a href="/cards/jp/S2">06 Mar 20</a></td>
+                <td class="md-only"><a href="/cards/jp/S2">106 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">31.13%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S1a"><img class="set" alt="S1a" src="https://s3.limitlesstcg.com/sets/jp/S1a.png" loading="lazy"> VMAX Rising <span class="code annotation">S1a</span></a></td>
+                <td><a href="/cards/jp/S1a">07 Feb 20</a></td>
+                <td class="md-only"><a href="/cards/jp/S1a">78 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SP1"><img class="set" alt="SP1" src="https://s3.limitlesstcg.com/sets/jp/SP1.png" loading="lazy"> Zacian &amp; Zamazenta Box <span class="code annotation">SP1</span></a></td>
+                <td><a href="/cards/jp/SP1">27 Dec 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SP1">7 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">28.57%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S1H"><img class="set" alt="S1H" src="https://s3.limitlesstcg.com/sets/jp/S1H.png" loading="lazy"> Shield <span class="code annotation">S1H</span></a></td>
+                <td><a href="/cards/jp/S1H">06 Dec 19</a></td>
+                <td class="md-only"><a href="/cards/jp/S1H">68 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">48.53%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/S1W"><img class="set" alt="S1W" src="https://s3.limitlesstcg.com/sets/jp/S1W.png" loading="lazy"> Sword <span class="code annotation">S1W</span></a></td>
+                <td><a href="/cards/jp/S1W">06 Dec 19</a></td>
+                <td class="md-only"><a href="/cards/jp/S1W">68 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">51.47%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SB"><img class="set" alt="SB" src="https://s3.limitlesstcg.com/sets/jp/SB.png" loading="lazy"> Premium Trainer Box Sword &amp; Shield <span class="code annotation">SB</span></a></td>
+                <td><a href="/cards/jp/SB">06 Dec 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SB">24 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">95.83%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SAf"><img class="set" alt="SAf" src="https://s3.limitlesstcg.com/sets/jp/SAf.png" loading="lazy"> Starter Set V Fighting <span class="code annotation">SAf</span></a></td>
+                <td><a href="/cards/jp/SAf">29 Nov 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SAf">25 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SAg"><img class="set" alt="SAg" src="https://s3.limitlesstcg.com/sets/jp/SAg.png" loading="lazy"> Starter Set V Grass <span class="code annotation">SAg</span></a></td>
+                <td><a href="/cards/jp/SAg">29 Nov 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SAg">24 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">58.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SAl"><img class="set" alt="SAl" src="https://s3.limitlesstcg.com/sets/jp/SAl.png" loading="lazy"> Starter Set V Lightning <span class="code annotation">SAl</span></a></td>
+                <td><a href="/cards/jp/SAl">29 Nov 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SAl">25 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SAr"><img class="set" alt="SAr" src="https://s3.limitlesstcg.com/sets/jp/SAr.png" loading="lazy"> Starter Set V Fire <span class="code annotation">SAr</span></a></td>
+                <td><a href="/cards/jp/SAr">29 Nov 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SAr">24 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">62.50%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SAw"><img class="set" alt="SAw" src="https://s3.limitlesstcg.com/sets/jp/SAw.png" loading="lazy"> Starter Set V Water <span class="code annotation">SAw</span></a></td>
+                <td><a href="/cards/jp/SAw">29 Nov 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SAw">24 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">58.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SP"><img class="set" alt="SP" src="https://s3.limitlesstcg.com/sets/jp/SP.png" loading="lazy"> Sword &amp; Shield Promotional Cards <span class="code annotation">SP</span></a></td>
+                <td><a href="/cards/jp/SP"></a></td>
+                <td class="md-only"><a href="/cards/jp/SP">300 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">41.67%</span></a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=4>Sun &amp; Moon</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM12a"><img class="set" alt="SM12a" src="https://s3.limitlesstcg.com/sets/jp/SM12a.png" loading="lazy"> Tag All Stars <span class="code annotation">SM12a</span></a></td>
+                <td><a href="/cards/jp/SM12a">04 Oct 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM12a">173 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">78.03%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM12"><img class="set" alt="SM12" src="https://s3.limitlesstcg.com/sets/jp/SM12.png" loading="lazy"> Alter Genesis <span class="code annotation">SM12</span></a></td>
+                <td><a href="/cards/jp/SM12">06 Sep 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM12">95 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">30.53%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM11b"><img class="set" alt="SM11b" src="https://s3.limitlesstcg.com/sets/jp/SM11b.png" loading="lazy"> Dream League <span class="code annotation">SM11b</span></a></td>
+                <td><a href="/cards/jp/SM11b">02 Aug 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM11b">68 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">54.41%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM11a"><img class="set" alt="SM11a" src="https://s3.limitlesstcg.com/sets/jp/SM11a.png" loading="lazy"> Remix Bout <span class="code annotation">SM11a</span></a></td>
+                <td><a href="/cards/jp/SM11a">05 Jul 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM11a">73 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.95%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM11"><img class="set" alt="SM11" src="https://s3.limitlesstcg.com/sets/jp/SM11.png" loading="lazy"> Miracle Twin <span class="code annotation">SM11</span></a></td>
+                <td><a href="/cards/jp/SM11">31 May 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM11">106 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.23%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMM"><img class="set" alt="SMM" src="https://s3.limitlesstcg.com/sets/jp/SMM.png" loading="lazy"> Tag Team GX Starter Sets <span class="code annotation">SMM</span></a></td>
+                <td><a href="/cards/jp/SMM">31 May 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SMM">31 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">80.65%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM10b"><img class="set" alt="SM10b" src="https://s3.limitlesstcg.com/sets/jp/SM10b.png" loading="lazy"> Sky Legend <span class="code annotation">SM10b</span></a></td>
+                <td><a href="/cards/jp/SM10b">26 Apr 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM10b">62 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.55%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMP2"><img class="set" alt="SMP2" src="https://s3.limitlesstcg.com/sets/jp/SMP2.png" loading="lazy"> Movie Special Pack Great Detective Pikachu <span class="code annotation">SMP2</span></a></td>
+                <td><a href="/cards/jp/SMP2">26 Apr 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SMP2">25 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">12.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM10a"><img class="set" alt="SM10a" src="https://s3.limitlesstcg.com/sets/jp/SM10a.png" loading="lazy"> GG End <span class="code annotation">SM10a</span></a></td>
+                <td><a href="/cards/jp/SM10a">05 Apr 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM10a">62 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">51.61%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SML"><img class="set" alt="SML" src="https://s3.limitlesstcg.com/sets/jp/SML.png" loading="lazy"> Family Pokémon Card Game <span class="code annotation">SML</span></a></td>
+                <td><a href="/cards/jp/SML">15 Mar 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SML">51 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">29.41%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM10"><img class="set" alt="SM10" src="https://s3.limitlesstcg.com/sets/jp/SM10.png" loading="lazy"> Double Blaze <span class="code annotation">SM10</span></a></td>
+                <td><a href="/cards/jp/SM10">01 Mar 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM10">107 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.75%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMN"><img class="set" alt="SMN" src="https://s3.limitlesstcg.com/sets/jp/SMN.png" loading="lazy"> Tag Team GX Deck Build Box <span class="code annotation">SMN</span></a></td>
+                <td><a href="/cards/jp/SMN">01 Mar 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SMN">29 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM9b"><img class="set" alt="SM9b" src="https://s3.limitlesstcg.com/sets/jp/SM9b.png" loading="lazy"> Full Metal Force <span class="code annotation">SM9b</span></a></td>
+                <td><a href="/cards/jp/SM9b">01 Feb 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM9b">62 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.55%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMK"><img class="set" alt="SMK" src="https://s3.limitlesstcg.com/sets/jp/SMK.png" loading="lazy"> Brock &amp; Misty Trainer Battle Decks <span class="code annotation">SMK</span></a></td>
+                <td><a href="/cards/jp/SMK">25 Jan 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SMK">31 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">41.94%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM9a"><img class="set" alt="SM9a" src="https://s3.limitlesstcg.com/sets/jp/SM9a.png" loading="lazy"> Night Unison <span class="code annotation">SM9a</span></a></td>
+                <td><a href="/cards/jp/SM9a">11 Jan 19</a></td>
+                <td class="md-only"><a href="/cards/jp/SM9a">63 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">47.62%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM9"><img class="set" alt="SM9" src="https://s3.limitlesstcg.com/sets/jp/SM9.png" loading="lazy"> Tag Bolt <span class="code annotation">SM9</span></a></td>
+                <td><a href="/cards/jp/SM9">07 Dec 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM9">109 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.05%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMJ"><img class="set" alt="SMJ" src="https://s3.limitlesstcg.com/sets/jp/SMJ.png" loading="lazy"> Tag Team GX Premium Trainer Box <span class="code annotation">SMJ</span></a></td>
+                <td><a href="/cards/jp/SMJ">07 Dec 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SMJ">35 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">88.57%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMI"><img class="set" alt="SMI" src="https://s3.limitlesstcg.com/sets/jp/SMI.png" loading="lazy"> Starter Sets Flareon &amp; Jolteon &amp; Vaporeon <span class="code annotation">SMI</span></a></td>
+                <td><a href="/cards/jp/SMI">23 Nov 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SMI">38 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">84.21%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM8b"><img class="set" alt="SM8b" src="https://s3.limitlesstcg.com/sets/jp/SM8b.png" loading="lazy"> GX Ultra Shiny <span class="code annotation">SM8b</span></a></td>
+                <td><a href="/cards/jp/SM8b">02 Nov 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM8b">243 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">76.54%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM8a"><img class="set" alt="SM8a" src="https://s3.limitlesstcg.com/sets/jp/SM8a.png" loading="lazy"> Dark Order <span class="code annotation">SM8a</span></a></td>
+                <td><a href="/cards/jp/SM8a">05 Oct 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM8a">58 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.55%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM8"><img class="set" alt="SM8" src="https://s3.limitlesstcg.com/sets/jp/SM8.png" loading="lazy"> Super Burst Impact <span class="code annotation">SM8</span></a></td>
+                <td><a href="/cards/jp/SM8">07 Sep 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM8">103 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.40%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM7b"><img class="set" alt="SM7b" src="https://s3.limitlesstcg.com/sets/jp/SM7b.png" loading="lazy"> Fairy Rise <span class="code annotation">SM7b</span></a></td>
+                <td><a href="/cards/jp/SM7b">03 Aug 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM7b">56 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">57.14%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMH"><img class="set" alt="SMH" src="https://s3.limitlesstcg.com/sets/jp/SMH.png" loading="lazy"> GX Starter Decks <span class="code annotation">SMH</span></a></td>
+                <td><a href="/cards/jp/SMH">13 Jul 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SMH">131 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">54.20%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM7a"><img class="set" alt="SM7a" src="https://s3.limitlesstcg.com/sets/jp/SM7a.png" loading="lazy"> Thunderclap Spark <span class="code annotation">SM7a</span></a></td>
+                <td><a href="/cards/jp/SM7a">06 Jul 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM7a">66 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">59.09%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM7"><img class="set" alt="SM7" src="https://s3.limitlesstcg.com/sets/jp/SM7.png" loading="lazy"> Charisma of the Ripped Sky <span class="code annotation">SM7</span></a></td>
+                <td><a href="/cards/jp/SM7">01 Jun 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM7">104 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.88%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM6b"><img class="set" alt="SM6b" src="https://s3.limitlesstcg.com/sets/jp/SM6b.png" loading="lazy"> Champion&#039;s Road <span class="code annotation">SM6b</span></a></td>
+                <td><a href="/cards/jp/SM6b">03 May 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM6b">77 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">50.65%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM6a"><img class="set" alt="SM6a" src="https://s3.limitlesstcg.com/sets/jp/SM6a.png" loading="lazy"> Dragon Storm <span class="code annotation">SM6a</span></a></td>
+                <td><a href="/cards/jp/SM6a">06 Apr 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM6a">59 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">37.29%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM6"><img class="set" alt="SM6" src="https://s3.limitlesstcg.com/sets/jp/SM6.png" loading="lazy"> Forbidden Light <span class="code annotation">SM6</span></a></td>
+                <td><a href="/cards/jp/SM6">02 Mar 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM6">102 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">54.90%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMG"><img class="set" alt="SMG" src="https://s3.limitlesstcg.com/sets/jp/SMG.png" loading="lazy"> Ultra Sun &amp; Ultra Moon Deck Battle Box <span class="code annotation">SMG</span></a></td>
+                <td><a href="/cards/jp/SMG">16 Feb 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SMG">12 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM5p"><img class="set" alt="SM5p" src="https://s3.limitlesstcg.com/sets/jp/SM5p.png" loading="lazy"> Ultra Force <span class="code annotation">SM5p</span></a></td>
+                <td><a href="/cards/jp/SM5p">19 Jan 18</a></td>
+                <td class="md-only"><a href="/cards/jp/SM5p">56 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.71%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM5M"><img class="set" alt="SM5M" src="https://s3.limitlesstcg.com/sets/jp/SM5M.png" loading="lazy"> Ultra Moon <span class="code annotation">SM5M</span></a></td>
+                <td><a href="/cards/jp/SM5M">08 Dec 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM5M">72 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">59.72%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM5S"><img class="set" alt="SM5S" src="https://s3.limitlesstcg.com/sets/jp/SM5S.png" loading="lazy"> Ultra Sun <span class="code annotation">SM5S</span></a></td>
+                <td><a href="/cards/jp/SM5S">08 Dec 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM5S">72 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">50.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMF"><img class="set" alt="SMF" src="https://s3.limitlesstcg.com/sets/jp/SMF.png" loading="lazy"> Premium Trainer Box Ultra Sun &amp; Ultra Moon <span class="code annotation">SMF</span></a></td>
+                <td><a href="/cards/jp/SMF">08 Dec 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SMF">12 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SME"><img class="set" alt="SME" src="https://s3.limitlesstcg.com/sets/jp/SME.png" loading="lazy"> Starter Set Solgaleo-GX &amp; Lunala-GX <span class="code annotation">SME</span></a></td>
+                <td><a href="/cards/jp/SME">10 Nov 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SME">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">80.95%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM4p"><img class="set" alt="SM4p" src="https://s3.limitlesstcg.com/sets/jp/SM4p.png" loading="lazy"> GX Battle Boost <span class="code annotation">SM4p</span></a></td>
+                <td><a href="/cards/jp/SM4p">20 Oct 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM4p">120 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">72.50%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM4A"><img class="set" alt="SM4A" src="https://s3.limitlesstcg.com/sets/jp/SM4A.png" loading="lazy"> Beasts from the Ultradimension <span class="code annotation">SM4A</span></a></td>
+                <td><a href="/cards/jp/SM4A">15 Sep 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM4A">55 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">29.09%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM4S"><img class="set" alt="SM4S" src="https://s3.limitlesstcg.com/sets/jp/SM4S.png" loading="lazy"> Awakened Heroes <span class="code annotation">SM4S</span></a></td>
+                <td><a href="/cards/jp/SM4S">15 Sep 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM4S">55 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">32.73%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM3p"><img class="set" alt="SM3p" src="https://s3.limitlesstcg.com/sets/jp/SM3p.png" loading="lazy"> Shining Legends <span class="code annotation">SM3p</span></a></td>
+                <td><a href="/cards/jp/SM3p">15 Jul 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM3p">77 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">53.25%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM3H"><img class="set" alt="SM3H" src="https://s3.limitlesstcg.com/sets/jp/SM3H.png" loading="lazy"> Did You See The Fighting Rainbow <span class="code annotation">SM3H</span></a></td>
+                <td><a href="/cards/jp/SM3H">16 Jun 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM3H">57 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.11%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM3N"><img class="set" alt="SM3N" src="https://s3.limitlesstcg.com/sets/jp/SM3N.png" loading="lazy"> Light Consuming Darkness <span class="code annotation">SM3N</span></a></td>
+                <td><a href="/cards/jp/SM3N">16 Jun 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM3N">57 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.86%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM2p"><img class="set" alt="SM2p" src="https://s3.limitlesstcg.com/sets/jp/SM2p.png" loading="lazy"> Let&#039;s Face New Trials <span class="code annotation">SM2p</span></a></td>
+                <td><a href="/cards/jp/SM2p">21 Apr 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM2p">61 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">63.93%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMD"><img class="set" alt="SMD" src="https://s3.limitlesstcg.com/sets/jp/SMD.png" loading="lazy"> Ash VS Team Rocket Half Decks <span class="code annotation">SMD</span></a></td>
+                <td><a href="/cards/jp/SMD">21 Apr 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SMD">30 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.75%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM2K"><img class="set" alt="SM2K" src="https://s3.limitlesstcg.com/sets/jp/SM2K.png" loading="lazy"> Islands Await You <span class="code annotation">SM2K</span></a></td>
+                <td><a href="/cards/jp/SM2K">17 Mar 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM2K">55 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.36%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM2L"><img class="set" alt="SM2L" src="https://s3.limitlesstcg.com/sets/jp/SM2L.png" loading="lazy"> Alolan Moonlight <span class="code annotation">SM2L</span></a></td>
+                <td><a href="/cards/jp/SM2L">17 Mar 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM2L">55 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.73%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMC"><img class="set" alt="SMC" src="https://s3.limitlesstcg.com/sets/jp/SMC.png" loading="lazy"> Starter Set Tapu Bulu-GX <span class="code annotation">SMC</span></a></td>
+                <td><a href="/cards/jp/SMC">17 Mar 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SMC">21 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">85.71%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM1p"><img class="set" alt="SM1p" src="https://s3.limitlesstcg.com/sets/jp/SM1p.png" loading="lazy"> Sun and Moon plus <span class="code annotation">SM1p</span></a></td>
+                <td><a href="/cards/jp/SM1p">27 Jan 17</a></td>
+                <td class="md-only"><a href="/cards/jp/SM1p">63 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">58.73%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMP1"><img class="set" alt="SMP1" src="https://s3.limitlesstcg.com/sets/jp/SMP1.png" loading="lazy"> Rockruff Full Strength Deck <span class="code annotation">SMP1</span></a></td>
+                <td><a href="/cards/jp/SMP1">15 Dec 16</a></td>
+                <td class="md-only"><a href="/cards/jp/SMP1">13 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">30.77%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM1M"><img class="set" alt="SM1M" src="https://s3.limitlesstcg.com/sets/jp/SM1M.png" loading="lazy"> Collection Moon <span class="code annotation">SM1M</span></a></td>
+                <td><a href="/cards/jp/SM1M">09 Dec 16</a></td>
+                <td class="md-only"><a href="/cards/jp/SM1M">66 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">48.48%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM1S"><img class="set" alt="SM1S" src="https://s3.limitlesstcg.com/sets/jp/SM1S.png" loading="lazy"> Collection Sun <span class="code annotation">SM1S</span></a></td>
+                <td><a href="/cards/jp/SM1S">09 Dec 16</a></td>
+                <td class="md-only"><a href="/cards/jp/SM1S">66 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.42%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMA"><img class="set" alt="SMA" src="https://s3.limitlesstcg.com/sets/jp/SMA.png" loading="lazy"> Starter Set SM <span class="code annotation">SMA</span></a></td>
+                <td><a href="/cards/jp/SMA">09 Dec 16</a></td>
+                <td class="md-only"><a href="/cards/jp/SMA">68 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">64.71%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMB"><img class="set" alt="SMB" src="https://s3.limitlesstcg.com/sets/jp/SMB.png" loading="lazy"> Premium Trainer Box <span class="code annotation">SMB</span></a></td>
+                <td><a href="/cards/jp/SMB">09 Dec 16</a></td>
+                <td class="md-only"><a href="/cards/jp/SMB">15 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">100.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SM0"><img class="set" alt="SM0" src="https://s3.limitlesstcg.com/sets/jp/SM0.png" loading="lazy"> Pikachu and new Friends <span class="code annotation">SM0</span></a></td>
+                <td><a href="/cards/jp/SM0">18 Nov 16</a></td>
+                <td class="md-only"><a href="/cards/jp/SM0">4 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SMP"><img class="set" alt="SMP" src="https://s3.limitlesstcg.com/sets/jp/SMP.png" loading="lazy"> Sun and Moon Promotional Cards <span class="code annotation">SMP</span></a></td>
+                <td><a href="/cards/jp/SMP"></a></td>
+                <td class="md-only"><a href="/cards/jp/SMP">440 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">44.32%</span></a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=4>XY</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY"><img class="set" alt="XY" src="https://s3.limitlesstcg.com/sets/jp/XY.png" loading="lazy"> Best of XY <span class="code annotation">XY</span></a></td>
+                <td><a href="/cards/jp/XY">21 Apr 17</a></td>
+                <td class="md-only"><a href="/cards/jp/XY">314 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">91.40%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/CP6"><img class="set" alt="CP6" src="https://s3.limitlesstcg.com/sets/jp/CP6.png" loading="lazy"> 20th Anniversary Pack <span class="code annotation">CP6</span></a></td>
+                <td><a href="/cards/jp/CP6">16 Sep 16</a></td>
+                <td class="md-only"><a href="/cards/jp/CP6">103 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">21.36%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/CP5"><img class="set" alt="CP5" src="https://s3.limitlesstcg.com/sets/jp/CP5.png" loading="lazy"> Illusion - Legend - Dream Holo Collection <span class="code annotation">CP5</span></a></td>
+                <td><a href="/cards/jp/CP5">16 Jul 16</a></td>
+                <td class="md-only"><a href="/cards/jp/CP5">38 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.21%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY11b"><img class="set" alt="XY11b" src="https://s3.limitlesstcg.com/sets/jp/XY11b.png" loading="lazy"> Heat Burst Fighter <span class="code annotation">XY11b</span></a></td>
+                <td><a href="/cards/jp/XY11b">17 Jun 16</a></td>
+                <td class="md-only"><a href="/cards/jp/XY11b">58 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.86%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY11r"><img class="set" alt="XY11r" src="https://s3.limitlesstcg.com/sets/jp/XY11r.png" loading="lazy"> Cruel Traitor <span class="code annotation">XY11r</span></a></td>
+                <td><a href="/cards/jp/XY11r">17 Jun 16</a></td>
+                <td class="md-only"><a href="/cards/jp/XY11r">58 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.21%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/CP4"><img class="set" alt="CP4" src="https://s3.limitlesstcg.com/sets/jp/CP4.png" loading="lazy"> EX x MEGA x BREAK Champion Pack <span class="code annotation">CP4</span></a></td>
+                <td><a href="/cards/jp/CP4">16 Apr 16</a></td>
+                <td class="md-only"><a href="/cards/jp/CP4">140 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">70.71%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY10"><img class="set" alt="XY10" src="https://s3.limitlesstcg.com/sets/jp/XY10.png" loading="lazy"> Awakened Psychic King <span class="code annotation">XY10</span></a></td>
+                <td><a href="/cards/jp/XY10">18 Mar 16</a></td>
+                <td class="md-only"><a href="/cards/jp/XY10">87 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">32.18%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYG"><img class="set" alt="XYG" src="https://s3.limitlesstcg.com/sets/jp/XYG.png" loading="lazy"> Perfect Battle Deck Zygarde-EX <span class="code annotation">XYG</span></a></td>
+                <td><a href="/cards/jp/XYG">18 Mar 16</a></td>
+                <td class="md-only"><a href="/cards/jp/XYG">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">70.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYH"><img class="set" alt="XYH" src="https://s3.limitlesstcg.com/sets/jp/XYH.png" loading="lazy"> Mega Battle Deck Audino-EX <span class="code annotation">XYH</span></a></td>
+                <td><a href="/cards/jp/XYH">18 Mar 16</a></td>
+                <td class="md-only"><a href="/cards/jp/XYH">27 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">51.85%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/20th"><img class="set" alt="20th" src="https://s3.limitlesstcg.com/sets/jp/20th.png" loading="lazy"> Pokemon Card Game Starter Pack <span class="code annotation">20th</span></a></td>
+                <td><a href="/cards/jp/20th">27 Feb 16</a></td>
+                <td class="md-only"><a href="/cards/jp/20th">84 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">41.67%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/CP3"><img class="set" alt="CP3" src="https://s3.limitlesstcg.com/sets/jp/CP3.png" loading="lazy"> Pokekyun Collection <span class="code annotation">CP3</span></a></td>
+                <td><a href="/cards/jp/CP3">29 Jan 16</a></td>
+                <td class="md-only"><a href="/cards/jp/CP3">32 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">40.63%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY9"><img class="set" alt="XY9" src="https://s3.limitlesstcg.com/sets/jp/XY9.png" loading="lazy"> Rage of the Broken Heaven <span class="code annotation">XY9</span></a></td>
+                <td><a href="/cards/jp/XY9">11 Dec 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XY9">88 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">35.23%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYF"><img class="set" alt="XYF" src="https://s3.limitlesstcg.com/sets/jp/XYF.png" loading="lazy"> Golduck BREAK and Palkia-EX Deck <span class="code annotation">XYF</span></a></td>
+                <td><a href="/cards/jp/XYF">09 Oct 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XYF">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">58.82%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SNPo"><img class="set" alt="SNPo" src="https://s3.limitlesstcg.com/sets/jp/SNPo.png" loading="lazy"> Noivern BREAK Evolution Pack <span class="code annotation">SNPo</span></a></td>
+                <td><a href="/cards/jp/SNPo">26 Sep 15</a></td>
+                <td class="md-only"><a href="/cards/jp/SNPo">10 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">70.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SNPr"><img class="set" alt="SNPr" src="https://s3.limitlesstcg.com/sets/jp/SNPr.png" loading="lazy"> Raichu BREAK Evolution Pack <span class="code annotation">SNPr</span></a></td>
+                <td><a href="/cards/jp/SNPr">26 Sep 15</a></td>
+                <td class="md-only"><a href="/cards/jp/SNPr">10 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">70.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY8b"><img class="set" alt="XY8b" src="https://s3.limitlesstcg.com/sets/jp/XY8b.png" loading="lazy"> Blue Counterattack <span class="code annotation">XY8b</span></a></td>
+                <td><a href="/cards/jp/XY8b">26 Sep 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XY8b">64 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">21.88%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY8r"><img class="set" alt="XY8r" src="https://s3.limitlesstcg.com/sets/jp/XY8r.png" loading="lazy"> Red Light Flash <span class="code annotation">XY8r</span></a></td>
+                <td><a href="/cards/jp/XY8r">26 Sep 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XY8r">64 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">32.81%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MMBp"><img class="set" alt="MMBp" src="https://s3.limitlesstcg.com/sets/jp/MMBp.png" loading="lazy"> Master Deck Build Box MEGA Power Style <span class="code annotation">MMBp</span></a></td>
+                <td><a href="/cards/jp/MMBp">07 Aug 15</a></td>
+                <td class="md-only"><a href="/cards/jp/MMBp">58 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">81.03%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MMBs"><img class="set" alt="MMBs" src="https://s3.limitlesstcg.com/sets/jp/MMBs.png" loading="lazy"> Master Deck Build Box MEGA Speed Style <span class="code annotation">MMBs</span></a></td>
+                <td><a href="/cards/jp/MMBs">07 Aug 15</a></td>
+                <td class="md-only"><a href="/cards/jp/MMBs">58 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">75.86%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/CP2"><img class="set" alt="CP2" src="https://s3.limitlesstcg.com/sets/jp/CP2.png" loading="lazy"> Legendary Holo Collection <span class="code annotation">CP2</span></a></td>
+                <td><a href="/cards/jp/CP2">18 Jul 15</a></td>
+                <td class="md-only"><a href="/cards/jp/CP2">27 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYE"><img class="set" alt="XYE" src="https://s3.limitlesstcg.com/sets/jp/XYE.png" loading="lazy"> Emboar-EX VS Togekiss-EX Half Decks <span class="code annotation">XYE</span></a></td>
+                <td><a href="/cards/jp/XYE">18 Jul 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XYE">26 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">56.25%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY7"><img class="set" alt="XY7" src="https://s3.limitlesstcg.com/sets/jp/XY7.png" loading="lazy"> Bandit Ring <span class="code annotation">XY7</span></a></td>
+                <td><a href="/cards/jp/XY7">20 Jun 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XY7">95 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">43.16%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY6"><img class="set" alt="XY6" src="https://s3.limitlesstcg.com/sets/jp/XY6.png" loading="lazy"> Emerald Break <span class="code annotation">XY6</span></a></td>
+                <td><a href="/cards/jp/XY6">14 Mar 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XY6">89 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">30.34%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYD"><img class="set" alt="XYD" src="https://s3.limitlesstcg.com/sets/jp/XYD.png" loading="lazy"> MEGA Rayquaza-EX Deck <span class="code annotation">XYD</span></a></td>
+                <td><a href="/cards/jp/XYD">14 Mar 15</a></td>
+                <td class="md-only"><a href="/cards/jp/XYD">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">70.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/CP1"><img class="set" alt="CP1" src="https://s3.limitlesstcg.com/sets/jp/CP1.png" loading="lazy"> Team Magma VS Team Aqua Double Crisis <span class="code annotation">CP1</span></a></td>
+                <td><a href="/cards/jp/CP1">30 Jan 15</a></td>
+                <td class="md-only"><a href="/cards/jp/CP1">34 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">5.88%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY5g"><img class="set" alt="XY5g" src="https://s3.limitlesstcg.com/sets/jp/XY5g.png" loading="lazy"> Gaia Volcano <span class="code annotation">XY5g</span></a></td>
+                <td><a href="/cards/jp/XY5g">13 Dec 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XY5g">78 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.62%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY5t"><img class="set" alt="XY5t" src="https://s3.limitlesstcg.com/sets/jp/XY5t.png" loading="lazy"> Tidal Storm <span class="code annotation">XY5t</span></a></td>
+                <td><a href="/cards/jp/XY5t">13 Dec 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XY5t">78 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYC"><img class="set" alt="XYC" src="https://s3.limitlesstcg.com/sets/jp/XYC.png" loading="lazy"> Xerneas-EX and Yveltal-EX Deck <span class="code annotation">XYC</span></a></td>
+                <td><a href="/cards/jp/XYC">14 Nov 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XYC">25 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">72.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY4"><img class="set" alt="XY4" src="https://s3.limitlesstcg.com/sets/jp/XY4.png" loading="lazy"> Phantom Gate <span class="code annotation">XY4</span></a></td>
+                <td><a href="/cards/jp/XY4">13 Sep 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XY4">95 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.84%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYB"><img class="set" alt="XYB" src="https://s3.limitlesstcg.com/sets/jp/XYB.png" loading="lazy"> Dialga-EX and Aegislash-EX Deck <span class="code annotation">XYB</span></a></td>
+                <td><a href="/cards/jp/XYB">13 Sep 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XYB">19 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">78.95%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY3"><img class="set" alt="XY3" src="https://s3.limitlesstcg.com/sets/jp/XY3.png" loading="lazy"> Rising Fist <span class="code annotation">XY3</span></a></td>
+                <td><a href="/cards/jp/XY3">14 Jun 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XY3">103 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">15.53%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY2"><img class="set" alt="XY2" src="https://s3.limitlesstcg.com/sets/jp/XY2.png" loading="lazy"> Wild Blaze <span class="code annotation">XY2</span></a></td>
+                <td><a href="/cards/jp/XY2">15 Mar 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XY2">87 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">36.78%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYA"><img class="set" alt="XYA" src="https://s3.limitlesstcg.com/sets/jp/XYA.png" loading="lazy"> MEGA Charizard Deck <span class="code annotation">XYA</span></a></td>
+                <td><a href="/cards/jp/XYA">15 Mar 14</a></td>
+                <td class="md-only"><a href="/cards/jp/XYA">23 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">56.52%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/X30"><img class="set" alt="X30" src="https://s3.limitlesstcg.com/sets/jp/X30.png" loading="lazy"> Xerneas Half Deck <span class="code annotation">X30</span></a></td>
+                <td><a href="/cards/jp/X30">31 Jan 14</a></td>
+                <td class="md-only"><a href="/cards/jp/X30">15 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/Y30"><img class="set" alt="Y30" src="https://s3.limitlesstcg.com/sets/jp/Y30.png" loading="lazy"> Yveltal Half Deck <span class="code annotation">Y30</span></a></td>
+                <td><a href="/cards/jp/Y30">31 Jan 14</a></td>
+                <td class="md-only"><a href="/cards/jp/Y30">15 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.67%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY1x"><img class="set" alt="XY1x" src="https://s3.limitlesstcg.com/sets/jp/XY1x.png" loading="lazy"> Collection X <span class="code annotation">XY1x</span></a></td>
+                <td><a href="/cards/jp/XY1x">13 Dec 13</a></td>
+                <td class="md-only"><a href="/cards/jp/XY1x">63 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.40%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XY1y"><img class="set" alt="XY1y" src="https://s3.limitlesstcg.com/sets/jp/XY1y.png" loading="lazy"> Collection Y <span class="code annotation">XY1y</span></a></td>
+                <td><a href="/cards/jp/XY1y">13 Dec 13</a></td>
+                <td class="md-only"><a href="/cards/jp/XY1y">63 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">17.46%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/HXY"><img class="set" alt="HXY" src="https://s3.limitlesstcg.com/sets/jp/HXY.png" loading="lazy"> Starting Set XY <span class="code annotation">HXY</span></a></td>
+                <td><a href="/cards/jp/HXY">15 Nov 13</a></td>
+                <td class="md-only"><a href="/cards/jp/HXY">45 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/XYP"><img class="set" alt="XYP" src="https://s3.limitlesstcg.com/sets/jp/XYP.png" loading="lazy"> XY Promotional Cards <span class="code annotation">XYP</span></a></td>
+                <td><a href="/cards/jp/XYP"></a></td>
+                <td class="md-only"><a href="/cards/jp/XYP">448 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.55%</span></a></td>
+                            </tr>
+                    <tr>
+            <th class="sub-heading" colspan=4>Black &amp; White</th>
+        </tr>
+                                <tr>
+                <td><a href="/cards/jp/EBB"><img class="set" alt="EBB" src="https://s3.limitlesstcg.com/sets/jp/EBB.png" loading="lazy"> EX Battle Boost <span class="code annotation">EBB</span></a></td>
+                <td><a href="/cards/jp/EBB">13 Jul 13</a></td>
+                <td class="md-only"><a href="/cards/jp/EBB">97 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">30.93%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MGg"><img class="set" alt="MGg" src="https://s3.limitlesstcg.com/sets/jp/MGg.png" loading="lazy"> Genesect Half Deck <span class="code annotation">MGg</span></a></td>
+                <td><a href="/cards/jp/MGg">13 Jul 13</a></td>
+                <td class="md-only"><a href="/cards/jp/MGg">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.94%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MGm"><img class="set" alt="MGm" src="https://s3.limitlesstcg.com/sets/jp/MGm.png" loading="lazy"> Mewtwo Half Deck <span class="code annotation">MGm</span></a></td>
+                <td><a href="/cards/jp/MGm">13 Jul 13</a></td>
+                <td class="md-only"><a href="/cards/jp/MGm">17 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.94%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW9"><img class="set" alt="BW9" src="https://s3.limitlesstcg.com/sets/jp/BW9.png" loading="lazy"> Megalo Cannon <span class="code annotation">BW9</span></a></td>
+                <td><a href="/cards/jp/BW9">15 Mar 13</a></td>
+                <td class="md-only"><a href="/cards/jp/BW9">76 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">27.63%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/KK"><img class="set" alt="KK" src="https://s3.limitlesstcg.com/sets/jp/KK.png" loading="lazy"> Blastoise &amp; Kyurem-EX Deck <span class="code annotation">KK</span></a></td>
+                <td><a href="/cards/jp/KK">15 Mar 13</a></td>
+                <td class="md-only"><a href="/cards/jp/KK">19 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">73.68%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SC"><img class="set" alt="SC" src="https://s3.limitlesstcg.com/sets/jp/SC.png" loading="lazy"> Shiny Collection <span class="code annotation">SC</span></a></td>
+                <td><a href="/cards/jp/SC">01 Feb 13</a></td>
+                <td class="md-only"><a href="/cards/jp/SC">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW8f"><img class="set" alt="BW8f" src="https://s3.limitlesstcg.com/sets/jp/BW8f.png" loading="lazy"> Spiral Force <span class="code annotation">BW8f</span></a></td>
+                <td><a href="/cards/jp/BW8f">14 Dec 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BW8f">51 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.49%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW8n"><img class="set" alt="BW8n" src="https://s3.limitlesstcg.com/sets/jp/BW8n.png" loading="lazy"> Raiden Knuckle <span class="code annotation">BW8n</span></a></td>
+                <td><a href="/cards/jp/BW8n">14 Dec 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BW8n">51 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">27.45%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/PBG"><img class="set" alt="PBG" src="https://s3.limitlesstcg.com/sets/jp/PBG.png" loading="lazy"> Team Plasma Battle Gift Set <span class="code annotation">PBG</span></a></td>
+                <td><a href="/cards/jp/PBG">16 Nov 12</a></td>
+                <td class="md-only"><a href="/cards/jp/PBG">18 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">38.89%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/WAK"><img class="set" alt="WAK" src="https://s3.limitlesstcg.com/sets/jp/WAK.png" loading="lazy"> Everyone&#039;s Exciting Battle <span class="code annotation">WAK</span></a></td>
+                <td><a href="/cards/jp/WAK">16 Nov 12</a></td>
+                <td class="md-only"><a href="/cards/jp/WAK">62 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">33.33%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BKB"><img class="set" alt="BKB" src="https://s3.limitlesstcg.com/sets/jp/BKB.png" loading="lazy"> Black Kyurem-EX Deck <span class="code annotation">BKB</span></a></td>
+                <td><a href="/cards/jp/BKB">19 Oct 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BKB">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BKW"><img class="set" alt="BKW" src="https://s3.limitlesstcg.com/sets/jp/BKW.png" loading="lazy"> White Kyurem-EX Deck <span class="code annotation">BKW</span></a></td>
+                <td><a href="/cards/jp/BKW">19 Oct 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BKW">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW7"><img class="set" alt="BW7" src="https://s3.limitlesstcg.com/sets/jp/BW7.png" loading="lazy"> Plasma Gale <span class="code annotation">BW7</span></a></td>
+                <td><a href="/cards/jp/BW7">14 Sep 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BW7">70 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">24.29%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/MDB"><img class="set" alt="MDB" src="https://s3.limitlesstcg.com/sets/jp/MDB.png" loading="lazy"> Master Deck Build Box EX <span class="code annotation">MDB</span></a></td>
+                <td><a href="/cards/jp/MDB">14 Sep 12</a></td>
+                <td class="md-only"><a href="/cards/jp/MDB">51 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">82.35%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/PPD"><img class="set" alt="PPD" src="https://s3.limitlesstcg.com/sets/jp/PPD.png" loading="lazy"> Team Plasma Powered Deck <span class="code annotation">PPD</span></a></td>
+                <td><a href="/cards/jp/PPD">14 Sep 12</a></td>
+                <td class="md-only"><a href="/cards/jp/PPD">19 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">52.63%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW6c"><img class="set" alt="BW6c" src="https://s3.limitlesstcg.com/sets/jp/BW6c.png" loading="lazy"> Cold Flare <span class="code annotation">BW6c</span></a></td>
+                <td><a href="/cards/jp/BW6c">13 Jul 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BW6c">59 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">25.42%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW6f"><img class="set" alt="BW6f" src="https://s3.limitlesstcg.com/sets/jp/BW6f.png" loading="lazy"> Freeze Bolt <span class="code annotation">BW6f</span></a></td>
+                <td><a href="/cards/jp/BW6f">13 Jul 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BW6f">59 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">23.73%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/HSZ"><img class="set" alt="HSZ" src="https://s3.limitlesstcg.com/sets/jp/HSZ.png" loading="lazy"> Starting Set BW Pokedex Edition <span class="code annotation">HSZ</span></a></td>
+                <td><a href="/cards/jp/HSZ">20 Apr 12</a></td>
+                <td class="md-only"><a href="/cards/jp/HSZ">40 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">39.58%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/KLD"><img class="set" alt="KLD" src="https://s3.limitlesstcg.com/sets/jp/KLD.png" loading="lazy"> Keldeo Half Deck <span class="code annotation">KLD</span></a></td>
+                <td><a href="/cards/jp/KLD">20 Apr 12</a></td>
+                <td class="md-only"><a href="/cards/jp/KLD">18 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">55.56%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW5n"><img class="set" alt="BW5n" src="https://s3.limitlesstcg.com/sets/jp/BW5n.png" loading="lazy"> Dragon Blade <span class="code annotation">BW5n</span></a></td>
+                <td><a href="/cards/jp/BW5n">16 Mar 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BW5n">50 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">12.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW5z"><img class="set" alt="BW5z" src="https://s3.limitlesstcg.com/sets/jp/BW5z.png" loading="lazy"> Dragon Blast <span class="code annotation">BW5z</span></a></td>
+                <td><a href="/cards/jp/BW5z">16 Mar 12</a></td>
+                <td class="md-only"><a href="/cards/jp/BW5z">50 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">24.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/GBR"><img class="set" alt="GBR" src="https://s3.limitlesstcg.com/sets/jp/GBR.png" loading="lazy"> Garchomp Half Deck <span class="code annotation">GBR</span></a></td>
+                <td><a href="/cards/jp/GBR">16 Mar 12</a></td>
+                <td class="md-only"><a href="/cards/jp/GBR">18 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">50.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/SZD"><img class="set" alt="SZD" src="https://s3.limitlesstcg.com/sets/jp/SZD.png" loading="lazy"> Hydreigon Half Deck <span class="code annotation">SZD</span></a></td>
+                <td><a href="/cards/jp/SZD">16 Mar 12</a></td>
+                <td class="md-only"><a href="/cards/jp/SZD">18 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">61.11%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/DS"><img class="set" alt="DS" src="https://s3.limitlesstcg.com/sets/jp/DS.png" loading="lazy"> Dragon Selection <span class="code annotation">DS</span></a></td>
+                <td><a href="/cards/jp/DS">27 Jan 12</a></td>
+                <td class="md-only"><a href="/cards/jp/DS">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">15.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW4"><img class="set" alt="BW4" src="https://s3.limitlesstcg.com/sets/jp/BW4.png" loading="lazy"> Dark Rush <span class="code annotation">BW4</span></a></td>
+                <td><a href="/cards/jp/BW4">16 Dec 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BW4">69 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">23.19%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BGS"><img class="set" alt="BGS" src="https://s3.limitlesstcg.com/sets/jp/BGS.png" loading="lazy"> Thundurus VS Tornadus Battle Gift Set <span class="code annotation">BGS</span></a></td>
+                <td><a href="/cards/jp/BGS">18 Nov 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BGS">26 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">62.50%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/HSP"><img class="set" alt="HSP" src="https://s3.limitlesstcg.com/sets/jp/HSP.png" loading="lazy"> Starting Set BW Pikachu Edition <span class="code annotation">HSP</span></a></td>
+                <td><a href="/cards/jp/HSP">18 Nov 11</a></td>
+                <td class="md-only"><a href="/cards/jp/HSP">40 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">45.83%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BKR"><img class="set" alt="BKR" src="https://s3.limitlesstcg.com/sets/jp/BKR.png" loading="lazy"> Reshiram-EX Deck <span class="code annotation">BKR</span></a></td>
+                <td><a href="/cards/jp/BKR">21 Oct 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BKR">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">50.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BKZ"><img class="set" alt="BKZ" src="https://s3.limitlesstcg.com/sets/jp/BKZ.png" loading="lazy"> Zekrom-EX Deck <span class="code annotation">BKZ</span></a></td>
+                <td><a href="/cards/jp/BKZ">21 Oct 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BKZ">20 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">60.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW3h"><img class="set" alt="BW3h" src="https://s3.limitlesstcg.com/sets/jp/BW3h.png" loading="lazy"> Hail Blizzard <span class="code annotation">BW3h</span></a></td>
+                <td><a href="/cards/jp/BW3h">16 Sep 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BW3h">52 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">13.46%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW3p"><img class="set" alt="BW3p" src="https://s3.limitlesstcg.com/sets/jp/BW3p.png" loading="lazy"> Psycho Drive <span class="code annotation">BW3p</span></a></td>
+                <td><a href="/cards/jp/BW3p">16 Sep 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BW3p">52 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">15.38%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW2"><img class="set" alt="BW2" src="https://s3.limitlesstcg.com/sets/jp/BW2.png" loading="lazy"> Red Collection <span class="code annotation">BW2</span></a></td>
+                <td><a href="/cards/jp/BW2">15 Jul 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BW2">67 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">23.88%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BTV"><img class="set" alt="BTV" src="https://s3.limitlesstcg.com/sets/jp/BTV.png" loading="lazy"> Victini Deck <span class="code annotation">BTV</span></a></td>
+                <td><a href="/cards/jp/BTV">17 Jun 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BTV">24 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">46.15%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BKc"><img class="set" alt="BKc" src="https://s3.limitlesstcg.com/sets/jp/BKc.png" loading="lazy"> Cobalion Deck <span class="code annotation">BKc</span></a></td>
+                <td><a href="/cards/jp/BKc">18 Mar 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BKc">14 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.86%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BKt"><img class="set" alt="BKt" src="https://s3.limitlesstcg.com/sets/jp/BKt.png" loading="lazy"> Terrakion Deck <span class="code annotation">BKt</span></a></td>
+                <td><a href="/cards/jp/BKt">18 Mar 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BKt">14 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.86%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BKv"><img class="set" alt="BKv" src="https://s3.limitlesstcg.com/sets/jp/BKv.png" loading="lazy"> Virizion Deck <span class="code annotation">BKv</span></a></td>
+                <td><a href="/cards/jp/BKv">18 Mar 11</a></td>
+                <td class="md-only"><a href="/cards/jp/BKv">14 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">50.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW1b"><img class="set" alt="BW1b" src="https://s3.limitlesstcg.com/sets/jp/BW1b.png" loading="lazy"> Black Collection <span class="code annotation">BW1b</span></a></td>
+                <td><a href="/cards/jp/BW1b">17 Dec 10</a></td>
+                <td class="md-only"><a href="/cards/jp/BW1b">53 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">26.42%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BW1w"><img class="set" alt="BW1w" src="https://s3.limitlesstcg.com/sets/jp/BW1w.png" loading="lazy"> White Collection <span class="code annotation">BW1w</span></a></td>
+                <td><a href="/cards/jp/BW1w">17 Dec 10</a></td>
+                <td class="md-only"><a href="/cards/jp/BW1w">54 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">24.07%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/HS"><img class="set" alt="HS" src="https://s3.limitlesstcg.com/sets/jp/HS.png" loading="lazy"> Starting Set BW <span class="code annotation">HS</span></a></td>
+                <td><a href="/cards/jp/HS">29 Oct 10</a></td>
+                <td class="md-only"><a href="/cards/jp/HS">43 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">42.11%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/CS1"><img class="set" alt="CS1" src="https://s3.limitlesstcg.com/sets/jp/CS1.png" loading="lazy"> Snivy - Tepig - Oshawott Collection Sheet <span class="code annotation">CS1</span></a></td>
+                <td><a href="/cards/jp/CS1">18 Sep 10</a></td>
+                <td class="md-only"><a href="/cards/jp/CS1">9 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">0.00%</span></a></td>
+                            </tr>
+                                <tr>
+                <td><a href="/cards/jp/BWP"><img class="set" alt="BWP" src="https://s3.limitlesstcg.com/sets/jp/BWP.png" loading="lazy"> Black &amp; White Promotional Cards <span class="code annotation">BWP</span></a></td>
+                <td><a href="/cards/jp/BWP"></a></td>
+                <td class="md-only"><a href="/cards/jp/BWP">246 <span class="playability" data-tooltip="percentage of cards in this set that appear in our decklist database">34.55%</span></a></td>
+                            </tr>
+            </table>
+
+</div>
+    </main>
+
+    
+            <div id="bottom_ad_placeholder" class="container dont-print"></div>
+    
+    <div class="after-content"></div>
+
+    <footer>
+    <div class="container footer">
+        <div class="menus">
+            <div class="column">
+                <h2><a href="https://limitlesstcg.com">Limitless TCG</a></h2>
+                <ul>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/privacy">Privacy Policy</a></li>
+                    <li><a href="/legal">Site Notice</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Our Other Sites</h2>
+                <ul>
+                    <li><a href="https://my.limitlesstcg.com">Deck Builder</a></li>
+                    <li><a href="https://play.limitlesstcg.com">Tournament Platform</a></li>
+                    <li><a href="https://onepiece.limitlesstcg.com">One Piece Database</a></li>
+                    <li><a href="https://pocket.limitlesstcg.com">Pocket Database</a></li>
+                    <li><a href="https://limitlessvgc.com">Limitless VGC</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Follow</h2>
+                <ul>
+                    <li><a href="https://twitter.com/limitlesstcg"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://facebook.com/LimitlessTCG/"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="https://twitch.tv/limitless_tcg"><i class="fab fa-twitch"></i> Twitch</a></li>
+                    <li><a href="https://www.patreon.com/limitlesstcg"><i class="fab fa-patreon"></i> Patreon</a></li>
+                </ul>
+            </div>
+            <div class="column full">
+                                                    <h2>TCGplayer</h2>
+                    <a class="promo" href="https://partner.tcgplayer.com/LIMITLESS?u=https%3A%2F%2Fwww.tcgplayer.com%2Fsearch%2Fpokemon%2Fproduct" target="_blank">
+                        <img src="https://limitless3.nyc3.cdn.digitaloceanspaces.com/markets/promo/tcgplayer.png" alt="TCGplayer logo" />
+                        <p>You can support us by using our Affiliate Link when buying on TCGplayer!</p>
+                    </a>
+                            </div>
+
+                            <span class="cookie-link" onclick="window.ramp.showCmpModal();">Manage Cookies</span>
+                    </div>
+
+        <div class="disclaimer">The literal and graphical information presented on this website about the Pokémon Trading Card Game, including card images and text, is copyright The Pokémon Company (Pokémon), Nintendo, Game Freak and/or Creatures. This website is not produced by, endorsed by, supported by, or affiliated with Pokémon, Nintendo, Game Freak or Creatures.</div>
+    </div>
+</footer>
+
+    <div id="jsg">
+        <div class="overlay"></div>
+    </div>
+
+            <script data-cfasync="false" async src="//cdn.intergient.com/1025537/78560/ramp.js"></script>
+    </body>
+
+</html>
