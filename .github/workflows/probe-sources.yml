@@ -1,11 +1,11 @@
-name: Probe picture sources (branch only)
+name: Sealed images check (branch only)
 
-# Temporary: dumps TCGplayer sealed lists and logo-source answers into probe/ on this branch.
+# Temporary: runs the sealed-images step on this branch and commits its output here for review.
 # Delete this file and scripts/probe-sources.mjs before anything merges.
 on:
   push:
     branches: [claude/sharp-cannon-uml18w]
-    paths: [scripts/probe-sources.mjs, .github/workflows/probe-sources.yml]
+    paths: [scripts/build-sealed-images.mjs, scripts/lib/sealed-match.mjs, .github/workflows/probe-sources.yml]
   workflow_dispatch:
 
 permissions:
@@ -14,6 +14,7 @@ permissions:
 jobs:
   probe:
     runs-on: ubuntu-latest
+    timeout-minutes: 90
     steps:
       - uses: actions/checkout@v4
         with:
@@ -21,10 +22,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/probe-sources.mjs
-      - name: Commit the dump to this branch
+      - run: node scripts/build-sealed-images.mjs
+        env:
+          PC_PAGES: '3000'
+      - name: Commit the output to this branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add probe
-          git commit -m "Probe dump" && git push
+          git add catalog/v2/sealed-images.json catalog/v2/sealed-sources.json
+          git commit -m "Sealed images check output" && git push
