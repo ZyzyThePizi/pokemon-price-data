@@ -1,48 +1,13 @@
 {
  "sets": {
-  "miscp": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/miscp/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "jumbo": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/jumbo/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "wp": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/wp/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
   "bog": {
    "url": "https://images.pokemontcg.io/bp/logo.png",
    "source": "pokemontcg.io",
    "at": "2026-10-24T13:06:14.379Z"
   },
-  "sp": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/sp/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
   "tk-ex-latia": {
    "url": "https://images.pokemontcg.io/tk1a/logo.png",
    "source": "pokemontcg.io",
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "exu": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/exu/logo.png"
-   ],
    "at": "2026-10-24T13:06:14.379Z"
   },
   "tk-ex-m": {
@@ -65,88 +30,9 @@
    "source": "pokemontcg.io",
    "at": "2026-10-24T13:06:14.379Z"
   },
-  "tk-hs-g": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-hs-g/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-dp-l": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-dp-l/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-dp-m": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-dp-m/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-bw-z": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-bw-z/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-hs-r": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-hs-r/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "ex5.5": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/ex5.5/logo.png",
-    "https://images.pokemontcg.io/ex55/logo.png",
-    "https://images.pokemontcg.io/ex5pt5/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-bw-e": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-bw-e/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "xya": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/xya/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
   "2012bw": {
    "url": "https://images.pokemontcg.io/mcd12/logo.png",
    "source": "pokemontcg.io",
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-xy-b": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-b/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-xy-sy": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-sy/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-xy-n": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-n/logo.png"
-   ],
    "at": "2026-10-24T13:06:14.379Z"
   },
   "2014xy": {
@@ -154,37 +40,9 @@
    "source": "pokemontcg.io",
    "at": "2026-10-24T13:06:14.379Z"
   },
-  "tk-xy-w": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-w/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
   "2015xy": {
    "url": "https://images.pokemontcg.io/mcd15/logo.png",
    "source": "pokemontcg.io",
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-xy-latio": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-latio/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-xy-p": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-p/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-xy-latia": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-latia/logo.png"
-   ],
    "at": "2026-10-24T13:06:14.379Z"
   },
   "2016xy": {
@@ -192,30 +50,9 @@
    "source": "pokemontcg.io",
    "at": "2026-10-24T13:06:14.379Z"
   },
-  "tk-xy-su": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-xy-su/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-sm-l": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-sm-l/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
   "2017sm": {
    "url": "https://images.pokemontcg.io/mcd17/logo.png",
    "source": "pokemontcg.io",
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "tk-sm-r": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/tk-sm-r/logo.png"
-   ],
    "at": "2026-10-24T13:06:14.379Z"
   },
   "2018sm": {
@@ -298,23 +135,9 @@
    "source": "pokemontcg.io",
    "at": "2026-10-24T13:06:14.379Z"
   },
-  "mfb": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/mfb/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
-  },
   "sv05": {
    "url": "https://images.pokemontcg.io/sv5/logo.png",
    "source": "pokemontcg.io",
-   "at": "2026-10-24T13:06:14.379Z"
-  },
-  "30th-c": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/30th-c/logo.png"
-   ],
    "at": "2026-10-24T13:06:14.379Z"
   },
   "PMCG2": {
@@ -334,9 +157,10 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "PMCG5": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PMCG5.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-leaders-stadium.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "rc": {
    "url": "https://den-media.pokellector.com/logos/Radiant-Collection.logo.148.png",
@@ -376,9 +200,10 @@
    "at": "2026-10-24T13:45:51.160Z"
   },
   "E1": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/E1.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-base-expansion-pack.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PMCG3": {
    "url": "https://den-media.pokellector.com/logos/Mystery-of-the-Fossils.logo.314.png",
@@ -386,19 +211,22 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "E3": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/E3.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-wind-from-the-sea.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "E4": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/E4.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-split-earth.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "E5": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/E5.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-mysterious-mountains.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "ADV1": {
    "url": null,
@@ -406,44 +234,52 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "ADV2": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/ADV2.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-miracle-of-the-desert.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "ADV3": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/ADV3.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-rulers-of-the-heavens.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "ADV4": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/ADV4.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-magma-vs-aqua-two-ambitions.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "ADV5": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/ADV5.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-undone-seal.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG1": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PCG1.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-flight-of-legends.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG2": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PCG2.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-clash-of-the-blue-sky.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG3": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PCG3.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-team-rocket-s-strikes-back.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG4": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PCG4.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-golden-sky-silvery-ocean.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG5": {
    "url": null,
@@ -451,9 +287,10 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "PCG6": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PCG6.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-holon-research-tower.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG7": {
    "url": null,
@@ -461,14 +298,16 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "PCG8": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PCG8.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-miracle-crystal.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG9": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PCG9.png",
+   "source": "mirror",
+   "from": "https://billsarchive.com/assets/logos/japanese/jp-offense-and-defense-of-the-furthest-ends.webp",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "PCG10": {
    "url": null,
@@ -935,9 +774,10 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "SVK": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/SVK.png",
+   "source": "mirror",
+   "from": "https://den-media.pokellector.com/logos/Stella-Miracle.logo.401.png",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "SV8a": {
    "url": "https://den-media.pokellector.com/logos/Terastal-Festival-ex.logo.406.png",
@@ -1118,9 +958,10 @@
    "at": "2026-10-24T13:45:51.160Z"
   },
   "MC": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/MC.png",
+   "source": "mirror",
+   "from": "https://www.pokemon-card.com/ex/mc/assets/images/top/kv/logo_pc.png",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "S4": {
    "url": "https://den-media.pokellector.com/logos/Electrifying-Tackle.logo.297.png",
@@ -1202,21 +1043,213 @@
    "source": "pokellector",
    "at": "2026-10-24T13:06:14.379Z"
   },
-  "2023sv": {
+  "jumbo": {
    "url": null,
    "tried": [
-    "https://images.pokemontcg.io/mcd23/logo.png",
-    "https://images.pokemontcg.io/2023sv/logo.png"
+    "https://images.pokemontcg.io/jumbo/logo.png",
+    "https://images.scrydex.com/pokemon/jumbo-logo/logo"
    ],
-   "at": "2026-10-24T13:47:48.250Z"
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "sp": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/sp/logo.png",
+    "https://images.scrydex.com/pokemon/sp-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "miscp": {
+   "url": "https://images.scrydex.com/pokemon/miscp-logo/logo",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "wp": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/wp/logo.png",
+    "https://images.scrydex.com/pokemon/wp-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "exu": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/exu/logo.png",
+    "https://images.scrydex.com/pokemon/exu-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-hs-r": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-hs-r/logo.png",
+    "https://images.scrydex.com/pokemon/tk-hs-r-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-hs-g": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-hs-g/logo.png",
+    "https://images.scrydex.com/pokemon/tk-hs-g-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-dp-m": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-dp-m/logo.png",
+    "https://images.scrydex.com/pokemon/tk-dp-m-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-dp-l": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-dp-l/logo.png",
+    "https://images.scrydex.com/pokemon/tk-dp-l-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-bw-e": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-bw-e/logo.png",
+    "https://images.scrydex.com/pokemon/tk-bw-e-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "xya": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/xya/logo.png",
+    "https://images.scrydex.com/pokemon/xya-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-bw-z": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-bw-z/logo.png",
+    "https://images.scrydex.com/pokemon/tk-bw-z-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-n": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-n/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-n-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-sy": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-sy/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-sy-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-b": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-b/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-b-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-w": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-w/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-w-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-latio": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-latio/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-latio-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-p": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-p/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-p-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-latia": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-latia/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-latia-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-sm-r": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-sm-r/logo.png",
+    "https://images.scrydex.com/pokemon/tk-sm-r-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-xy-su": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-su/logo.png",
+    "https://images.scrydex.com/pokemon/tk-xy-su-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "tk-sm-l": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-sm-l/logo.png",
+    "https://images.scrydex.com/pokemon/tk-sm-l-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "2023sv": {
+   "url": "https://images.scrydex.com/pokemon/mcd23-logo/logo",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "mfb": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/mfb/logo.png",
+    "https://images.scrydex.com/pokemon/mfb-logo/logo"
+   ],
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "30th-c": {
+   "url": "https://images.scrydex.com/pokemon/me55c-logo/logo",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T15:19:58.519Z"
   },
   "2024sv": {
+   "url": "https://images.scrydex.com/pokemon/mcd24-logo/logo",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T15:19:58.519Z"
+  },
+  "ex5.5": {
    "url": null,
    "tried": [
-    "https://images.pokemontcg.io/mcd24/logo.png",
-    "https://images.pokemontcg.io/2024sv/logo.png"
+    "https://images.pokemontcg.io/ex5.5/logo.png",
+    "https://images.scrydex.com/pokemon/ex5.5-logo/logo",
+    "https://images.pokemontcg.io/ex55/logo.png",
+    "https://images.scrydex.com/pokemon/ex55-logo/logo",
+    "https://images.pokemontcg.io/ex5pt5/logo.png",
+    "https://images.scrydex.com/pokemon/ex5pt5-logo/logo"
    ],
-   "at": "2026-10-24T13:47:48.250Z"
+   "at": "2026-10-24T15:19:58.519Z"
   }
  }
 }

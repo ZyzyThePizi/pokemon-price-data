@@ -7,9 +7,11 @@
 //      …/logos/<Name>.symbol.<id>.png → …/<Name>.logo.<id>.png.
 //   3. A copy kept in this repository (catalog/set-logos/<id>.png, at most 600 px wide, served by GitHub Pages)
 //      of a fan site's logo, for the sets neither source has. Listed by hand in MIRROR, paired by name and
-//      release date: Serebii's set lists (serebii.net/card/japanese.shtml) and WikiDex's "Logo_…" files.
-//      Bulbapedia would have more but refuses requests from GitHub's servers (403). Fan sites may refuse
-//      pictures shown on other sites, hence the copy.
+//      release date: Serebii's set lists (serebii.net/card/japanese.shtml), WikiDex's "Logo_…" files, Bill's
+//      Archive's Japanese logos (billsarchive.com/assets/logos/japanese/jp-<name>.webp: the 1998–2006 sets) and
+//      the official site's product pages (pokemon-card.com/ex/<code>/, cropped). Every copy was checked by eye
+//      against the set's Japanese title. Bulbapedia challenges every automated request (Cloudflare), so it is
+//      not a source. Fan sites may refuse pictures shown on other sites, hence the copy (256 colours, ≤600 px).
 // Every URL is fetched once and kept only when it answers with a picture (200, image/*, more than 1 KB).
 // The answers are cached in catalog/v2/set-logos.json: a found logo is checked again after 90 days, a set
 // with none after 30 (a source may add it). A network error caches nothing.
@@ -17,6 +19,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
 import path from 'node:path'
+import { createHash } from 'node:crypto'
 
 const HIT_DAYS = 90
 const MISS_DAYS = 30
@@ -24,13 +27,14 @@ const CONCURRENCY = 6
 // our id → pokemontcg.io's, where neither the id nor the name pairs them
 export const PTCG_ALIAS = {
   'sm3.5': 'sm35', 'sm7.5': 'sm75', 'swsh4.5sv': 'swsh45sv', 'swsh12.5gg': 'swsh12pt5gg', cel25cc: 'cel25c',
-  sv05: 'sv5', bog: 'bp', '2023sv': 'mcd23', '2024sv': 'mcd24',
+  sv05: 'sv5', bog: 'bp', '30th-c': 'me55c', '2023sv': 'mcd23', '2024sv': 'mcd24',
   '2011bw': 'mcd11', '2012bw': 'mcd12', '2014xy': 'mcd14', '2015xy': 'mcd15', '2016xy': 'mcd16', '2017sm': 'mcd17',
   '2018sm': 'mcd18', '2019sm': 'mcd19', '2021swsh': 'mcd21', '2022swsh': 'mcd22',
   'tk-ex-latia': 'tk1a', 'tk-ex-latio': 'tk1b', 'tk-ex-p': 'tk2a', 'tk-ex-m': 'tk2b',
 }
 
 const WIKIDEX = 'https://images.wikidexcdn.net/mwuploads/wikidex/'
+const BILLS = 'https://billsarchive.com/assets/logos/japanese/jp-'
 export const MIRROR = {
   // Japanese
   PMCG2: `${WIKIDEX}7/7e/latest/20220924221845/Logo_Jungla_Pok%C3%A9mon_%28JTCG%29.png`,
@@ -44,6 +48,28 @@ export const MIRROR = {
   SM3p: 'https://www.serebii.net/card/logo/shininglegend.png',
   S1a: 'https://www.serebii.net/card/logo/vmaxrising.png',
   // (WikiDex's McDonald's 2023/2024 files are promo photos, not logos: left out)
+  PMCG5: `${BILLS}leaders-stadium.webp`,
+  E1: `${BILLS}base-expansion-pack.webp`,
+  E3: `${BILLS}wind-from-the-sea.webp`,
+  E4: `${BILLS}split-earth.webp`,
+  E5: `${BILLS}mysterious-mountains.webp`,
+  ADV2: `${BILLS}miracle-of-the-desert.webp`,
+  ADV3: `${BILLS}rulers-of-the-heavens.webp`,
+  ADV4: `${BILLS}magma-vs-aqua-two-ambitions.webp`,
+  ADV5: `${BILLS}undone-seal.webp`,
+  PCG1: `${BILLS}flight-of-legends.webp`,
+  PCG2: `${BILLS}clash-of-the-blue-sky.webp`,
+  PCG3: `${BILLS}team-rocket-s-strikes-back.webp`,
+  PCG4: `${BILLS}golden-sky-silvery-ocean.webp`,
+  PCG6: `${BILLS}holon-research-tower.webp`,
+  PCG8: `${BILLS}miracle-crystal.webp`,
+  PCG9: `${BILLS}offense-and-defense-of-the-furthest-ends.webp`,
+  // the official page's logo without its release-date line
+  MC: 'https://www.pokemon-card.com/ex/mc/assets/images/top/kv/logo_pc.png',
+  // Deck Build Box Stellar Miracle: its box carries the expansion's logo
+  SVK: 'https://den-media.pokellector.com/logos/Stella-Miracle.logo.401.png',
+  // not found anywhere yet (2026-10-24): ADV1, PCG5, PCG7, PCG10; SVLN and SVLS only on a banner photo
+  // (pokemon-card.com/products/2024/images/svl_1.jpg)
 }
 const PAGES = 'https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/'
 const BROWSER = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
@@ -75,12 +101,22 @@ export function ptcgLogos(row) {
   const id = String(row[ID])
   const codes = [PTCG_ALIAS[id], id, id.replace(/\./g, ''), id.replace(/\.5/, 'pt5'), id.replace(/\./g, 'pt')]
     .filter(Boolean).map(c => c.toLowerCase())
-  return [...new Set(codes)].map(c => `https://images.pokemontcg.io/${c}/logo.png`)
+  // its newer sets' logos are on Scrydex (the API's images.logo, 2026-10: 30th Classic Collection)
+  return [...new Set(codes)].flatMap(c => [`https://images.pokemontcg.io/${c}/logo.png`, `https://images.scrydex.com/pokemon/${c}-logo/logo`])
 }
 
 /** Pokéllector's logo next to its symbol, or null. */
 export const pokellectorLogo = (symbol) =>
   typeof symbol === 'string' && /\.symbol\.\d+\.png$/.test(symbol) ? symbol.replace(/\.symbol\.(\d+)\.png$/, '.logo.$1.png') : null
+
+const sha1 = (buf) => createHash('sha1').update(Buffer.from(buf)).digest('hex')
+// Scrydex answers any unknown set with the same placeholder picture (200, 12.8 KB): its hash, fetched once
+let scrydexStub = null
+async function scrydexPlaceholder() {
+  scrydexStub ??= fetch('https://images.scrydex.com/pokemon/no-such-set-ciac-logo/logo', { signal: AbortSignal.timeout(20000) })
+    .then(async r => (r.ok ? sha1(await r.arrayBuffer()) : '')).catch(() => null)
+  return scrydexStub
+}
 
 /** true: a picture; false: not one (404, a page, a stub); null: couldn't tell (network). */
 async function isImage(url) {
@@ -89,8 +125,14 @@ async function isImage(url) {
     const type = res.headers.get('content-type') || ''
     if (!res.ok) { await res.body?.cancel(); return res.status >= 500 || res.status === 429 ? null : false }
     if (!type.startsWith('image/')) { await res.body?.cancel(); return false }
-    const size = (await res.arrayBuffer()).byteLength
-    return size > 1024
+    const body = await res.arrayBuffer()
+    if (body.byteLength <= 1024) return false
+    if (url.includes('images.scrydex.com')) {
+      const stub = await scrydexPlaceholder()
+      if (stub === null) return null
+      if (stub && sha1(body) === stub) return false
+    }
+    return true
   } catch {
     return null
   }
