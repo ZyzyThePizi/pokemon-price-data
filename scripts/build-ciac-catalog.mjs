@@ -31,6 +31,7 @@ import { fillImages, POKELLECTOR_JA } from './lib/image-fallbacks.mjs'
 import { japaneseEnglishNames } from './lib/ja-english-names.mjs'
 import { fillSetLogos } from './lib/set-logos.mjs'
 import { dropSetMarks } from './lib/set-marks.mjs'
+import { subsetParent } from './lib/subsets.mjs'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..')
 const OUT = path.join(ROOT, 'catalog', 'v2')
@@ -47,7 +48,7 @@ const LOGOS_ONLY = process.argv.includes('--logos-only') // fill missing set log
 const LIMIT_SETS = Number(process.env.LIMIT_SETS || 0) // for test runs
 
 const SET_FIELDS = ['id', 'lang', 'name', 'serieId', 'serieName', 'releaseDate', 'total', 'official',
-  'logo', 'symbol', 'abbr', 'pokellector', 'nameEn']
+  'logo', 'symbol', 'abbr', 'pokellector', 'nameEn', 'parent']
 const CARD_FIELDS = ['id', 'setId', 'localId', 'name', 'rarity', 'category', 'illustrator', 'dexIds',
   'types', 'hp', 'stage', 'image', 'variants', 'attacks', 'abilities', 'regulationMark', 'suffix', 'forms']
 const FORMS = CARD_FIELDS.indexOf('forms')
@@ -153,7 +154,7 @@ function cardRow(c, setId, fallbackImage) {
   // The card as most people own it: standard size, no event/promo stamp.
   // Jumbo and stamped printings are separate Cardmarket products.
   const detailed = c.variants_detailed ?? []
-  const plain = detailed.filter(v => (!v.size || v.size === 'standard') && !(v.stamp?.length) && !v.foil)
+  const plain = detailed.filter(v => (!v.size || v.size === 'standard') && !(v.stamp?.length) && !v.foil && v.subtype !== 'shadowless')
   for (const v of plain.length ? plain : detailed) {
     const id = v.thirdParty?.cardmarket ?? v.pricing?.cardmarket?.idProduct ?? null
     const code = VARIANT_CODE[v.type] ?? 'x'
@@ -162,10 +163,14 @@ function cardRow(c, setId, fallbackImage) {
   // Then every special print as its own entry with its own Cardmarket product (priced
   // apart): pattern foils (r:pokeball, r:masterball, h:cosmos…) and stamps (h+staff,
   // n+pokemon-center…). Codes are read by the app's src/lib/variants.ts. Jumbo skipped.
+  // Base Set's Shadowless print (TCGdex's subtype; its 1st Edition is shadowless too, so that one stays
+  // "+1st-edition") is a printing of its own: +shadowless. Other subtypes (1999-2000 copyright) stay plain.
   for (const v of detailed) {
     if (v.size && v.size !== 'standard') continue
-    if (!v.foil && !(v.stamp?.length)) continue
-    const code = (VARIANT_CODE[v.type] ?? v.type ?? 'x') + (v.foil ? ':' + v.foil : '') + (v.stamp?.length ? '+' + v.stamp.join(',') : '')
+    const shadowless = v.subtype === 'shadowless' && !(v.stamp?.length)
+    if (!v.foil && !(v.stamp?.length) && !shadowless) continue
+    const stamps = shadowless ? ['shadowless'] : v.stamp ?? []
+    const code = (VARIANT_CODE[v.type] ?? v.type ?? 'x') + (v.foil ? ':' + v.foil : '') + (stamps.length ? '+' + stamps.join(',') : '')
     const id = v.thirdParty?.cardmarket ?? v.pricing?.cardmarket?.idProduct ?? null
     if (!variants.some(([k]) => k === code)) variants.push([code, id])
   }
@@ -245,12 +250,15 @@ async function buildLang(lang, previousCards, previousSets) {
       d.cardCount?.total ?? null, d.cardCount?.official ?? null,
       // TCGdex's symbol assets don't resolve (400), Pokéllector's do
       stripAssets(d.logo), pkSet?.symbol ?? null, d.abbreviation?.official ?? null, pkSlug, nameEn,
+      subsetParent(d.id, lang), // a subset's parent set (scripts/lib/subsets.mjs)
     ])
     for (const c of d.cards ?? []) {
       const prev = prevById.get(c.id)
       const hasCm = prev && prev[12].some(([, id, how]) => id && how !== 'm') // a matched id still asks TCGdex again
       const fallback = pkSet?.cards.get(parseInt(c.localId, 10)) ?? null
-      if (!FORCE && prev && !recent && (hasCm || !young)) keep.push(prev)
+      // Base Set cards built before +shadowless existed (2026-10-24) are fetched once more
+      const stale = lang === 'en' && d.id === 'base1' && !prev?.[12].some(([k]) => k.endsWith('+shadowless'))
+      if (!FORCE && prev && !recent && !stale && (hasCm || !young)) keep.push(prev)
       else todo.push({ id: c.id, setId: d.id, fallback })
     }
   }

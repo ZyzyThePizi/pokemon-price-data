@@ -15,7 +15,7 @@ export function dropSetMarks(cards) {
     for (const r of rows) for (const stamp of new Set(r[VARIANTS].filter(v => v[0].includes('+')).map(v => v[0].split('+')[1])))
       count.set(stamp, (count.get(stamp) ?? 0) + 1)
     for (const [stamp, n] of count) {
-      if (n < rows.length * 0.9 || /edition/i.test(stamp)) continue
+      if (n < rows.length * 0.9 || /edition|shadowless/i.test(stamp)) continue
       // every entry with this stamp has its plain printing's product
       const entries = rows.flatMap(r => r[VARIANTS].filter(v => v[0].split('+')[1] === stamp).map(v => [r, v]))
       const same = entries.every(([r, v]) => v[1] != null && r[VARIANTS].some(p => p[0] === v[0].split('+')[0] && p[1] === v[1]))
