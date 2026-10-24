@@ -24,6 +24,8 @@ const tcg = [
   [18, 'MEGA Expansion 30th Celebration Booster Pack', 'M6a: MEGA Expansion 30th Celebration', 'ja'],
   [19, 'Elite Trainer Box [Mewtwo X]', 'XY - BREAKthrough', 'en'],
   [20, 'McDonald\'s 2022 Match & Battle Pack', 'McDonald\'s Promos 2022', 'en'],
+  [21, 'Mega Evolution: Ascended Heroes Collection - Erika (3-Tab)', 'ME: Ascended Heroes', 'en'],
+  [22, 'Mega Evolution: Ascended Heroes Collection - Larry (3-Tab)', 'ME: Ascended Heroes', 'en'],
 ]
 const cases = [
   ['Leaf Charge Theme Deck', 1], // the era prefix "SM - " is no word of the set
@@ -41,6 +43,8 @@ const cases = [
   ['30th Celebration JP Booster', 18],
   ['BREAKthrough Elite Trainer Box (Mega Mewtwo X)', 19], // Mega on Cardmarket's side only is fine
   ['McDonald\'s Match Battle 2022 Booster', 20],
+  ['Ascended Heroes: Erika\'s Tangela 2-Pack Blister', 21],
+  ['Ascended Heroes: Larry\'s Komala 2-Pack Blister', 22],
 ]
 let failed = 0
 for (const [name, want, lang] of cases) {

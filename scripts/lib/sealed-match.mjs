@@ -34,6 +34,9 @@ const NUMBER_WORDS = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, eight
 // Deck", "MAerodactyl" its "Mega Aerodactyl"; a "US Version" is TCGplayer's plain one (it sells the US one; the
 // flag keeps its "(EU Exclusive)" twin away), Cardmarket's "Build & Battle Stadium Box" is the Stadium.
 const spellOut = (s) => String(s ?? '').replace(/\bWCD\b/g, 'World Championship Deck').replace(/\bM([A-Z][a-z]{2,})/g, 'Mega $1')
+  // TCGplayer's name for a 2-pack hanging blister with a promo ("Collection - Erika (3-Tab)" is Cardmarket's
+  // "Erika's Tangela 2-Pack Blister", checked by its photo)
+  .replace(/\bCollection\s*-\s*(.+?)\s*\(3-Tab\)/i, '$1 2-Pack Blister')
   .replace(/\(?\bUS Version\)?/gi, ' ').replace(/\b(Build & Battle Stadium) Box\b/gi, '$1')
   // a "Collector's Box" is its own kind (EX Collector's Box [Rayquaza] is not the Rayquaza-EX Box)
   .replace(/\bCollector'?s? Box\b/gi, 'Collectorbox').replace(/(Collectorbox\b.*?)\s+Box\b/i, '$1')
