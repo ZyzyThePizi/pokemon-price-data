@@ -6,6 +6,8 @@
 //   then both: TCGplayer's catalog (tcgplayer-images.mjs), which also has the Japanese sets of 1996–2006;
 //   last, Japanese: Pokéllector's old sets under the codes it gives them (B02 = PMCG2…), when its numbering
 //   is TCGdex's (every card whose Pokémon both name agrees).
+// Before all of these, the sets in BY_NAME: pokemontcg.io numbers their cards another way, so its API's
+// cards are paired with ours by name (all or nothing).
 // For each set the first source + number style that has one of its missing cards wins.
 // What was found is remembered in catalog/v2/image-fallbacks.json, so a daily build only asks about
 // new gaps; a miss is retried after a week.
@@ -17,6 +19,42 @@ const IMAGE = 11 // the image column of a card row (CARD_FIELDS in build-ciac-ca
 const LIMITLESS = 'https://limitlesstcg.nyc3.cdn.digitaloceanspaces.com'
 // official abbreviations Limitless spells its own way
 const LIMITLESS_EN = { 'CEL:CC': 'CEC' }
+
+// TCGdex set → pokemontcg.io set whose cards keep their original numbers (Charizard is 4 there, 001 here).
+// 30th-c shares its official code 30C with the main 30th Celebration set, and Limitless's 30C pictures are
+// the main set's (Exeggcute where Charizard belongs, 2026-10-24).
+const BY_NAME = { '30th-c': 'me55c' }
+const nameKey = (s) => String(s).toLowerCase().replace(/[^a-z0-9&]+/g, ' ').trim()
+
+/** pokemontcg.io's pictures for a BY_NAME set: card id → URL (the small one; the app asks /large for big). */
+async function picturesByName(rows, ptcgSet) {
+  let data = null
+  for (let i = 0; i < 3 && !data; i++) {
+    try {
+      const r = await fetch(`https://api.pokemontcg.io/v2/cards?q=set.id:${ptcgSet}&pageSize=250&select=id,name,number,images`)
+      if (r.ok) data = (await r.json()).data
+    } catch { /* retry */ }
+    if (!data) await new Promise(r => setTimeout(r, 1000 * (i + 1)))
+  }
+  if (!data?.length) return null
+  // theirs in number order (99 before 100, 106 before 106m), ours in ours: two cards of one name pair in order
+  const num = (n) => [parseInt(n, 10) || 0, String(n)]
+  const theirs = [...data].sort((a, b) => num(a.number)[0] - num(b.number)[0] || num(a.number)[1].localeCompare(num(b.number)[1]))
+  const ours = [...rows].sort((a, b) => String(a[2]).localeCompare(String(b[2]), undefined, { numeric: true }))
+  const out = new Map()
+  const left = new Set(theirs)
+  // exact name first ("Genesect-EX" = "Genesect EX"), then a name theirs extends by one word ("Palkia LV.X")
+  for (const pass of [(a, b) => a === b, (a, b) => b.startsWith(a + ' ') && b.split(' ').length - a.split(' ').length <= 2]) {
+    for (const r of ours) {
+      if (out.has(r[0])) continue
+      const hits = [...left].filter(t => pass(nameKey(r[3]), nameKey(t.name)))
+      // two different names fit: not this pass (two cards of one name: the first in number order)
+      if (!hits.length || new Set(hits.map(h => nameKey(h.name))).size > 1) continue
+      out.set(r[0], hits[0].images.small); left.delete(hits[0])
+    }
+  }
+  return out.size === rows.length ? out : null
+}
 
 async function exists(url) {
   for (let i = 0; i < 3; i++) {
@@ -102,6 +140,18 @@ export async function fillImages(lang, cards, cacheFile, abbrOf = () => null, op
   try { cache = JSON.parse(await readFile(cacheFile, 'utf8')) } catch { /* first run */ }
   cache.sets ??= {}; cache.cards ??= {}
   const now = Date.now()
+  const now0 = Date.now()
+  for (const [setId, ptcgSet] of Object.entries(BY_NAME)) {
+    const rows = cards.filter(r => String(r[1]).replace(/^ja-/, '') === setId)
+    if (lang !== 'en' || !rows.length) continue
+    const got = await picturesByName(rows, ptcgSet)
+    for (const r of rows) {
+      const url = got?.get(r[0]) ?? (cache.cards[r[0]]?.by === ptcgSet ? cache.cards[r[0]].url : null)
+      // a TCGdex picture (a relative path) stays; a guessed one from another source is replaced
+      if (url && (!r[IMAGE] || /^https?:/.test(r[IMAGE]))) { r[IMAGE] = url; cache.cards[r[0]] = { url, by: ptcgSet, at: now0 } }
+    }
+    if (!got) console.log(`  ${setId}: pokemontcg.io ${ptcgSet} did not pair every card by name`)
+  }
   const missing = cards.filter(r => !r[IMAGE])
   const bySet = new Map()
   for (const r of missing) { if (!bySet.has(r[1])) bySet.set(r[1], []); bySet.get(r[1]).push(r) }

@@ -184,7 +184,22 @@ function cardRow(c, setId, fallbackImage) {
   ]
 }
 
-async function buildLang(lang, previousCards) {
+// TCGdex sometimes loses data on a refetch: on 2026-10-24 the 30th Celebration sets came back with no
+// Cardmarket id, Pokédex number, regulation mark or stamped printing, and 34 cards of mee, mep and 30th
+// were deleted (404), and so were the Japanese sets M6a and MF (225 cards). The weekly build wrote that out
+// and every price of those sets went. So a refetched card keeps what the previous output had where TCGdex
+// now has less, and a card or a set TCGdex no longer lists stays (people own them). --force rebuilds from
+// TCGdex alone.
+const cmIds = (variants) => variants.filter(([, id, how]) => id && how !== 'm').length
+function keepRicher(row, prev) {
+  if (!prev || FORCE) return row
+  if (cmIds(prev[12]) > cmIds(row[12])) row[12] = prev[12]
+  if (!row[7] && prev[7]) row[7] = prev[7] // dexIds
+  if (!row[15] && prev[15]) row[15] = prev[15] // regulationMark
+  return row
+}
+
+async function buildLang(lang, previousCards, previousSets) {
   console.log(`[${lang}] set list`)
   const brief = await getJson(`${API}/${lang}/sets`)
   let setIds = brief.map(s => s.id)
@@ -238,15 +253,34 @@ async function buildLang(lang, previousCards) {
       else todo.push({ id: c.id, setId: d.id, fallback })
     }
   }
+  if (!FORCE && !LIMIT_SETS) {
+    const listed = new Set(sets.map(r => r[0]))
+    for (const p of previousSets ?? []) {
+      const id = String(p[0]).replace(/^ja-/, '')
+      if (p[1] !== lang || listed.has(id)) continue
+      // in release order, as TCGdex lists them
+      const at = sets.findIndex(r => r[5] && p[5] && r[5] > p[5])
+      sets.splice(at < 0 ? sets.length : at, 0, Object.assign([...p], { 0: id }))
+      console.log(`[${lang}] set ${id} kept: TCGdex no longer lists it`)
+    }
+  }
   console.log(`[${lang}] ${sets.length} sets, ${keep.length} cards kept, ${todo.length} to fetch`)
   const fetched = await pool(todo, async ({ id, setId, fallback }) => {
     const c = await getJson(`${API}/${lang}/cards/${encodeURIComponent(id)}`, { allow404: true })
-    return c ? cardRow(c, setId, fallback) : (prevById.get(id) ?? null)
+    return c ? keepRicher(cardRow(c, setId, fallback), prevById.get(id)) : (prevById.get(id) ?? null)
   })
   const cards = [...keep, ...fetched.filter(Boolean)]
+  if (!FORCE && !LIMIT_SETS) {
+    const have = new Set(cards.map(r => String(r[0]).replace(/^ja-/, '')))
+    const setIds = new Set(sets.map(r => r[0]))
+    const gone = [...prevById].filter(([id, r]) => !have.has(id) && setIds.has(String(r[1]).replace(/^ja-/, '')))
+    for (const [, r] of gone) cards.push(r)
+    if (gone.length) console.log(`[${lang}] ${gone.length} cards TCGdex no longer lists kept: ${gone.slice(0, 12).map(([id]) => id).join(' ')}${gone.length > 12 ? ' …' : ''}`)
+  }
   // Stable order: by set release order, then number
   const setOrder = new Map(sets.map((s, i) => [s[0], i]))
-  cards.sort((a, b) => (setOrder.get(a[1]) - setOrder.get(b[1])) ||
+  const order = (r) => setOrder.get(r[1]) ?? setOrder.get(String(r[1]).replace(/^ja-/, ''))
+  cards.sort((a, b) => (order(a) - order(b)) ||
     (parseInt(a[2], 10) - parseInt(b[2], 10)) || String(a[2]).localeCompare(String(b[2])))
   return { sets, cards }
 }
@@ -332,12 +366,13 @@ async function main() {
   const allSets = []
   const manifest = { version: 2, generatedAt: new Date().toISOString(), source: 'TCGdex (tcgdex.dev, MIT)', imageBase: ASSETS, files: {} }
   const enSetIds = new Set()
+  const prevSets = (await readJson(path.join(OUT, 'sets.json')))?.rows
   // the Pokémon form each card shows (scripts/build-pokedex.mjs writes the Pokédex first)
   const pokedex = await readJson(path.join(ROOT, 'catalog', 'pokedex-v2.json'))
   const byDex = pokedex ? formIndex(pokedex) : null
   for (const lang of LANGS) {
     const prev = await readJson(path.join(OUT, `cards-${lang}.json`))
-    const { sets, cards } = await buildLang(lang, prev?.rows)
+    const { sets, cards } = await buildLang(lang, prev?.rows, prevSets)
     const abbrOf = new Map(sets.map(r => [r[0], r[10]]))
     const nameOf = new Map(sets.map(r => [r[0], r[2]]))
     const img = await fillImages(lang, cards, path.join(OUT, 'image-fallbacks.json'), id => abbrOf.get(id), { setName: id => nameOf.get(id), root: ROOT })
