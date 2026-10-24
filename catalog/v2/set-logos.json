@@ -318,25 +318,22 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "2023sv": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/mcd23/logo.png",
-    "https://images.pokemontcg.io/2023sv/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/2023sv.png",
+   "source": "mirror",
+   "from": "https://images.wikidexcdn.net/mwuploads/wikidex/4/48/latest/20230926215305/Logo_Colecci%C3%B3n_de_McDonald%27s_2023_%28TCG%29.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "2024sv": {
-   "url": null,
-   "tried": [
-    "https://images.pokemontcg.io/mcd24/logo.png",
-    "https://images.pokemontcg.io/2024sv/logo.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/2024sv.png",
+   "source": "mirror",
+   "from": "https://images.wikidexcdn.net/mwuploads/wikidex/b/b7/latest/20250117134554/Logo_Colecci%C3%B3n_de_McDonald%27s_2024_%28TCG%29.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "PMCG2": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/PMCG2.png",
+   "source": "mirror",
+   "from": "https://images.wikidexcdn.net/mwuploads/wikidex/7/7e/latest/20220924221845/Logo_Jungla_Pok%C3%A9mon_%28JTCG%29.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "30th": {
    "url": "https://den-media.pokellector.com/logos/30th-Celebration.logo.434.png",
@@ -379,14 +376,16 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "VS1": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/VS1.png",
+   "source": "mirror",
+   "from": "https://images.wikidexcdn.net/mwuploads/wikidex/6/62/latest/20220923193401/Logo_Pok%C3%A9mon_VS_%28JTCG%29.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "web1": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/web1.png",
+   "source": "mirror",
+   "from": "https://images.wikidexcdn.net/mwuploads/wikidex/6/6b/latest/20220420182637/Logo_Pok%C3%A9mon_Web_%28JTCG%29.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "E1": {
    "url": null,
@@ -569,9 +568,10 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "XY8a": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/XY8a.png",
+   "source": "mirror",
+   "from": "https://www.serebii.net/card/logo/blueshock.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "CP1": {
    "url": "https://den-media.pokellector.com/logos/Team-Magma-vs-Team-Aqua-Double-Crisis.logo.168.png",
@@ -599,14 +599,16 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "XY11b": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/XY11b.png",
+   "source": "mirror",
+   "from": "https://www.serebii.net/card/logo/crueltraitor.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "XY11a": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/XY11a.png",
+   "source": "mirror",
+   "from": "https://www.serebii.net/card/logo/feverburstfighter.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "XY9": {
    "url": "https://den-media.pokellector.com/logos/Rage-of-the-Broken-Sky.logo.177.png",
@@ -849,11 +851,10 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "S1a": {
-   "url": null,
-   "tried": [
-    "https://den-media.pokellector.com/logos/V-Rising.logo.285.png"
-   ],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/S1a.png",
+   "source": "mirror",
+   "from": "https://www.serebii.net/card/logo/vmaxrising.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "S3a": {
    "url": "https://den-media.pokellector.com/logos/Legendary-Pulse.logo.294.png",
@@ -1106,9 +1107,10 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "SM1p": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/SM1p.png",
+   "source": "mirror",
+   "from": "https://www.serebii.net/card/logo/sunmoonstrengtheningpack.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "S12a": {
    "url": "https://den-media.pokellector.com/logos/VSTAR-Universe.logo.357.png",
@@ -1116,14 +1118,16 @@
    "at": "2026-10-24T13:06:14.379Z"
   },
   "SM3p": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/SM3p.png",
+   "source": "mirror",
+   "from": "https://www.serebii.net/card/logo/shininglegend.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "SM2p": {
-   "url": null,
-   "tried": [],
-   "at": "2026-10-24T13:06:14.379Z"
+   "url": "https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/SM2p.png",
+   "source": "mirror",
+   "from": "https://www.serebii.net/card/logo/beyondanewchallenge.png",
+   "at": "2026-10-24T13:45:51.160Z"
   },
   "MC": {
    "url": null,
