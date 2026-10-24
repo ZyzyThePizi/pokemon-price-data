@@ -1,0 +1,22 @@
+{
+  "priceGuideEtag": "\"b401ef2a671dc2474ba630ee18269095\"",
+  "priceGuideLastModified": "Sat, 24 Oct 2026 00:45:55 GMT",
+  "sourceCreatedAt": "2026-10-24T02:45:46+0200",
+  "lastRunAt": "2026-10-24T08:30:52.243Z",
+  "rowCount": 80029,
+  "shardCount": 1000,
+  "historyFields": [
+    "date",
+    "low",
+    "trend",
+    "avg1",
+    "avg7",
+    "avg30",
+    "lowHolo",
+    "trendHolo",
+    "avg30Holo"
+  ],
+  "singlesEtag": "\"9ef7ced331a0e6c4d68f9b8ead2e6837\"",
+  "nonsinglesEtag": "\"5de29cec62f15326481f7be75cbb8a66\"",
+  "productRowCount": 80027
+}
