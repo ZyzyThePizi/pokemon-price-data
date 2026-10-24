@@ -11,6 +11,7 @@
 //   sets.json                { fields, rows }   one row per set, both languages
 //   cards-en.json            { fields, rows }   one row per English card
 //   cards-ja.json            { fields, rows }   one row per Japanese card
+//   set-logos.json           what each logo source answered per set (scripts/lib/set-logos.mjs)
 //
 // Incremental: a card already in the previous output is only fetched again
 // when its set is recent (prices/variants still settling) or it has no
@@ -28,6 +29,7 @@ import path from 'node:path'
 import { fillCardmarketIds, expansionLanguages } from './lib/cm-match.mjs'
 import { fillImages, POKELLECTOR_JA } from './lib/image-fallbacks.mjs'
 import { japaneseEnglishNames } from './lib/ja-english-names.mjs'
+import { fillSetLogos } from './lib/set-logos.mjs'
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1')), '..')
 const OUT = path.join(ROOT, 'catalog', 'v2')
@@ -40,6 +42,7 @@ const RECENT_DAYS = 120
 const FORCE = process.argv.includes('--force')
 const MATCH_ONLY = process.argv.includes('--match-only')
 const IMAGES_ONLY = process.argv.includes('--images-only') // fill missing images in the existing files, nothing else
+const LOGOS_ONLY = process.argv.includes('--logos-only') // fill missing set logos in the existing sets.json, nothing else
 const LIMIT_SETS = Number(process.env.LIMIT_SETS || 0) // for test runs
 
 const SET_FIELDS = ['id', 'lang', 'name', 'serieId', 'serieName', 'releaseDate', 'total', 'official',
@@ -289,6 +292,20 @@ async function main() {
     console.log('done (match only)')
     return
   }
+  if (LOGOS_ONLY) {
+    const manifest = await readJson(path.join(OUT, 'manifest.json'))
+    const data = await readJson(path.join(OUT, 'sets.json'))
+    await fillSetLogos(data.rows, path.join(OUT, 'set-logos.json'))
+    const json = JSON.stringify(data)
+    await writeFile(path.join(OUT, 'sets.json'), json)
+    if (manifest.files.sets.sha1 !== sha1(json)) {
+      manifest.files.sets.sha1 = sha1(json)
+      manifest.generatedAt = new Date().toISOString()
+      await writeFile(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n')
+    }
+    console.log('done (logos only)')
+    return
+  }
   if (IMAGES_ONLY) {
     const manifest = await readJson(path.join(OUT, 'manifest.json'))
     const setRows = (await readJson(path.join(OUT, 'sets.json'))).rows
@@ -336,6 +353,8 @@ async function main() {
     manifest.files[`cards-${lang}`] = { file: `cards-${lang}.json`, cards: cards.length, withCardmarketId: withCm, cardmarketMatched: matched, sha1: sha1(cardsJson) }
     console.log(`[${lang}] ${cards.length} cards, ${withCm} with a Cardmarket id`)
   }
+  // real logos for the sets TCGdex has none for (pokemontcg.io, Pokéllector), checked once and cached
+  await fillSetLogos(allSets, path.join(OUT, 'set-logos.json'))
   const setsJson = JSON.stringify({ fields: SET_FIELDS, rows: allSets })
   await writeFile(path.join(OUT, 'sets.json'), setsJson)
   // the hashes make any change a new generatedAt (apps re-import on that), not only a new count
