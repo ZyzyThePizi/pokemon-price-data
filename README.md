@@ -171,3 +171,14 @@ variant** (`n` normal, `r` reverse, `h` holo, `f` 1st edition, `p` W promo, `x` 
 can be joined from `prices/latest.json`. Columnar JSON: `{ fields, rows }`. Images: `imageBase + image + '/low.webp'`
 (or `/high.webp`). `sets.json` also maps each set to its Pokéllector slug where one matches. Used by
 [CIAC](https://zyzythepizi.github.io/ciac/).
+
+**Set logos** (`sets.json` `logo`): TCGdex's, else pokemontcg.io's, else Pokéllector's, else a copy kept here in
+`catalog/set-logos/` of a Serebii or WikiDex logo (a hand-checked list in `scripts/lib/set-logos.mjs`). What each
+source answered is cached in `set-logos.json`.
+
+**Sealed product pictures** (`sealed-images.json`, `{ generatedAt, fields: [idProduct, image, source], rows }`):
+built weekly by `scripts/build-sealed-images.mjs`. Each Cardmarket sealed product (`prices/products.json`, every
+category but singles) is paired by name (`scripts/lib/sealed-match.mjs`: the kind of product and every number must
+agree) with the same product on TCGplayer (via [tcgcsv.com](https://tcgcsv.com)), else on PriceCharting. About 2,200
+of 5,100 have one; coins, most Chinese releases and sampling packs have no source. `sealed-sources.json` caches what
+each source listed.

@@ -50,6 +50,11 @@ jobs:
       - name: Refresh the CIAC catalog (v2)
         run: node scripts/build-ciac-catalog.mjs ${{ inputs.force && '--force' || '' }}
 
+      # Pictures for sealed products (TCGplayer, then PriceCharting), paired by name with
+      # Cardmarket's product list. Incremental: only stale TCGplayer groups / PriceCharting sets.
+      - name: Sealed product pictures
+        run: node scripts/build-sealed-images.mjs
+
       # Fingerprints for the CIAC scanner (incremental: only new cards)
       - name: Update the scanner index
         run: node scripts/build-scan-index.mjs
