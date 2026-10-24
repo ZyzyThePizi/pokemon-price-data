@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-23T13:05:04.213Z",
+  "generatedAt": "2026-10-24T13:06:17.008Z",
   "source": "TCGdex (tcgdex.dev, MIT)",
   "imageBase": "https://assets.tcgdex.net/",
   "files": {
@@ -21,7 +21,7 @@
     "sets": {
       "file": "sets.json",
       "sets": 376,
-      "sha1": "addfecb95188687de5111979f71480254eff0ae4"
+      "sha1": "6d898ed30532eb75eb191541800aaa04e7969af5"
     }
   }
 }

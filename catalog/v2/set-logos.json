@@ -1,0 +1,1214 @@
+{
+ "sets": {
+  "miscp": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/miscp/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "jumbo": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/jumbo/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "wp": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/wp/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "bog": {
+   "url": "https://images.pokemontcg.io/bp/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "sp": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/sp/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-ex-latia": {
+   "url": "https://images.pokemontcg.io/tk1a/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "exu": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/exu/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-ex-m": {
+   "url": "https://images.pokemontcg.io/tk2b/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-ex-p": {
+   "url": "https://images.pokemontcg.io/tk2a/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-ex-latio": {
+   "url": "https://images.pokemontcg.io/tk1b/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2011bw": {
+   "url": "https://images.pokemontcg.io/mcd11/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-hs-g": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-hs-g/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-dp-l": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-dp-l/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-dp-m": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-dp-m/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-bw-z": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-bw-z/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-hs-r": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-hs-r/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ex5.5": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/ex5.5/logo.png",
+    "https://images.pokemontcg.io/ex55/logo.png",
+    "https://images.pokemontcg.io/ex5pt5/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-bw-e": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-bw-e/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "xya": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/xya/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2012bw": {
+   "url": "https://images.pokemontcg.io/mcd12/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-b": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-b/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-sy": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-sy/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-n": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-n/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2014xy": {
+   "url": "https://images.pokemontcg.io/mcd14/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-w": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-w/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2015xy": {
+   "url": "https://images.pokemontcg.io/mcd15/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-latio": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-latio/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-p": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-p/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-latia": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-latia/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2016xy": {
+   "url": "https://images.pokemontcg.io/mcd16/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-xy-su": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-xy-su/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-sm-l": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-sm-l/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2017sm": {
+   "url": "https://images.pokemontcg.io/mcd17/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "tk-sm-r": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/tk-sm-r/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2018sm": {
+   "url": "https://images.pokemontcg.io/mcd18/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "sm3.5": {
+   "url": "https://images.pokemontcg.io/sm35/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "sm7.5": {
+   "url": "https://images.pokemontcg.io/sm75/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2019sm": {
+   "url": "https://images.pokemontcg.io/mcd19/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2021swsh": {
+   "url": "https://images.pokemontcg.io/mcd21/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "swsh4.5sv": {
+   "url": "https://images.pokemontcg.io/swsh45sv/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "swsh9tg": {
+   "url": "https://images.pokemontcg.io/swsh9tg/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "cel25cc": {
+   "url": "https://images.pokemontcg.io/cel25c/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "swsh10tg": {
+   "url": "https://images.pokemontcg.io/swsh10tg/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2022swsh": {
+   "url": "https://images.pokemontcg.io/mcd22/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "sma": {
+   "url": "https://images.pokemontcg.io/sma/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "swsh11tg": {
+   "url": "https://images.pokemontcg.io/swsh11tg/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "swsh12tg": {
+   "url": "https://images.pokemontcg.io/swsh12tg/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "swsh12.5gg": {
+   "url": "https://images.pokemontcg.io/swsh12pt5gg/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "svp": {
+   "url": "https://images.pokemontcg.io/svp/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "sve": {
+   "url": "https://images.pokemontcg.io/sve/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "mfb": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/mfb/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "sv05": {
+   "url": "https://images.pokemontcg.io/sv5/logo.png",
+   "source": "pokemontcg.io",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "30th-c": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/30th-c/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2023sv": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/mcd23/logo.png",
+    "https://images.pokemontcg.io/2023sv/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "2024sv": {
+   "url": null,
+   "tried": [
+    "https://images.pokemontcg.io/mcd24/logo.png",
+    "https://images.pokemontcg.io/2024sv/logo.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PMCG2": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "30th": {
+   "url": "https://den-media.pokellector.com/logos/30th-Celebration.logo.434.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "mee": {
+   "url": "https://den-media.pokellector.com/logos/Mega-Evolution-Energies.logo.436.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PMCG5": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "rc": {
+   "url": "https://den-media.pokellector.com/logos/Radiant-Collection.logo.148.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "mep": {
+   "url": "https://den-media.pokellector.com/logos/Mega-Evolution-Black-Star-Promos.logo.423.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ja-neo1": {
+   "url": "https://den-media.pokellector.com/logos/Gold-Silver-to-a-New-World.logo.324.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PMCG6": {
+   "url": "https://den-media.pokellector.com/logos/Challenge-from-the-Darkness.logo.317.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PMCG1": {
+   "url": "https://den-media.pokellector.com/logos/Expansion-Pack.logo.311.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "VS1": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "web1": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "E1": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PMCG3": {
+   "url": "https://den-media.pokellector.com/logos/Mystery-of-the-Fossils.logo.314.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "E3": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "E4": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "E5": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ADV1": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ADV2": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ADV3": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ADV4": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ADV5": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG1": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG2": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG3": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG4": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG5": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG6": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG7": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG8": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG9": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PCG10": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ja-neo2": {
+   "url": "https://den-media.pokellector.com/logos/Crossing-the-Ruins.logo.331.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ja-neo4": {
+   "url": "https://den-media.pokellector.com/logos/Darkness-and-to-Light.logo.333.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "L1b": {
+   "url": "https://den-media.pokellector.com/logos/SoulSilver-Collection.logo.248.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "ja-neo3": {
+   "url": "https://den-media.pokellector.com/logos/Awakening-Legends.logo.332.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "L1a": {
+   "url": "https://den-media.pokellector.com/logos/HeartGold-Collection.logo.247.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "L2": {
+   "url": "https://den-media.pokellector.com/logos/Reviving-Legends.logo.249.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "LL": {
+   "url": "https://den-media.pokellector.com/logos/Lost-Link.logo.251.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "L3": {
+   "url": "https://den-media.pokellector.com/logos/Clash-at-the-Summit.logo.250.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY1b": {
+   "url": "https://den-media.pokellector.com/logos/Collection-Y.logo.140.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "PMCG4": {
+   "url": "https://den-media.pokellector.com/logos/Rocket-Gang.logo.315.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY1a": {
+   "url": "https://den-media.pokellector.com/logos/Collection-X.logo.139.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "E2": {
+   "url": "https://den-media.pokellector.com/logos/The-Town-on-No-Map.logo.390.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY2": {
+   "url": "https://den-media.pokellector.com/logos/Wild-Blaze.logo.152.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY4": {
+   "url": "https://den-media.pokellector.com/logos/Phantom-Gate.logo.160.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY5a": {
+   "url": "https://den-media.pokellector.com/logos/Gaia-Volcano.logo.165.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY3": {
+   "url": "https://den-media.pokellector.com/logos/Rising-Fist.logo.157.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY8a": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "CP1": {
+   "url": "https://den-media.pokellector.com/logos/Team-Magma-vs-Team-Aqua-Double-Crisis.logo.168.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY6": {
+   "url": "https://den-media.pokellector.com/logos/Emerald-Break.logo.167.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY5b": {
+   "url": "https://den-media.pokellector.com/logos/Tidal-Storm.logo.164.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY7": {
+   "url": "https://den-media.pokellector.com/logos/Bandit-Ring.logo.171.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY8b": {
+   "url": "https://den-media.pokellector.com/logos/Red-Flash.logo.175.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY11b": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY11a": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY9": {
+   "url": "https://den-media.pokellector.com/logos/Rage-of-the-Broken-Sky.logo.177.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "CP3": {
+   "url": "https://den-media.pokellector.com/logos/Pokekyun-Collection.logo.186.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "CP2": {
+   "url": "https://den-media.pokellector.com/logos/Legendary-Holo-Collection.logo.173.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "CP5": {
+   "url": "https://den-media.pokellector.com/logos/Mythical-Legendary-Dream-Holo-Collection.logo.195.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "CP4": {
+   "url": "https://den-media.pokellector.com/logos/Premium-Champion-Pack-EX-x-M-x-BREAK.logo.185.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "XY10": {
+   "url": "https://den-media.pokellector.com/logos/Awakening-of-Psychic-Kings.logo.184.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "CP6": {
+   "url": "https://den-media.pokellector.com/logos/20th-Anniversary-Collection.logo.198.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM1S": {
+   "url": "https://den-media.pokellector.com/logos/Collection-Sun.logo.201.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM1M": {
+   "url": "https://den-media.pokellector.com/logos/Collection-Moon.logo.202.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM0": {
+   "url": "https://den-media.pokellector.com/logos/Pikachu-New-Friends.logo.204.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM1+": {
+   "url": "https://den-media.pokellector.com/logos/Sun-Moon-Strengthening-Expansion.logo.200.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM2L": {
+   "url": "https://den-media.pokellector.com/logos/Alola-Moonlight.logo.210.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM2K": {
+   "url": "https://den-media.pokellector.com/logos/Islands-Awaiting-You.logo.211.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "sm2+": {
+   "url": "https://den-media.pokellector.com/logos/Strengthening-Expansion-Pack-Beyond-A-New-Challenge.logo.212.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM3H": {
+   "url": "https://den-media.pokellector.com/logos/Seen-the-Rainbow-Battle.logo.219.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM3N": {
+   "url": "https://den-media.pokellector.com/logos/Light-Consuming-Darkness.logo.218.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM3+": {
+   "url": "https://den-media.pokellector.com/logos/Strengthening-Expansion-Pack-Shining-Legends.logo.224.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM4S": {
+   "url": "https://den-media.pokellector.com/logos/The-Awoken-Hero.logo.226.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM4A": {
+   "url": "https://den-media.pokellector.com/logos/The-Transdimensional-Beast.logo.227.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM4+": {
+   "url": "https://den-media.pokellector.com/logos/GX-Battle-Boost.logo.228.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM5M": {
+   "url": "https://den-media.pokellector.com/logos/Ultra-Moon.logo.233.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM5S": {
+   "url": "https://den-media.pokellector.com/logos/Ultra-Sun.logo.232.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM5+": {
+   "url": "https://den-media.pokellector.com/logos/Ultra-Force.logo.238.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM6": {
+   "url": "https://den-media.pokellector.com/logos/Forbidden-Light.logo.235.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM6b": {
+   "url": "https://den-media.pokellector.com/logos/Champion-Road.logo.237.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM6a": {
+   "url": "https://den-media.pokellector.com/logos/Dragon-Storm.logo.236.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM7b": {
+   "url": "https://den-media.pokellector.com/logos/Fairy-Rise.logo.240.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM7a": {
+   "url": "https://den-media.pokellector.com/logos/Thunderclap-Spark.logo.243.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM7": {
+   "url": "https://den-media.pokellector.com/logos/Charisma-of-the-Cracked-Sky.logo.242.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM8a": {
+   "url": "https://den-media.pokellector.com/logos/Dark-Order.logo.245.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM8b": {
+   "url": "https://den-media.pokellector.com/logos/Ultra-Shiny-GX.logo.241.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM9": {
+   "url": "https://den-media.pokellector.com/logos/Tag-Bolt.logo.260.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM9b": {
+   "url": "https://den-media.pokellector.com/logos/Full-Metal-Wall.logo.263.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM10": {
+   "url": "https://den-media.pokellector.com/logos/Double-Blaze.logo.266.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM8": {
+   "url": "https://den-media.pokellector.com/logos/Explosive-Impact.logo.258.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM10a": {
+   "url": "https://den-media.pokellector.com/logos/GG-End.logo.267.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM10b": {
+   "url": "https://den-media.pokellector.com/logos/Sky-Legends.logo.268.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM9a": {
+   "url": "https://den-media.pokellector.com/logos/Night-Unison.logo.262.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SMP2": {
+   "url": "https://den-media.pokellector.com/logos/Detective-Pikachu.logo.271.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM12a": {
+   "url": "https://den-media.pokellector.com/logos/Tag-Team-GX-All-Stars.logo.288.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM11": {
+   "url": "https://den-media.pokellector.com/logos/Miracle-Twins.logo.277.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM11a": {
+   "url": "https://den-media.pokellector.com/logos/Remix-Bout.logo.272.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM12": {
+   "url": "https://den-media.pokellector.com/logos/Alter-Genesis.logo.281.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM11b": {
+   "url": "https://den-media.pokellector.com/logos/Dream-League.logo.278.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S1W": {
+   "url": "https://den-media.pokellector.com/logos/Sword.logo.283.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S1H": {
+   "url": "https://den-media.pokellector.com/logos/Shield.logo.284.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S3": {
+   "url": "https://den-media.pokellector.com/logos/Infinity-Zone.logo.293.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S2": {
+   "url": "https://den-media.pokellector.com/logos/Rebellion-Crash.logo.291.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S1a": {
+   "url": null,
+   "tried": [
+    "https://den-media.pokellector.com/logos/V-Rising.logo.285.png"
+   ],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S3a": {
+   "url": "https://den-media.pokellector.com/logos/Legendary-Pulse.logo.294.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SVLN": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV6a": {
+   "url": "https://den-media.pokellector.com/logos/Night-Wanderer.logo.398.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV5a": {
+   "url": "https://den-media.pokellector.com/logos/Crimson-Haze.logo.391.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV7a": {
+   "url": "https://den-media.pokellector.com/logos/Paradise-Dragona.logo.403.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV4a": {
+   "url": "https://den-media.pokellector.com/logos/Shiny-Treasure-ex.logo.375.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV2a": {
+   "url": "https://den-media.pokellector.com/logos/Pokemon-151.logo.371.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV4K": {
+   "url": "https://den-media.pokellector.com/logos/Ancient-Roar.logo.381.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV6": {
+   "url": "https://den-media.pokellector.com/logos/Mask-of-Change.logo.393.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV2D": {
+   "url": "https://den-media.pokellector.com/logos/Clay-Burst.logo.370.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV10": {
+   "url": "https://den-media.pokellector.com/logos/Glory-of-Team-Rocket.logo.413.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV3": {
+   "url": "https://den-media.pokellector.com/logos/Ruler-of-the-Black-Flame.logo.368.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SVLS": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV-P": {
+   "url": "https://den-media.pokellector.com/logos/Scarlet-Violet-Promos.logo.360.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV11B": {
+   "url": "https://den-media.pokellector.com/logos/Black-Bolt.logo.414.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV8": {
+   "url": "https://den-media.pokellector.com/logos/Super-Electric-Breaker.logo.405.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV1a": {
+   "url": "https://den-media.pokellector.com/logos/Triple-Beat.logo.366.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV3a": {
+   "url": "https://den-media.pokellector.com/logos/Raging-Surf.logo.376.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SVK": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV8a": {
+   "url": "https://den-media.pokellector.com/logos/Terastal-Festival-ex.logo.406.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV5K": {
+   "url": "https://den-media.pokellector.com/logos/Wild-Force.logo.386.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV9": {
+   "url": "https://den-media.pokellector.com/logos/Battle-Partners.logo.408.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV9a": {
+   "url": "https://den-media.pokellector.com/logos/Hot-Air-Arena.logo.411.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV4M": {
+   "url": "https://den-media.pokellector.com/logos/Future-Flash.logo.382.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV2P": {
+   "url": "https://den-media.pokellector.com/logos/Snow-Hazard.logo.369.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV1S": {
+   "url": "https://den-media.pokellector.com/logos/Scarlet-ex.logo.361.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV1V": {
+   "url": "https://den-media.pokellector.com/logos/Violet-ex.logo.362.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV7": {
+   "url": "https://den-media.pokellector.com/logos/Stella-Miracle.logo.401.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV11W": {
+   "url": "https://den-media.pokellector.com/logos/White-Flare.logo.415.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SV5M": {
+   "url": "https://den-media.pokellector.com/logos/Cyber-Judge.logo.387.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S9": {
+   "url": "https://den-media.pokellector.com/logos/Star-Birth.logo.336.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S12": {
+   "url": "https://den-media.pokellector.com/logos/Paradigm-Trigger.logo.351.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S7D": {
+   "url": "https://den-media.pokellector.com/logos/Perfect-Skyscraper.logo.318.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S10D": {
+   "url": "https://den-media.pokellector.com/logos/Time-Gazer.logo.341.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S8a": {
+   "url": "https://den-media.pokellector.com/logos/25th-Anniversary-Collection.logo.327.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S5R": {
+   "url": "https://den-media.pokellector.com/logos/Rapid-Strike-Master.logo.307.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S5I": {
+   "url": "https://den-media.pokellector.com/logos/Single-Strike-Master.logo.306.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S5a": {
+   "url": "https://den-media.pokellector.com/logos/Matchless-Fighter.logo.308.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S7R": {
+   "url": "https://den-media.pokellector.com/logos/Blue-Sky-Stream.logo.319.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S8b": {
+   "url": "https://den-media.pokellector.com/logos/VMAX-Climax.logo.338.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S11": {
+   "url": "https://den-media.pokellector.com/logos/Lost-Abyss.logo.344.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S8": {
+   "url": "https://den-media.pokellector.com/logos/Fusion-ARTS.logo.326.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S6K": {
+   "url": "https://den-media.pokellector.com/logos/Jet-Black-Poltergeist.logo.310.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S11a": {
+   "url": "https://den-media.pokellector.com/logos/Incandescent-Arcana.logo.352.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S6H": {
+   "url": "https://den-media.pokellector.com/logos/Silver-Lance.logo.309.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S6a": {
+   "url": "https://den-media.pokellector.com/logos/Eevee-Heroes.logo.322.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S10a": {
+   "url": "https://den-media.pokellector.com/logos/Dark-Phantasma.logo.343.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S10P": {
+   "url": "https://den-media.pokellector.com/logos/Space-Juggler.logo.342.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S2a": {
+   "url": "https://den-media.pokellector.com/logos/Explosive-Flame-Walker.logo.295.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM5p": {
+   "url": "https://den-media.pokellector.com/logos/Ultra-Force.logo.238.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM1p": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S12a": {
+   "url": "https://den-media.pokellector.com/logos/VSTAR-Universe.logo.357.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM3p": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM2p": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "MC": {
+   "url": null,
+   "tried": [],
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S4": {
+   "url": "https://den-media.pokellector.com/logos/Electrifying-Tackle.logo.297.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "SM4p": {
+   "url": "https://den-media.pokellector.com/logos/GX-Battle-Boost.logo.228.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S4a": {
+   "url": "https://den-media.pokellector.com/logos/Shiny-Star-V.logo.301.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S9a": {
+   "url": "https://den-media.pokellector.com/logos/Battle-Region.logo.339.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "S10b": {
+   "url": "https://den-media.pokellector.com/logos/Pokmon-GO.logo.347.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M5": {
+   "url": "https://den-media.pokellector.com/logos/Abyss-Eye.logo.433.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M2a": {
+   "url": "https://den-media.pokellector.com/logos/MEGA-Dream-ex.logo.427.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M6a": {
+   "url": "https://den-media.pokellector.com/logos/30th-Celebration-Japanese.logo.435.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M6": {
+   "url": "https://den-media.pokellector.com/logos/Storm-Emeralda.logo.437.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "MF": {
+   "url": "https://den-media.pokellector.com/logos/30th-Celebration-Japanese.logo.435.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M2": {
+   "url": "https://den-media.pokellector.com/logos/Inferno-X.logo.425.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M1S": {
+   "url": "https://den-media.pokellector.com/logos/Mega-Symphonia.logo.417.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M4": {
+   "url": "https://den-media.pokellector.com/logos/Ninja-Spinner.logo.430.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M1L": {
+   "url": "https://den-media.pokellector.com/logos/Mega-Brave.logo.416.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M3": {
+   "url": "https://den-media.pokellector.com/logos/Munikis-Zero.logo.428.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  },
+  "M-P": {
+   "url": "https://den-media.pokellector.com/logos/Mega-Series-Promos.logo.419.png",
+   "source": "pokellector",
+   "at": "2026-10-24T13:06:14.379Z"
+  }
+ }
+}
