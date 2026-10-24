@@ -5,12 +5,18 @@
 //      the usual respellings are tried. (Its sets API answered 500 on 2026-10-24, so it isn't used.)
 //   2. Pokéllector (both languages): its logo sits next to the symbol the catalog already stores,
 //      …/logos/<Name>.symbol.<id>.png → …/<Name>.logo.<id>.png.
+//   3. A copy kept in this repository (catalog/set-logos/<id>.png, at most 600 px wide, served by GitHub Pages)
+//      of a fan site's logo, for the sets neither source has. Listed by hand in MIRROR, paired by name and
+//      release date: Serebii's set lists (serebii.net/card/japanese.shtml) and WikiDex's "Logo_…" files.
+//      Bulbapedia would have more but refuses requests from GitHub's servers (403). Fan sites may refuse
+//      pictures shown on other sites, hence the copy.
 // Every URL is fetched once and kept only when it answers with a picture (200, image/*, more than 1 KB).
 // The answers are cached in catalog/v2/set-logos.json: a found logo is checked again after 90 days, a set
 // with none after 30 (a source may add it). A network error caches nothing.
 // The app draws its own logo for whatever is still missing (src/components/SetLogo.tsx in ciac-app).
-import { readFile, writeFile } from 'node:fs/promises'
+import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { existsSync } from 'node:fs'
+import path from 'node:path'
 
 const HIT_DAYS = 90
 const MISS_DAYS = 30
@@ -22,6 +28,45 @@ export const PTCG_ALIAS = {
   '2011bw': 'mcd11', '2012bw': 'mcd12', '2014xy': 'mcd14', '2015xy': 'mcd15', '2016xy': 'mcd16', '2017sm': 'mcd17',
   '2018sm': 'mcd18', '2019sm': 'mcd19', '2021swsh': 'mcd21', '2022swsh': 'mcd22',
   'tk-ex-latia': 'tk1a', 'tk-ex-latio': 'tk1b', 'tk-ex-p': 'tk2a', 'tk-ex-m': 'tk2b',
+}
+
+const WIKIDEX = 'https://images.wikidexcdn.net/mwuploads/wikidex/'
+export const MIRROR = {
+  // Japanese
+  PMCG2: `${WIKIDEX}7/7e/latest/20220924221845/Logo_Jungla_Pok%C3%A9mon_%28JTCG%29.png`,
+  VS1: `${WIKIDEX}6/62/latest/20220923193401/Logo_Pok%C3%A9mon_VS_%28JTCG%29.png`,
+  web1: `${WIKIDEX}6/6b/latest/20220420182637/Logo_Pok%C3%A9mon_Web_%28JTCG%29.png`,
+  XY8a: 'https://www.serebii.net/card/logo/blueshock.png',
+  XY11a: 'https://www.serebii.net/card/logo/feverburstfighter.png', // Explosive (Fever-Burst) Fighter, 2016-06
+  XY11b: 'https://www.serebii.net/card/logo/crueltraitor.png',
+  SM1p: 'https://www.serebii.net/card/logo/sunmoonstrengtheningpack.png', // 2017-01-27
+  SM2p: 'https://www.serebii.net/card/logo/beyondanewchallenge.png',
+  SM3p: 'https://www.serebii.net/card/logo/shininglegend.png',
+  S1a: 'https://www.serebii.net/card/logo/vmaxrising.png',
+  // English
+  '2023sv': `${WIKIDEX}4/48/latest/20230926215305/Logo_Colecci%C3%B3n_de_McDonald%27s_2023_%28TCG%29.png`,
+  '2024sv': `${WIKIDEX}b/b7/latest/20250117134554/Logo_Colecci%C3%B3n_de_McDonald%27s_2024_%28TCG%29.png`,
+}
+const PAGES = 'https://zyzythepizi.github.io/pokemon-price-data/catalog/set-logos/'
+const BROWSER = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
+
+/** The copy of a MIRROR logo: already here, or fetched now (resized when sharp is installed). true when there is one. */
+async function mirrored(id, dir) {
+  const file = path.join(dir, `${id}.png`)
+  if (existsSync(file)) return true
+  try {
+    const res = await fetch(MIRROR[id], { headers: { 'user-agent': BROWSER }, signal: AbortSignal.timeout(30000) })
+    if (!res.ok || !(res.headers.get('content-type') || '').startsWith('image/')) { await res.body?.cancel(); return false }
+    let buf = Buffer.from(await res.arrayBuffer())
+    if (buf.length < 1024) return false
+    try {
+      const sharp = (await import('sharp')).default
+      buf = await sharp(buf).resize({ width: 600, withoutEnlargement: true }).png({ compressionLevel: 9 }).toBuffer()
+    } catch { /* no sharp: as it came */ }
+    await mkdir(dir, { recursive: true })
+    await writeFile(file, buf)
+    return true
+  } catch { return false }
 }
 
 // sets.json columns (scripts/build-ciac-catalog.mjs SET_FIELDS)
@@ -66,10 +111,18 @@ async function pool(items, fn, n = CONCURRENCY) {
  */
 export async function fillSetLogos(rows, cacheFile, { now = Date.now(), log = console.log } = {}) {
   const cache = existsSync(cacheFile) ? JSON.parse(await readFile(cacheFile, 'utf8')) : { sets: {} }
+  const mirrorDir = path.join(path.dirname(cacheFile), '..', 'set-logos')
   const todo = rows.filter(r => !r[LOGO])
   const counts = { missing: todo.length, cached: 0, found: 0, none: 0, unknown: 0, bySource: {} }
   await pool(todo, async (r) => {
     const id = String(r[ID])
+    if (MIRROR[id] && await mirrored(id, mirrorDir)) {
+      r[LOGO] = PAGES + id + '.png'
+      cache.sets[id] = { url: r[LOGO], source: 'mirror', from: MIRROR[id], at: new Date(now).toISOString() }
+      counts.found++
+      counts.bySource.mirror = (counts.bySource.mirror || 0) + 1
+      return
+    }
     const hit = cache.sets[id]
     const fresh = hit && now - Date.parse(hit.at) < (hit.url ? HIT_DAYS : MISS_DAYS) * 864e5
     if (fresh) {

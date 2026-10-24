@@ -131,9 +131,11 @@ async function main() {
   await pricecharting(cache.pricecharting)
   await writeFile(cacheFile, JSON.stringify(cache))
 
-  const tcg = Object.values(cache.tcgplayer.groups ?? {}).flatMap(g => g.items.map(([id, name]) => [id, name, g.name]))
+  const tcg = Object.values(cache.tcgplayer.groups ?? {}).flatMap(g => g.items.map(([id, name]) => [id, name, g.name, g.lang]))
   const byTcg = matchSealedAll(cm, tcg)
-  const pcItems = Object.values(cache.pricecharting.consoles ?? {}).flatMap(c => c.items.map(([title, img]) => [img, title, consoleSet(c.name)]))
+  // Cardmarket sells Japanese, Chinese and Western products; a Korean set's box only looks like the Japanese one
+  const pcItems = Object.values(cache.pricecharting.consoles ?? {}).filter(c => !/^Pokemon Korean/i.test(c.name))
+    .flatMap(c => c.items.map(([title, img]) => [img, title, consoleSet(c.name), /^Pokemon (Japanese|Chinese)/i.test(c.name) ? 'ja' : 'en']))
   const left = cm.filter(([id]) => !byTcg.has(id))
   const byPc = matchSealedAll(left, pcItems)
 

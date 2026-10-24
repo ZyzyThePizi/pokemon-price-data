@@ -22,6 +22,13 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: PriceCharting's set lists (probe)
+        run: |
+          mkdir -p probe
+          for u in category/pokemon-cards "category/pokemon-cards?region=japan" brand/pokemon; do
+            curl -sL -A "Mozilla/5.0 (X11; Linux x86_64) Chrome/124.0" "https://www.pricecharting.com/$u" -o "probe/pc-$(echo $u | tr '/?=' '___').html"; sleep 2
+          done
+          ls -la probe
       - run: node scripts/build-sealed-images.mjs
         env:
           PC_PAGES: '3000'
@@ -29,5 +36,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add catalog/v2/sealed-images.json catalog/v2/sealed-sources.json
+          git add catalog/v2/sealed-images.json catalog/v2/sealed-sources.json probe
           git commit -m "Sealed images check output" && git push
