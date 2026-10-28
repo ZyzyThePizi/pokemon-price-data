@@ -5,12 +5,14 @@
 //   Japanese: Limitless TCG (tpc/<SET>/<SET>_<n>_R_JP_LG.png), Sun & Moon era onwards;
 //   then both: TCGplayer's catalog (tcgplayer-images.mjs), which also has the Japanese sets of 1996–2006;
 //   last, Japanese: Pokéllector's old sets under the codes it gives them (B02 = PMCG2…), when its numbering
-//   is TCGdex's (every card whose Pokémon both name agrees).
+//   is TCGdex's (every card whose Pokémon both name agrees);
+//   last of all, both: cardcodex.com and pkmncards.com for the sets nobody else has (cardcodex.mjs).
 // For each set the first source + number style that has one of its missing cards wins.
 // What was found is remembered in catalog/v2/image-fallbacks.json, so a daily build only asks about
 // new gaps; a miss is retried after a week.
 import { readFile, writeFile } from 'node:fs/promises'
 import { fillFromTcgplayer, pokedexByName, cardDex, rememberTcgplayerNames } from './tcgplayer-images.mjs'
+import { fillFromCardcodex } from './cardcodex.mjs'
 
 const WEEK = 7 * 864e5
 const IMAGE = 11 // the image column of a card row (CARD_FIELDS in build-ciac-catalog.mjs)
@@ -134,6 +136,7 @@ export async function fillImages(lang, cards, cacheFile, abbrOf = () => null, op
   const tp = await fillFromTcgplayer(lang, missing.filter(r => !r[IMAGE]), cache, opts)
   filled += tp.filled
   if (lang === 'ja') filled += await fillFromPokellectorJa(cards, opts.root ?? '.')
+  filled += await fillFromCardcodex(lang, cards, cache, opts.root ?? '.')
   // English names of the TCGplayer products behind Japanese pictures, for Cardmarket matching
   if (lang === 'ja') await rememberTcgplayerNames(lang, cards, cache)
   await writeFile(cacheFile, JSON.stringify(cache))
