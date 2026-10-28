@@ -20,6 +20,10 @@
 // English cards TCGdex has no Cardmarket id for get one matched from
 // Cardmarket's product list (scripts/lib/cm-match.mjs), marked [code, id, 'm'].
 // `--match-only` redoes just that step on the current output.
+//
+// Reverse holos TCGdex misses (whole EX sets, Hidden Fates) come from pokemontcg.io, checked against
+// Cardmarket's guide, marked [r, id, 'p'] (scripts/lib/reverse-holos.mjs). `--prints-only` redoes that step
+// and the set-mark one (scripts/lib/set-marks.mjs) on the current output.
 import { createHash } from 'node:crypto'
 import { JA_SET_NAMES, JA_TITLE_FIXES } from './lib/ja-set-names.mjs'
 import { formIndex, cardForms } from './lib/card-forms.mjs'
@@ -28,6 +32,7 @@ import { existsSync } from 'node:fs'
 import path from 'node:path'
 import { fillCardmarketIds, expansionLanguages } from './lib/cm-match.mjs'
 import { fillImages, POKELLECTOR_JA } from './lib/image-fallbacks.mjs'
+import { fillReverseHolos } from './lib/reverse-holos.mjs'
 import { japaneseEnglishNames } from './lib/ja-english-names.mjs'
 import { fillSetLogos } from './lib/set-logos.mjs'
 import { dropSetMarks } from './lib/set-marks.mjs'
@@ -45,6 +50,8 @@ const FORCE = process.argv.includes('--force')
 const MATCH_ONLY = process.argv.includes('--match-only')
 const IMAGES_ONLY = process.argv.includes('--images-only') // fill missing images in the existing files, nothing else
 const LOGOS_ONLY = process.argv.includes('--logos-only') // fill missing set logos in the existing sets.json, nothing else
+// redo the print fixes on the existing output: set marks and 1st-Edition-only sets (set-marks.mjs), English reverse holos
+const PRINTS_ONLY = process.argv.includes('--prints-only')
 const LIMIT_SETS = Number(process.env.LIMIT_SETS || 0) // for test runs
 
 const SET_FIELDS = ['id', 'lang', 'name', 'serieId', 'serieName', 'releaseDate', 'total', 'official',
@@ -196,7 +203,8 @@ function cardRow(c, setId, fallbackImage) {
 // and every price of those sets went. So a refetched card keeps what the previous output had where TCGdex
 // now has less, and a card or a set TCGdex no longer lists stays (people own them). --force rebuilds from
 // TCGdex alone.
-const cmIds = (variants) => variants.filter(([, id, how]) => id && how !== 'm').length
+// matched ids ('m') and reverse holos from pokemontcg.io ('p', on the card's own product) are not TCGdex's
+const cmIds = (variants) => variants.filter(([, id, how]) => id && how !== 'm' && how !== 'p').length
 function keepRicher(row, prev) {
   if (!prev || FORCE) return row
   if (cmIds(prev[12]) > cmIds(row[12])) row[12] = prev[12]
@@ -315,6 +323,15 @@ async function matchCardmarket(lang, cards, setRows) {
   return n
 }
 
+/** The reverse holos TCGdex misses, on the English cards (scripts/lib/reverse-holos.mjs). */
+async function reverseHolos(cards, setRows) {
+  const release = new Map(setRows.map(r => [r[0], r[5]]))
+  const guide = (await readJson(path.join(ROOT, 'prices', 'latest.json')))?.rows ?? null
+  const r = await fillReverseHolos(cards, id => release.get(id), path.join(OUT, 'reverse-holos.json'), guide)
+  console.log(`[en] reverse holos: ${r.added} added in ${r.sets} sets (pokemontcg.io; Cardmarket lists ${r.cmAgree} of them, not ${r.cmDisagree}); ${r.fetched} sets asked, ${r.left} left for the next build`)
+  return r
+}
+
 async function main() {
   await mkdir(OUT, { recursive: true })
   if (MATCH_ONLY) {
@@ -334,6 +351,29 @@ async function main() {
     manifest.generatedAt = new Date().toISOString()
     await writeFile(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n')
     console.log('done (match only)')
+    return
+  }
+  if (PRINTS_ONLY) {
+    const manifest = await readJson(path.join(OUT, 'manifest.json'))
+    const setRows = (await readJson(path.join(OUT, 'sets.json'))).rows
+    let changed = false
+    for (const lang of LANGS) {
+      const file = path.join(OUT, `cards-${lang}.json`)
+      const data = await readJson(file)
+      const marks = dropSetMarks(data.rows)
+      if (Object.keys(marks).length) console.log(`[${lang}] dropped: ${JSON.stringify(marks)}`)
+      if (lang === 'en') await reverseHolos(data.rows, setRows.filter(r => r[1] === 'en'))
+      const json = JSON.stringify(data)
+      if (manifest.files[`cards-${lang}`].sha1 === sha1(json)) continue
+      await writeFile(file, json)
+      manifest.files[`cards-${lang}`].sha1 = sha1(json)
+      changed = true
+    }
+    if (changed) {
+      manifest.generatedAt = new Date().toISOString()
+      await writeFile(path.join(OUT, 'manifest.json'), JSON.stringify(manifest, null, 2) + '\n')
+    }
+    console.log('done (prints only)')
     return
   }
   if (LOGOS_ONLY) {
@@ -394,6 +434,7 @@ async function main() {
     for (const r of cards) r[FORMS] = byDex ? cardForms({ name: r[3], types: r[8], dexIds: r[7] }, lang, byDex) : null
     allSets.push(...sets)
     const matched = await matchCardmarket(lang, cards, sets)
+    if (lang === 'en') await reverseHolos(cards, sets)
     const withCm = cards.filter(r => r[12].some(([, id]) => id)).length
     const cardsJson = JSON.stringify({ fields: CARD_FIELDS, variantCodes: VARIANT_CODE, rows: cards })
     await writeFile(path.join(OUT, `cards-${lang}.json`), cardsJson)
