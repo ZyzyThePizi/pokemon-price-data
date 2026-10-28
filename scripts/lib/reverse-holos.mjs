@@ -86,13 +86,16 @@ export async function fillReverseHolos(cards, release, cacheFile, guideRows = nu
 
   const guide = guideRows ? new Map(guideRows.map(g => [g[0], g])) : null
   let added = 0, sets = 0, cmAgree = 0, cmDisagree = 0
-  const disagree = []
+  const disagree = [], skipped = []
   for (const [setId, rows] of bySet) {
     const hit = cache.sets[setId]
     if (!hit?.cards) continue
     const pairs = rows.map(r => [r, hit.cards[norm(r[LOCAL_ID])]]).filter(([, p]) => p)
     const same = pairs.filter(([r, p]) => nameKey(r[NAME]) === nameKey(p[0]) || nameKey(p[0]).startsWith(nameKey(r[NAME]))).length
-    if (!pairs.length || same < 0.85 * pairs.length) continue
+    if (!pairs.length || same < 0.85 * pairs.length) {
+      if (pairs.some(([r, p]) => p[1] && !r[VARIANTS].some(([code]) => code.startsWith('r')))) skipped.push(`${setId} (${same}/${pairs.length} names)`)
+      continue
+    }
     let n = 0
     for (const [r, [, rev]] of pairs) {
       const vs = r[VARIANTS]
@@ -105,6 +108,7 @@ export async function fillReverseHolos(cards, release, cacheFile, guideRows = nu
     }
     if (n) { added += n; sets++ }
   }
+  if (skipped.length) console.log(`  reverse holos: names don't agree with pokemontcg.io, skipped: ${skipped.join(', ')}`)
   if (disagree.length) console.log(`  reverse holos with no Cardmarket reverse listing today (kept): ${disagree.slice(0, 20).join(' ')}${disagree.length > 20 ? ' …' : ''}`)
   await writeFile(cacheFile, JSON.stringify(cache))
   return { added, sets, fetched, cmAgree, cmDisagree, left: Math.max(0, stale.length - MAX_FETCH) }

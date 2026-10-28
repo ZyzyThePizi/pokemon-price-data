@@ -48,7 +48,7 @@ jobs:
       # CIAC catalog v2 (TCGdex: rarity, illustrator, Cardmarket id per
       # variant). Incremental: only new/recent cards are fetched again.
       - name: Refresh the CIAC catalog (v2)
-        run: node scripts/build-ciac-catalog.mjs ${{ inputs.force && '--force' || '' }}
+        run: node scripts/test-print-fixes.mjs && node scripts/build-ciac-catalog.mjs ${{ inputs.force && '--force' || '' }}
 
       # Pictures for sealed products (TCGplayer, then PriceCharting), paired by name with
       # Cardmarket's product list. Incremental: only stale TCGplayer groups / PriceCharting sets.

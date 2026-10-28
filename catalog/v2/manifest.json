@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generatedAt": "2026-10-24T16:30:51.295Z",
+  "generatedAt": "2026-10-28T05:30:40.256Z",
   "source": "TCGdex (tcgdex.dev, MIT)",
   "imageBase": "https://assets.tcgdex.net/",
   "files": {
@@ -9,14 +9,14 @@
       "cards": 21290,
       "withCardmarketId": 19596,
       "cardmarketMatched": 6807,
-      "sha1": "f118c21ab4a096e6f2b85bffe38a6fa2df126d3e"
+      "sha1": "3e78ffbb28a910c328ea5a0bcef13c30f17ce288"
     },
     "cards-ja": {
       "file": "cards-ja.json",
       "cards": 13006,
       "withCardmarketId": 12373,
       "cardmarketMatched": 2480,
-      "sha1": "751f81373d9c275a467f0e29edc632ea8cb29ac1"
+      "sha1": "6af8f6bf1246ec94cc14093339a05108902b9362"
     },
     "sets": {
       "file": "sets.json",
