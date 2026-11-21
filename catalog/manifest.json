@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-11-20T15:41:45.699Z",
+  "version": 1,
+  "files": {
+    "pokellector_en": {
+      "file": "pokellector_en.json",
+      "sets": 191,
+      "cards": 21244,
+      "updatedAt": "2026-11-20T15:41:45.699Z"
+    },
+    "pokellector_jp": {
+      "file": "pokellector_jp.json",
+      "sets": 204,
+      "cards": 18261,
+      "updatedAt": "2026-11-20T15:41:45.699Z"
+    },
+    "pokedex": {
+      "file": "pokedex.json",
+      "species": 1336,
+      "updatedAt": "2026-09-28T21:13:04.710Z"
+    }
+  }
+}
