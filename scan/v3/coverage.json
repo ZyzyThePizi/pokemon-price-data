@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "count": 38545,
  "base": 38404,
  "added": {
@@ -13,8 +13,8 @@
  "today": {},
  "noPictureYet": 3,
  "noPictureSets": {
-  "en:dc1": 1,
   "en:ex14": 1,
+  "en:dc1": 1,
   "en:sv03.5": 1
  },
  "parity": 0.99923
