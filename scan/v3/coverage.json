@@ -1,0 +1,21 @@
+{
+ "updated": "2026-11-27",
+ "count": 38545,
+ "base": 38404,
+ "added": {
+  "2026-11-18": {
+   "ja": 139
+  },
+  "2026-11-24": {
+   "ja": 2
+  }
+ },
+ "today": {},
+ "noPictureYet": 3,
+ "noPictureSets": {
+  "en:dc1": 1,
+  "en:ex14": 1,
+  "en:sv03.5": 1
+ },
+ "parity": 0.99923
+}

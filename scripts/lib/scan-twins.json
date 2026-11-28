@@ -1,0 +1,4 @@
+{
+  "_": "Japanese sets TCGdex lists twice: the first id comes with no cards (filled by ja-empty-sets.mjs from TCGplayer and Limitless), the second is TCGdex's own copy, same numbers and Cardmarket products. The scanner index keeps only the second (scan-prep.mjs, CIAC tools/scan-train common.py scanner_rows), and CIAC's gate counts both ids as one card (canon).",
+  "sets": { "SM1+": "SM1p", "sm2+": "SM2p", "SM3+": "SM3p", "SM4+": "SM4p", "SM5+": "SM5p" }
+}
